@@ -1,0 +1,710 @@
+﻿<Object>
+  <Object type="0xab0" id="Minor Health Potion">
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0xf6</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>A small potion that restores health points.</Description>
+    <Sound>use_potion</Sound>
+    <Activate amount="50">Heal</Activate>
+    <Consumable/>
+    <Potion/>
+    <BagType>0</BagType>
+  </Object>
+  <Object type="0xadd" id="Minor Magic Potion">
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0xf7</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>A small potion that restores magic points.</Description>
+    <Sound>use_potion</Sound>
+    <Activate amount="50">Magic</Activate>
+    <Consumable/>
+    <Potion/>
+    <BagType>0</BagType>
+  </Object>
+
+  <Object type="0xa22" id="Health Potion">
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0x32</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Tier>1</Tier>
+    <Description>A potion that instantly restores health points.</Description>
+    <Sound>use_potion</Sound>
+    <Activate amount="100">Heal</Activate>
+    <Consumable/>
+    <Potion/>
+    <BagType>0</BagType>
+  </Object>
+  <Object type="0xa23" id="Magic Potion">
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0x33</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Tier>1</Tier>
+    <Description>A potion that instantly restores magic points.</Description>
+    <Sound>use_potion</Sound>
+    <Activate amount="100">Magic</Activate>
+    <Consumable/>
+    <Potion/>
+    <BagType>0</BagType>
+  </Object>
+  
+  <Object type="0xb14" id="Elixir of Health 7">
+    <DisplayId>Elixir of Health</DisplayId>
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0xe8</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>A large vial holding seven doses of healing elixir.</Description>
+    <Sound>use_potion</Sound>
+    <Doses>7</Doses>
+    <Activate amount="125">Heal</Activate>
+    <Consumable/>
+    <SuccessorId>Elixir of Health 6</SuccessorId>
+    <Soulbound/>
+    <Potion/>
+    <BagType>3</BagType>
+  </Object>
+  <Object type="0xb15" id="Elixir of Health 6">
+    <DisplayId>Elixir of Health</DisplayId>
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0xe8</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>A large vial holding six doses of healing elixir.</Description>
+    <Sound>use_potion</Sound>
+    <Doses>6</Doses>
+    <Activate amount="125">Heal</Activate>
+    <Consumable/>
+    <SuccessorId>Elixir of Health 5</SuccessorId>
+    <Soulbound/>
+    <Potion/>
+    <BagType>3</BagType>
+  </Object>
+  <Object type="0xb16" id="Elixir of Health 5">
+    <DisplayId>Elixir of Health</DisplayId>
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0xe9</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>A large vial holding five doses of healing elixir.</Description>
+    <Sound>use_potion</Sound>
+    <Doses>5</Doses>
+    <Activate amount="125">Heal</Activate>
+    <Consumable/>
+    <SuccessorId>Elixir of Health 4</SuccessorId>
+    <Soulbound/>
+    <Potion/>
+    <BagType>3</BagType>
+  </Object>
+  <Object type="0xb17" id="Elixir of Health 4">
+    <DisplayId>Elixir of Health</DisplayId>
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0xe9</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>A large vial holding four doses of healing elixir.</Description>
+    <Sound>use_potion</Sound>
+    <Doses>4</Doses>
+    <Activate amount="125">Heal</Activate>
+    <Consumable/>
+    <SuccessorId>Elixir of Health 3</SuccessorId>
+    <Soulbound/>
+    <Potion/>
+    <BagType>3</BagType>
+  </Object>
+  <Object type="0xa81" id="Elixir of Health 3">
+    <DisplayId>Elixir of Health</DisplayId>
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0xe9</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>A large vial holding three doses of healing elixir.</Description>
+    <Sound>use_potion</Sound>
+    <Doses>3</Doses>
+    <Activate amount="125">Heal</Activate>
+    <Consumable/>
+    <SuccessorId>Elixir of Health 2</SuccessorId>
+    <Soulbound/>
+    <Potion/>
+    <BagType>3</BagType>
+  </Object>
+  <Object type="0xa48" id="Elixir of Health 2">
+    <DisplayId>Elixir of Health</DisplayId>
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0xea</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>A large vial holding two doses of healing elixir.</Description>
+    <Sound>use_potion</Sound>
+    <Doses>2</Doses>
+    <Activate amount="125">Heal</Activate>
+    <Consumable/>
+    <SuccessorId>Elixir of Health 1</SuccessorId>
+    <Soulbound/>
+    <Potion/>
+    <BagType>3</BagType>
+  </Object>
+  <Object type="0xa49" id="Elixir of Health 1">
+    <DisplayId>Elixir of Health</DisplayId>
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0xea</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>A large vial of healing elixir.</Description>
+    <Sound>use_potion</Sound>
+    <Activate amount="125">Heal</Activate>
+    <Consumable/>
+    <Soulbound/>
+    <Potion/>
+    <BagType>3</BagType>
+  </Object>
+  <Object type="0xb18" id="Elixir of Magic 7">
+    <DisplayId>Elixir of Magic</DisplayId>
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0xd8</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>A large vial holding seven doses of magical essence.</Description>
+    <Sound>use_potion</Sound>
+    <Doses>7</Doses>
+    <Activate amount="125">Magic</Activate>
+    <Consumable/>
+    <SuccessorId>Elixir of Magic 6</SuccessorId>
+    <Soulbound/>
+    <Potion/>
+    <BagType>3</BagType>
+  </Object>
+  <Object type="0xb19" id="Elixir of Magic 6">
+    <DisplayId>Elixir of Magic</DisplayId>
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0xd8</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>A large vial holding six doses of magical essence.</Description>
+    <Sound>use_potion</Sound>
+    <Doses>6</Doses>
+    <Activate amount="125">Magic</Activate>
+    <Consumable/>
+    <SuccessorId>Elixir of Magic 5</SuccessorId>
+    <Soulbound/>
+    <Potion/>
+    <BagType>3</BagType>
+  </Object>
+  <Object type="0xb1a" id="Elixir of Magic 5">
+    <DisplayId>Elixir of Magic</DisplayId>
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0xd9</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>A large vial holding five doses of magical essence.</Description>
+    <Sound>use_potion</Sound>
+    <Doses>5</Doses>
+    <Activate amount="125">Magic</Activate>
+    <Consumable/>
+    <SuccessorId>Elixir of Magic 4</SuccessorId>
+    <Soulbound/>
+    <Potion/>
+    <BagType>3</BagType>
+  </Object>
+  <Object type="0xb1b" id="Elixir of Magic 4">
+    <DisplayId>Elixir of Magic</DisplayId>
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0xd9</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>A large vial holding four doses of magical essence.</Description>
+    <Sound>use_potion</Sound>
+    <Doses>4</Doses>
+    <Activate amount="125">Magic</Activate>
+    <Consumable/>
+    <SuccessorId>Elixir of Magic 3</SuccessorId>
+    <Soulbound/>
+    <Potion/>
+    <BagType>3</BagType>
+  </Object>
+  <Object type="0xa4a" id="Elixir of Magic 3">
+    <DisplayId>Elixir of Magic</DisplayId>
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0xd9</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>A large vial holding three doses of magical essence.</Description>
+    <Sound>use_potion</Sound>
+    <Doses>3</Doses>
+    <Activate amount="125">Magic</Activate>
+    <Consumable/>
+    <SuccessorId>Elixir of Magic 2</SuccessorId>
+    <Soulbound/>
+    <Potion/>
+    <BagType>3</BagType>
+  </Object>
+  <Object type="0xaed" id="Elixir of Magic 2">
+    <DisplayId>Elixir of Magic</DisplayId>
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0xda</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>A large vial holding two doses of magical essence.</Description>
+    <Sound>use_potion</Sound>
+    <Doses>2</Doses>
+    <Activate amount="125">Magic</Activate>
+    <Consumable/>
+    <SuccessorId>Elixir of Magic 1</SuccessorId>
+    <Soulbound/>
+    <Potion/>
+    <BagType>3</BagType>
+  </Object>
+  <Object type="0xaee" id="Elixir of Magic 1">
+    <DisplayId>Elixir of Magic</DisplayId>
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0xda</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>A large vial of magical essence.</Description>
+    <Sound>use_potion</Sound>
+    <Activate amount="125">Magic</Activate>
+    <Consumable/>
+    <Soulbound/>
+    <Potion/>
+    <BagType>3</BagType>
+  </Object>
+  <Object type="0xaeb" id="Greater Health Potion">
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0x24</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>A potion that instantly restores health points.</Description>
+    <Sound>use_potion</Sound>
+    <Activate amount="200">Heal</Activate>
+    <Consumable/>
+    <Soulbound/>
+    <Potion/>
+    <BagType>0</BagType>
+  </Object>
+  <Object type="0xaec" id="Greater Magic Potion">
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0x25</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>A potion that instantly restores magic points.</Description>
+    <Sound>use_potion</Sound>
+    <Activate amount="200">Magic</Activate>
+    <Consumable/>
+    <Soulbound/>
+    <Potion/>
+    <BagType>0</BagType>
+  </Object>
+  <Object type="0xb0c" id="Tincture of Dexterity">
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0xc7</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>A potion that temporarily boosts dexterity.</Description>
+    <Sound>use_potion</Sound>
+    <Consumable/>
+    <Soulbound/>
+    <Potion/>
+    <BagType>3</BagType>
+    <Activate stat="28" amount="15" duration="30">StatBoostSelf</Activate>
+  </Object>
+  <Object type="0xb0d" id="Tincture of Life">
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0xc0</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>A potion that temporarily boosts maximum health points.</Description>
+    <Sound>use_potion</Sound>
+    <Consumable/>
+    <Soulbound/>
+    <Potion/>
+    <BagType>3</BagType>
+    <Activate stat="0" amount="75" duration="30">StatBoostSelf</Activate>
+  </Object>
+  <Object type="0xb0e" id="Tincture of Mana">
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0xc1</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>A potion that temporarily boosts maximum magic points.</Description>
+    <Sound>use_potion</Sound>
+    <Consumable/>
+    <Soulbound/>
+    <Potion/>
+    <BagType>3</BagType>
+    <Activate stat="3" amount="75" duration="30">StatBoostSelf</Activate>
+  </Object>
+  <Object type="0xb0f" id="Tincture of Defense">
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0xc5</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>A potion that temporarily boosts defense.</Description>
+    <Sound>use_potion</Sound>
+    <Consumable/>
+    <Soulbound/>
+    <Potion/>
+    <BagType>3</BagType>
+    <Activate stat="21" amount="15" duration="30">StatBoostSelf</Activate>
+  </Object>
+  <Object type="0xb10" id="Effusion of Dexterity">
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0xd7</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>A potion that temporarily boosts the dexterity of all nearby allies.</Description>
+    <Sound>use_potion</Sound>
+    <Consumable/>
+    <Soulbound/>
+    <Potion/>
+    <BagType>3</BagType>
+    <Activate stat="28" amount="30" duration="30" range="6">StatBoostAura</Activate>
+  </Object>
+  <Object type="0xb11" id="Effusion of Life">
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0xd0</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>A potion that temporarily boosts the maximum health points of all nearby allies.</Description>
+    <Sound>use_potion</Sound>
+    <Consumable/>
+    <Soulbound/>
+    <Potion/>
+    <BagType>3</BagType>
+    <Activate stat="0" amount="150" duration="30" range="6">StatBoostAura</Activate>
+  </Object>
+  <Object type="0xb12" id="Effusion of Mana">
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0xd1</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>A potion that temporarily boosts the maximum magic points of all nearby allies.</Description>
+    <Sound>use_potion</Sound>
+    <Consumable/>
+    <Soulbound/>
+    <Potion/>
+    <BagType>3</BagType>
+    <Activate stat="3" amount="150" duration="30" range="6">StatBoostAura</Activate>
+  </Object>
+  <Object type="0xb13" id="Effusion of Defense">
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0xd5</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>A potion that temporarily boosts the defense of all nearby allies.</Description>
+    <Sound>use_potion</Sound>
+    <Consumable/>
+    <Soulbound/>
+    <Potion/>
+    <BagType>3</BagType>
+    <Activate stat="21" amount="30" duration="30" range="6">StatBoostAura</Activate>
+  </Object>
+
+  <Object type="0xc5d" id="XP Booster 2x">
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0xf8</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>Get 2x all XP gained! Lasts until level 20 or death.</Description>
+    <Sound>use_potion</Sound>
+    <Consumable/>
+    <Soulbound/>
+    <BagType>1</BagType>
+    <XpBoost>2</XpBoost>
+    <DisplayId>XP Booster</DisplayId>
+  </Object>
+  <Object type="0xc5e" id="XP Booster 3x">
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0xf9</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>Get 3x all XP gained! Lasts until level 20 or death.</Description>
+    <Sound>use_potion</Sound>
+    <Consumable/>
+    <Soulbound/>
+    <BagType>1</BagType>
+    <XpBoost>3</XpBoost>
+    <DisplayId>XP Booster</DisplayId>
+  </Object>
+
+  <Object type="0xc60" id="Greater Elixir of Health 10">
+    <DisplayId>Greater Elixir of Health</DisplayId>
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0xeb</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>A large vial holding seven doses of healing elixir.</Description>
+    <Sound>use_potion</Sound>
+    <Doses>10</Doses>
+    <Activate amount="200">Heal</Activate>
+    <Consumable/>
+    <SuccessorId>Greater Elixir of Health 9</SuccessorId>
+    <Soulbound/>
+    <Potion/>
+    <BagType>3</BagType>
+  </Object>
+  <Object type="0xc61" id="Greater Elixir of Health 9">
+    <DisplayId>Greater Elixir of Health</DisplayId>
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0xeb</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>A large vial holding seven doses of healing elixir.</Description>
+    <Sound>use_potion</Sound>
+    <Doses>9</Doses>
+    <Activate amount="200">Heal</Activate>
+    <Consumable/>
+    <SuccessorId>Greater Elixir of Health 8</SuccessorId>
+    <Soulbound/>
+    <Potion/>
+    <BagType>3</BagType>
+  </Object>
+  <Object type="0xc62" id="Greater Elixir of Health 8">
+    <DisplayId>Greater Elixir of Health</DisplayId>
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0xec</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>A large vial holding seven doses of healing elixir.</Description>
+    <Sound>use_potion</Sound>
+    <Doses>8</Doses>
+    <Activate amount="200">Heal</Activate>
+    <Consumable/>
+    <SuccessorId>Greater Elixir of Health 7</SuccessorId>
+    <Soulbound/>
+    <Potion/>
+    <BagType>3</BagType>
+  </Object>
+  <Object type="0xc63" id="Greater Elixir of Health 7">
+    <DisplayId>Greater Elixir of Health</DisplayId>
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0xec</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>A large vial holding seven doses of healing elixir.</Description>
+    <Sound>use_potion</Sound>
+    <Doses>7</Doses>
+    <Activate amount="200">Heal</Activate>
+    <Consumable/>
+    <SuccessorId>Greater Elixir of Health 6</SuccessorId>
+    <Soulbound/>
+    <Potion/>
+    <BagType>3</BagType>
+  </Object>
+  <Object type="0xc64" id="Greater Elixir of Health 6">
+    <DisplayId>Greater Elixir of Health</DisplayId>
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0xec</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>A large vial holding six doses of healing elixir.</Description>
+    <Sound>use_potion</Sound>
+    <Doses>6</Doses>
+    <Activate amount="200">Heal</Activate>
+    <Consumable/>
+    <SuccessorId>Greater Elixir of Health 5</SuccessorId>
+    <Soulbound/>
+    <Potion/>
+    <BagType>3</BagType>
+  </Object>
+  <Object type="0xc65" id="Greater Elixir of Health 5">
+    <DisplayId>Greater Elixir of Health</DisplayId>
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0xed</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>A large vial holding five doses of healing elixir.</Description>
+    <Sound>use_potion</Sound>
+    <Doses>5</Doses>
+    <Activate amount="200">Heal</Activate>
+    <Consumable/>
+    <SuccessorId>Greater Elixir of Health 4</SuccessorId>
+    <Soulbound/>
+    <Potion/>
+    <BagType>3</BagType>
+  </Object>
+  <Object type="0xc66" id="Greater Elixir of Health 4">
+    <DisplayId>Greater Elixir of Health</DisplayId>
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0xed</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>A large vial holding four doses of healing elixir.</Description>
+    <Sound>use_potion</Sound>
+    <Doses>4</Doses>
+    <Activate amount="200">Heal</Activate>
+    <Consumable/>
+    <SuccessorId>Greater Elixir of Health 3</SuccessorId>
+    <Soulbound/>
+    <Potion/>
+    <BagType>3</BagType>
+  </Object>
+  <Object type="0xc67" id="Greater Elixir of Health 3">
+    <DisplayId>Greater Elixir of Health</DisplayId>
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0xee</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>A large vial holding three doses of healing elixir.</Description>
+    <Sound>use_potion</Sound>
+    <Doses>3</Doses>
+    <Activate amount="200">Heal</Activate>
+    <Consumable/>
+    <SuccessorId>Greater Elixir of Health 2</SuccessorId>
+    <Soulbound/>
+    <Potion/>
+    <BagType>3</BagType>
+  </Object>
+  <Object type="0xc68" id="Greater Elixir of Health 2">
+    <DisplayId>Greater Elixir of Health</DisplayId>
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0xee</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>A large vial holding two doses of healing elixir.</Description>
+    <Sound>use_potion</Sound>
+    <Doses>2</Doses>
+    <Activate amount="200">Heal</Activate>
+    <Consumable/>
+    <SuccessorId>Greater Elixir of Health 1</SuccessorId>
+    <Soulbound/>
+    <Potion/>
+    <BagType>3</BagType>
+  </Object>
+  <Object type="0xc69" id="Greater Elixir of Health 1">
+    <DisplayId>Greater Elixir of Health</DisplayId>
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0xef</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>A large vial of healing elixir.</Description>
+    <Sound>use_potion</Sound>
+    <Activate amount="200">Heal</Activate>
+    <Consumable/>
+    <Soulbound/>
+    <Potion/>
+    <BagType>3</BagType>
+  </Object>
+</Object>

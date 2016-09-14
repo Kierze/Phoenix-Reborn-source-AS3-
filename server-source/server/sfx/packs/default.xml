@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<SoundPack name="default" folderPath="sfx/soundpacks/default/">
+  <MusicList folderPath="music/" pathInformation="%allfiles%" />
+  <SoundList folderPath="sounds/" pathInformation="%allfiles%" />
+</SoundPack>

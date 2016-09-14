@@ -1,0 +1,64 @@
+﻿<Objects>
+  <Object type="0x0926" id="Bonegrind the Butcher">
+    <Enemy />
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>chars16x16rEncounters</File>
+      <Index>14</Index>
+    </AnimatedTexture>
+    <HitSound>monster/pirates_hit</HitSound>
+    <DeathSound>monster/pirates_death</DeathSound>
+    <Size>80</Size>
+    <MaxHitPoints>300</MaxHitPoints>
+    <Defense>0</Defense>
+    <Quest />
+    <Level>1</Level>
+    <XpMult>0.7</XpMult>
+    <NoArticle />
+    <Projectile id="0">
+      <ObjectId>Blade</ObjectId>
+      <Damage>6</Damage>
+      <Size>100</Size>
+      <Speed>75</Speed>
+      <LifetimeMS>800</LifetimeMS>
+    </Projectile>
+  </Object>
+  <Object type="0x6b3" id="Kitchen Guard">
+    <Enemy />
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>chars8x8rBeach</File>
+      <Index>6</Index>
+    </AnimatedTexture>
+    <HitSound>monster/pirates_hit</HitSound>
+    <DeathSound>monster/pirates_death</DeathSound>
+    <Size>100</Size>
+    <MaxHitPoints>10</MaxHitPoints>
+    <Defense>0</Defense>
+    <Projectile id="0">
+      <ObjectId>Blade</ObjectId>
+      <Damage>2</Damage>
+      <Speed>120</Speed>
+      <LifetimeMS>400</LifetimeMS>
+    </Projectile>
+  </Object>
+  <Object type="0x6b4" id="Butcher">
+    <Enemy />
+    <Class>Character</Class>
+    <AnimatedTexture>
+      <File>chars8x8rBeach</File>
+      <Index>7</Index>
+    </AnimatedTexture>
+    <HitSound>monster/pirates_hit</HitSound>
+    <DeathSound>monster/pirates_death</DeathSound>
+    <Size>100</Size>
+    <MaxHitPoints>10</MaxHitPoints>
+    <Defense>0</Defense>
+    <Projectile id="0">
+      <ObjectId>Blade</ObjectId>
+      <Damage>5</Damage>
+      <Speed>120</Speed>
+      <LifetimeMS>400</LifetimeMS>
+    </Projectile>
+  </Object>
+</Objects>

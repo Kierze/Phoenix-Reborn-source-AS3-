@@ -1,0 +1,1389 @@
+<Abilities>
+  <!--#Region Wizard Abilities-->
+  <!--Reserved ids: 000, 001, 002, 003, 004, 005, 006, 007, 008, 009-->
+  <Ability type="0x000" id="Power Blast">
+    <Class>Wizard</Class>
+    <Description>Shoots {Amount} magic bullets in all directions from target location, each dealing {MinDamage}-{MaxDamage} damage.</Description>
+    <Texture>
+      <File>abilities</File>
+      <Index>0x00</Index>
+    </Texture>
+    <Formula type="Simple" base="60" perAp="1.2" min="60" max="110" rounding="Ceiling">MpCost</Formula>
+    <Formula type="Simple" base="4500" perAp="-5" min="4000" max="4500" rounding="Ceiling">Cooldown</Formula>
+    <Projectile>
+      <ObjectId>White Bolt</ObjectId>
+      <Formula type="Flat" base="160">Speed</Formula>
+      <Formula type="Simple" base="25" perAp="0.5" min="25" max="50" rounding="Ceiling">MinDamage</Formula>
+      <Formula type="Simple" base="40" perAp="0.5" min="40" max="70" rounding="Ceiling">MaxDamage</Formula>
+      <Formula type="Flat" base="1000">LifetimeMS</Formula>
+      <Formula type="Flat" base="50">Penetration</Formula>
+    </Projectile>
+    <ActivateAbility id="BulletNova">
+      <Formula type="Flat" base="20">Amount</Formula>
+    </ActivateAbility>
+  </Ability>
+  <!--#Region Specialization: Fire-->
+  <Ability type="0x001" id="Fireblast">
+    <Class>Wizard</Class>
+    <Spec>Fire</Spec>
+    <Description>Shoots {Amount} piercing fire bullets in all directions from target location, each dealing {MinDamage}-{MaxDamage} damage and burning enemies for {TotalDamage} over {DurationMS} seconds.</Description>
+    <Texture>
+      <File>abilities</File>
+      <Index>0x01</Index>
+    </Texture>
+    <Formula type="Simple" base="60" perAp="1.5" min="60" max="700" rounding="Ceiling">MpCost</Formula>
+    <Formula type="Simple" base="4000" perAp="-5" min="2000" max="4000" rounding="Ceiling">Cooldown</Formula>
+    <Projectile>
+      <ObjectId>Fire Bolt</ObjectId>
+      <Formula type="Flat" base="160">Speed</Formula>
+      <Formula type="Simple" base="40" perAp="0.5" min="40" max="250" rounding="Ceiling">MinDamage</Formula>
+      <Formula type="Simple" base="70" perAp="0.5" min="70" max="300" rounding="Ceiling">MaxDamage</Formula>
+      <Formula type="Flat" base="1000">LifetimeMS</Formula>
+      <Formula type="Flat" base="50">Penetration</Formula>
+      <MultiHit />
+    </Projectile>
+    <ActivateAbility id="Fireblast">
+      <Formula type="Flat" base="20">Amount</Formula>
+      <Formula type="Simple" base="5000" perAp="-5" min="3000" max="5000" rounding="Ceiling">DurationMS</Formula>
+      <Formula type="Simple" base="200" perAp="2" min="200" max="1000" rounding="Ceiling">TotalDamage</Formula>
+    </ActivateAbility>
+  </Ability>
+  <Ability type="0x002" id="Fireball">
+    <Class>Wizard</Class>
+    <Spec>Fire</Spec>
+    <Description>Hurls a quick piercing ball of fire towards the cursor, dealing {MinDamage}-{MaxDamage}. Deals 3 times as much damage to burned enemies.</Description>
+    <Texture>
+      <File>abilities</File>
+      <Index>0x02</Index>
+    </Texture>
+    <Formula type="Simple" base="80" perAp="1.5" min="80" max="700" rounding="Ceiling">MpCost</Formula>
+    <Formula type="Simple" base="4000" perAp="-5" min="2000" max="4000" rounding="Ceiling">Cooldown</Formula>
+    <Projectile>
+      <ObjectId>Fire Bolt</ObjectId>
+      <Size>200</Size>
+      <Formula type="Flat" base="120">Speed</Formula>
+      <Formula type="Simple" base="400" perAp="1" min="400" max="800" rounding="Ceiling">MinDamage</Formula>
+      <Formula type="Simple" base="800" perAp="1" min="800" max="1200" rounding="Ceiling">MaxDamage</Formula>
+      <Formula type="Flat" base="800">LifetimeMS</Formula>
+      <Formula type="Flat" base="50">Penetration</Formula>
+      <MultiHit/>
+    </Projectile>
+    <ActivateAbility id="FireBall"></ActivateAbility>
+  </Ability>
+  <Ability type="0x003" id="Incinerate">
+    <Class>Wizard</Class>
+    <Type>Fire</Type>
+    <Description>Burns all enemies within a {Radius} tile radius of the target location for {TotalDamage} damage over {DurationMS} seconds, and damages them for {Damage}</Description>
+    <Texture>
+      <File>abilities</File>
+      <Index>0x03</Index>
+    </Texture>
+    <Formula type="Simple" base="80" perAp="1.5" min="80" max="700" rounding="Ceiling">MpCost</Formula>
+    <Formula type="Simple" base="4000" perAp="-5" min="2000" max="4000" rounding="Ceiling">Cooldown</Formula>
+    <ActivateAbility id="Burn">
+      <Formula type="Simple" base="3" perAp="0.0125" min="3" max="8" rounding="Ceiling">Radius</Formula>
+      <Formula type="Simple" base="5000" perAp="-5" min="3000" max="5000" rounding="Ceiling">DurationMS</Formula>
+      <Formula type="Simple" base="600" perAp="2" min="600" max="1400" rounding="Ceiling">TotalDamage</Formula>
+      <Formula type="Simple" base="100" perAp="1" min="100" max="500" rounding="Ceiling">Damage</Formula>
+      <Formula type="Flat" base="50">Penetration</Formula>
+    </ActivateAbility>
+  </Ability>
+  <!--#EndRegion Specialization: Fire-->
+  <!--#Region Specialization: Frost-->
+  <Ability type="0x004" id="Ice Burst">
+    <Class>Wizard</Class>
+    <Spec>Frost</Spec>
+    <Description>Shoots {Amount} piercing icicles in all directions from target location, each dealing {MinDamage}-{MaxDamage} damage and slowing down enemies for {DurationMS} seconds.</Description>
+    <Texture>
+      <File>abilities</File>
+      <Index>0x04</Index>
+    </Texture>
+    <Formula type="Simple" base="50" perAp="1.5" min="50" max="650" rounding="Ceiling">MpCost</Formula>
+    <Formula type="Simple" base="4000" perAp="-5" min="2000" max="4000" rounding="Ceiling">Cooldown</Formula>
+    <Projectile>
+      <ObjectId>Aqua Missile</ObjectId>
+      <Formula type="Flat" base="100">Speed</Formula>
+      <Formula type="Simple" base="40" perAp="0.5" min="40" max="250" rounding="Ceiling">MinDamage</Formula>
+      <Formula type="Simple" base="70" perAp="0.5" min="50" max="280" rounding="Ceiling">MaxDamage</Formula>
+      <Formula type="Flat" base="1600">LifetimeMS</Formula>
+      <Formula type="Flat" base="50">Penetration</Formula>
+      <MultiHit />
+      <ConditionEffect duration="3">Slowed</ConditionEffect>
+    </Projectile>
+    <ActivateAbility id="BulletNova">
+      <Formula type="Flat" base="20">Amount</Formula>
+    </ActivateAbility>
+  </Ability>
+  <Ability type="0x005" id="Freeze Bolt">
+    <Class>Wizard</Class>
+    <Spec>Frost</Spec>
+    <Description>Fires a single piercing shot that deals between {MinDamage} and {MaxDamage} and paralyzes targets for {DurationMS} seconds.</Description>
+    <Texture>
+      <File>abilities</File>
+      <Index>0x05</Index>
+    </Texture>
+    <Formula type="Simple" base="50" perAp="1.5" min="50" max="650" rounding="Ceiling">MpCost</Formula>
+    <Formula type="Simple" base="4000" perAp="-5" min="2000" max="4000" rounding="Ceiling">Cooldown</Formula>
+    <Projectile>
+      <ObjectId>Blue Bolt</ObjectId>
+      <Formula type="Flat" base="80">Speed</Formula>
+      <Formula type="Simple" base="600" perAp="1" min="600" max="1000" rounding="Ceiling">MinDamage</Formula>
+      <Formula type="Simple" base="1000" perAp="1" min="1000" max="1400" rounding="Ceiling">MaxDamage</Formula>
+      <Formula type="Flat" base="1200">LifetimeMS</Formula>
+      <Formula type="Flat" base="50">Penetration</Formula>
+      <MultiHit />
+      <ConditionEffect duration="4">Paralyzed</ConditionEffect>
+    </Projectile>
+    <ActivateAbility id="Shoot">
+    </ActivateAbility>
+  </Ability>
+  <Ability type="0x006" id="Blizzard">
+    <Class>Wizard</Class>
+    <Spec>Frost</Spec>
+    <Description>Creates a blizzard for {Amount} seconds that will deal {Damage} damage and slow down all enemies within a radius of {Radius} at 2 second intervals, and paralyzing all enemies inside for {DurationMS} seconds upon disappearing.</Description>
+    <Texture>
+      <File>abilities</File>
+      <Index>0x06</Index>
+    </Texture>
+    <Formula type="Simple" base="100" perAp="1.5" min="100" max="700" rounding="Ceiling">MpCost</Formula>
+    <Formula type="Simple" base="8000" perAp="-5" min="6000" max="8000" rounding="Ceiling">Cooldown</Formula>
+    <ActivateAbility id="Blizzard">
+      <Formula type="Simple" base="3" perAp="0.0125" min="3" max="8" rounding="Ceiling">Radius</Formula>
+      <Formula type="Simple" base="6" perAp="0.02" min="6" max="14" rounding="Ceiling">Amount</Formula>
+      <Formula type="Simple" base="200" perAp="2" min="200" max="1000" rounding="Ceiling">Damage</Formula>
+      <Formula type="Simple" base="3000" perAp="5" min="3000" max="5000" rounding="Ceiling">DurationMS</Formula>
+    </ActivateAbility>
+  </Ability>
+  <!--#EndRegion Specialization: Frost-->
+  <!--#Region Specialization: Doom-->
+  <!-- TODO: Add instability. -->
+  <Ability type="0x007" id="Psychic Burst">
+    <Class>Wizard</Class>
+    <Spec>Doom</Spec>
+    <Description>Shoots {Amount} piercing psychic bullets in all directions from target location, each dealing {MinDamage}-{MaxDamage} damage.</Description>
+    <Texture>
+      <File>abilities</File>
+      <Index>0x07</Index>
+    </Texture>
+    <Formula type="Simple" base="100" perAp="1.5" min="100" max="700" rounding="Ceiling">MpCost</Formula>
+    <Formula type="Simple" base="4500" perAp="-5" min="2500" max="4500" rounding="Ceiling">Cooldown</Formula>
+    <Projectile>
+      <ObjectId>White Beam</ObjectId>
+      <Formula type="Flat" base="160">Speed</Formula>
+      <Formula type="Simple" base="40" perAp="0.5" min="40" max="250" rounding="Ceiling">MinDamage</Formula>
+      <Formula type="Simple" base="70" perAp="0.5" min="70" max="300" rounding="Ceiling">MaxDamage</Formula>
+      <Formula type="Flat" base="1000">LifetimeMS</Formula>
+      <Formula type="Flat" base="50">Penetration</Formula>
+      <MultiHit />
+    </Projectile>
+    <ActivateAbility id="BulletNova">
+      <Formula type="Flat" base="30">Amount</Formula>
+    </ActivateAbility>
+  </Ability>
+  <Ability type="0x008" id="Phase Blast">
+    <Class>Wizard</Class>
+    <Spec>Doom</Spec>
+    <Description>Fires a burst of twin lasers, each dealing between {MinDamage} and {MaxDamage} armor-penetrating damage.</Description>
+    <Texture>
+      <File>abilities</File>
+      <Index>0x08</Index>
+    </Texture>
+    <Formula type="Simple" base="100" perAp="1.5" min="100" max="700" rounding="Ceiling">MpCost</Formula>
+    <Formula type="Simple" base="4000" perAp="-5" min="2000" max="4000" rounding="Ceiling">Cooldown</Formula>
+    <Projectile>
+      <ObjectId>White Bolt</ObjectId>
+      <Speed>100</Speed>
+      <Formula type="Simple" base="600" perAp="1" min="600" max="1000" rounding="Ceiling">MinDamage</Formula>
+      <Formula type="Simple" base="1000" perAp="1" min="1000" max="1400" rounding="Ceiling">MaxDamage</Formula>
+      <LifetimeMS>1000</LifetimeMS>
+      <Amplitude>0.49</Amplitude>
+      <Frequency>1.9</Frequency>
+      <MultiHit />
+      <ArmorPiercing />
+    </Projectile>
+    <NumProjectiles>2</NumProjectiles>
+    <ArcGap>0</ArcGap>
+    <ActivateAbility id="Shoot"></ActivateAbility>
+  </Ability>
+  <Ability type="0x009" id="Chaos Anomaly">
+    <!-- Add a sprite to the anomaly. -->
+    <Class>Wizard</Class>
+    <Spec>Doom</Spec>
+    <Description>Sends a magical singularity towards cursor location that rapidly deals between {Damage} damage to enemies within a radius of {Radius}.</Description>
+    <Texture>
+      <File>abilities</File>
+      <Index>0x09</Index>
+    </Texture>
+    <Formula type="Simple" base="100" perAp="1.5" min="100" max="700" rounding="Ceiling">MpCost</Formula>
+    <Formula type="Simple" base="5000" perAp="-5" min="3000" max="5000" rounding="Ceiling">Cooldown</Formula>
+    <ActivateAbility id="ChaosAnomaly">
+      <Formula type="Flat" base="3000">DurationMS</Formula>
+      <Formula type="Simple" base="100" perAp="0.5" min="100" max="300" rounding="Ceiling">Damage</Formula>
+      <Formula type="Simple" base="2" perAp="0.0075" min="2" max="5" rounding="Ceiling">Radius</Formula>
+      <Formula type="Flat" base="50">Penetration</Formula>
+    </ActivateAbility>
+  </Ability>
+  <!--#EndRegion Specialization: Doom-->
+  <!--#EndRegion Wizard Abilities-->
+
+  <!--#Region Sorcerer Abilities-->
+  <!--Reserved ids: 00a, 00b, 00c, 00d, 00e, 00f, 010, 011, 012, 013-->
+  <Ability type="0x00a" id="Lightning Blast">
+    <Class>Sorcerer</Class>
+    <Description>Fires a bolt of chain lightning, dealing {TotalDamage} to up to {MaxTargets} targets.</Description>
+    <Texture>
+      <File>abilities</File>
+      <Index>0x00</Index>
+    </Texture>
+    <Formula type="Simple" base="60" perAp="1.2" min="60" max="110" rounding="Ceiling">MpCost</Formula>
+    <Formula type="Simple" base="3000" perAp="-5" min="2500" max="3000" rounding="Ceiling">Cooldown</Formula>
+    <ActivateAbility id="Lightning">
+      <Formula type="Simple" base="80" perAp="1" min="80" max="150" rounding="Ceiling">TotalDamage</Formula>
+      <Formula type="Simple" base="3" perAp="0.025" min="3" max="4" rounding ="Floor">MaxTargets</Formula>
+      <Formula type="Flat" base="80">Penetration</Formula>
+    </ActivateAbility>
+  </Ability>
+  <!--#Region Specialization: Chain-->
+  <Ability type="0x00b" id="Chain Blast">
+    <Class>Sorcerer</Class>
+    <Description>Fires a bolt of lightning, dealing {TotalDamage} base damage to each target. Consecutive targets take 20% more damage from the last, up to {MaxTargets} targets.</Description>
+    <Texture>
+      <File>abilities</File>
+      <Index>0x00</Index>
+    </Texture>
+    <Formula type="Simple" base="60" perAp="1.2" min="60" max="550" rounding="Ceiling">MpCost</Formula>
+    <Formula type="Simple" base="3000" perAp="-5" min="1500" max="3000" rounding="Ceiling">Cooldown</Formula>
+    <ActivateAbility id="ChainLightning">
+      <Formula type="Simple" base="50" perAp="0.5" min="50" max="500" rounding="Ceiling">TotalDamage</Formula>
+      <Formula type="Simple" base="3" perAp="0.02" min="3" max="12" rounding ="Floor">MaxTargets</Formula>
+      <Formula type="Flat" base="80">Penetration</Formula>
+    </ActivateAbility>
+  </Ability>
+  <Ability type="0x00c" id="Lightning Orb">
+    <Class>Sorcerer</Class>
+    <Description>Fire off an orb that conducts lightning that lasts for {DurationMS} seconds. Hitting Chain Blast with this orb will increase the number of targets hit.</Description>
+    <Texture>
+      <File>abilities</File>
+      <Index>0x00</Index>
+    </Texture>
+    <Formula type="Simple" base="80" perAp="1.2" min="60" max="570" rounding="Ceiling">MpCost</Formula>
+    <Formula type="Simple" base="5500" perAp="-2.5" min="4000" max="5500" rounding="Ceiling">Cooldown</Formula>
+    <ActivateAbility id="LightningOrb">
+      <Formula type="Simple" base="3000" perAp="10" min="3000" max="7500" rounding="Ceiling">DurationMS</Formula>
+    </ActivateAbility>
+  </Ability>
+  <Ability type="0x00d" id="Burst Orb">
+    <Class>Sorcerer</Class>
+    <Description>Fires off an orb to cursor location that lasts for {DurationMS} seconds. The orb unleashes a burst of electricity for {Damage} damage within a range of {Radius} tiles when it is hit by Chain Blast.</Description>
+    <Texture>
+      <File>abilities</File>
+      <Index>0x00</Index>
+    </Texture>
+    <Formula type="Simple" base="80" perAp="1.5" min="60" max="650" rounding="Ceiling">MpCost</Formula>
+    <Formula type="Simple" base="4500" perAp="-2.5" min="3000" max="4500" rounding="Ceiling">Cooldown</Formula>
+    <ActivateAbility id="BurstOrb">
+      <Formula type="Simple" base="3000" perAp="10" min="3000" max="7500" rounding="Ceiling">DurationMS</Formula>
+      <Formula type="Simple" base="300" perAp="1.5" min="300" max="950" rounding="Ceiling">Damage</Formula>
+      <Formula type="Simple" base="2" perAp="0.01" min="2" max="6" rounding="Floor">Radius</Formula>
+      <Formula type="Flat" base="80">Penetration</Formula>
+    </ActivateAbility>
+  </Ability>
+  <!--#EndRegion Specialization: Chain-->
+  <!--#Region Specialization: Storm-->
+  <Ability type="0x00e" id="Storm Surge">
+    <Class>Sorcerer</Class>
+    <Description>Fires three blasts of lightning towards the cursor, each dealing {TotalDamage} to up to {MaxTargets} targets.</Description>
+    <Texture>
+      <File>abilities</File>
+      <Index>0x00</Index>
+    </Texture>
+    <Formula type="Simple" base="60" perAp="1.2" min="60" max="550" rounding="Ceiling">MpCost</Formula>
+    <Formula type="Simple" base="3000" perAp="-5" min="1500" max="3000" rounding="Ceiling">Cooldown</Formula>
+    <ActivateAbility id="StormSurge">
+      <Formula type="Simple" base="50" perAp="1" min="50" max="500">TotalDamage</Formula>
+      <Formula type="Simple" base="3" perAp="0.02" min="3" max="12" rounding="Floor">MaxTargets</Formula>
+      <Formula type="Flat" base="80">Penetration</Formula>
+    </ActivateAbility>
+  </Ability>
+  <Ability type="0x00f" id="Storm Cloud">
+    <Class>Sorcerer</Class>
+    <Description>Conjures a cloud for {DurationMS} seconds. This cloud fires {FireRate} times per second, dealing {Damage} damage to the closest target within {Radius} tiles.</Description>
+    <Texture>
+      <File>abilities</File>
+      <Index>0x00</Index>
+    </Texture>
+    <Formula type="Simple" base="80" perAp="1.5" min="60" max="650" rounding="Ceiling">MpCost</Formula>
+    <Formula type="Simple" base="4500" perAp="-2.5" min="3000" max="4500" rounding="Ceiling">Cooldown</Formula>
+    <ActivateAbility id="StormCloud">
+      <Formula type="Simple" base="2000" perAp="10" min="2000" max="6500" rounding="Ceiling">DurationMS</Formula>
+      <Formula type="Simple" base="200" perAp="1" min="100" max="550" rounding="Ceiling">Damage</Formula>
+      <Formula type="Simple" base="2" perAp="0.01" min="2" max="6">Radius</Formula>
+      <Formula type="Simple" base="2" perAp="0.005" min="2" max="5">FireRate</Formula>
+      <Formula type="Flat" base="80">Penetration</Formula>
+    </ActivateAbility>
+  </Ability>
+  <Ability type="0x010" id="Cloud Burst">
+    <Class>Sorcerer</Class>
+    <Description>Fires a lightning strike that blows up the cloud closest to the cursor, dealing {Damage} damage and slowing all enemies within a range of {Radius} tiles. If there is no cloud near the cursor enemies are only slowed.</Description>
+    <Texture>
+      <File>abilities</File>
+      <Index>0x00</Index>
+    </Texture>
+    <Formula type="Simple" base="100" perAp="1" min="100" max="550" rounding="Ceiling">MpCost</Formula>
+    <Formula type="Simple" base="2500" perAp="-2.5" min="1000" max="2500" rounding="Ceiling">Cooldown</Formula>
+    <ActivateAbility id="Cloudburst">
+      <Formula type="Simple" base="2500" perAp="10" min="2500" max="7000" rounding="Ceiling">DurationMS</Formula>
+      <Formula type="Simple" base="200" perAp="1.5" min ="200" max="850" rounding="Ceiling">Damage</Formula>
+      <Formula type="Simple" base="3" perAp="0.01" min="3" max="7">Radius</Formula>
+      <Formula type="flat" base="80">Penetration</Formula>
+    </ActivateAbility>
+  </Ability>
+  <!--#EndRegion Specialization: Storm-->
+  <!--#Region Specialization: Chaos-->
+  <Ability type="0x011" id="Chaos Burst">
+    <Class>Sorcerer</Class>
+    <Description>Fires a bolt of lightning to the enemy closest to the cursor, that splits into multiple bolts that hit all enemies within a {Radius} tile range.</Description>
+    <Texture>
+      <File>abilities</File>
+      <Index>0x00</Index>
+    </Texture>
+    <Formula type="Simple" base="60" perAp="1.2" min="60" max="550" rounding="Ceiling">MpCost</Formula>
+    <Formula type="Simple" base="3000" perAp="-5" min="1500" max="3000" rounding="Ceiling">Cooldown</Formula>
+    <ActivateAbility id="ChaosBurst">
+      <Formula type="Simple" base="100" perAp="1" min="100" max="550">TotalDamage</Formula>
+      <Formula type="Simple" base="2" perAp="0.01" min="2" max="6">Radius</Formula>
+      <Formula type="flat" base="80">Penetration</Formula>
+    </ActivateAbility>
+  </Ability>
+  <Ability type="0x012" id="Chaos Bolt">
+    <Class>Sorcerer</Class>
+    <Description>Fires a single blast of lightining that deals {TotalDamage} damage and paralyzes all targets for up to {DurationMS} seconds, at up to {MaxTargets} targets.</Description>
+    <Texture>
+      <File>abilities</File>
+      <Index>0x00</Index>
+    </Texture>
+    <Formula type="Simple" base="80" perAp="1.2" min="60" max="550" rounding="Ceiling">MpCost</Formula>
+    <Formula type="Simple" base="6000" perAp="-5" min="3500" max="6000" rounding="Ceiling">Cooldown</Formula>
+    <ActivateAbility id="ChaosBolt">
+      <Formula type="Simple" base="50" perAp="0.5" min="50" max="250" rounding="Ceiling">TotalDamage</Formula>
+      <Formula type="Simple" base="3" perAp="0.0125" min="3" max="9" rounding="Floor">MaxTargets</Formula>
+      <Formula type="Simple" base="1500" perAp="5" min="1500" max="4000" rounding="Ceiling">DurationMS</Formula>
+      <Formula type="flat" base="80">Penetration</Formula>
+    </ActivateAbility>
+  </Ability>
+  <Ability type="0x013" id="Chaos Orb">
+    <Class>Sorcerer</Class>
+    <Description>Fires off an orb to cursor location that lasts for {DurationMS} seconds. The orb is charged every time it is hit with lightning attacks from the player. Releases bursts of damage to all nearby enemies when lifetime is depleted or charge capacity is reached.</Description>
+    <Texture>
+      <File>abilities</File>
+      <Index>0x00</Index>
+    </Texture>
+    <Formula type="Simple" base="100" perAp="1" min="100" max="550" rounding="Ceiling">MpCost</Formula>
+    <Formula type="Simple" base="6000" perAp="-2.5" min="3500" max="6000" rounding="Ceiling">Cooldown</Formula>
+    <ActivateAbility id="ChaosOrb">
+      <Formula type="Simple" base="10000" perAp="15" min="10000" max="16000" rounding="Ceiling">DurationMS</Formula>
+      <Formula type="Simple" base="500" perAp="2" min="500" max="1400">Damage</Formula>
+      <Formula type="Simple" base="3" perAp="0.01" min="3" max="7">Radius</Formula>
+      <Formula type="Flat" base="80">Penetration</Formula>
+    </ActivateAbility>
+  </Ability>
+  <!--#EndRegion Specialization: Chaos-->
+  <!--#EndRegion Sorcerer Abilities-->
+  <!--#Region Priest Abilities-->
+  <!--Reserved ids: 014, 015, 016, 017, 018, 019, 01a, 01b, 01c, 01d-->
+  <Ability type="0x014" id="Heal">
+    <Class>Priest</Class>
+    <Description>Heals all players within a range of {Radius} for {Amount} HP.</Description>
+    <Texture>
+      <File>abilities</File>
+      <Index>0x00</Index>
+    </Texture>
+    <Formula type="Simple" base="60" perAp="1.2" min="60" max="110" rounding="Ceiling">MpCost</Formula>
+    <Formula type="Simple" base="3000" perAp="-5" min="2750" max="3000" rounding="Ceiling">Cooldown</Formula>
+    <ActivateAbility id="HealNova">
+      <Formula type="Simple" base="150" perAp="5" min="150" max="600">Amount</Formula>
+      <Formula type="Simple" base="2" perAp="0.02" min="2" max="3">Radius</Formula>
+    </ActivateAbility>
+  </Ability>
+  <!--#Region Specialization: Battle Priest-->
+  <Ability type="0x015" id="Smite">
+    <Class>Priest</Class>
+    <Description>Heals players and damages enemies within a range of {Radius} for {Amount} HP.</Description>
+    <Texture>
+      <File>abilities</File>
+      <Index>0x00</Index>
+    </Texture>
+    <Formula type="Simple" base="60" perAp="1.2" min="60" max="500" rounding="Ceiling">MpCost</Formula>
+    <Formula type="Simple" base="4000" perAp="-5" min="2000" max="4000" rounding="Ceiling">Cooldown</Formula>
+    <ActivateAbility id="Smite">
+      <Formula type="Simple" base="75" perAp="5" min="75" max="2000">Amount</Formula>
+      <Formula type="Simple" base="75" perAp="5" min="75" max="2000">Damage</Formula>
+      <Formula type="Flat" base="50">Penetration</Formula>
+      <Formula type="Simple" base="2" perAp="0.02" min="2" max="8">Radius</Formula>
+    </ActivateAbility>
+  </Ability>
+  <Ability type="0x016" id="Shield Of Repent">
+    <Class>Priest</Class>
+    <Description>Lasting for {ActiveDuration} seconds, this shield will activate under 50% HP, blasting an AOE of {Damage} across {Radius} tiles.</Description>
+    <Texture>
+      <File>abilities</File>
+      <Index>0x00</Index>
+    </Texture>
+    <Formula type="Simple" base="80" perAp="1.2" min="80" max="600" rounding="Ceiling">MpCost</Formula>
+    <Formula type="Simple" base="10000" perAp="-10" min="6000" max="10000" rounding="Ceiling">Cooldown</Formula>
+    <Formula type="Simple" base="7000" perAp="20" min="7000" max="15000" rounding="Ceiling">ActiveDuration</Formula>
+    <AbilityPerTick id="ShieldOfRepent">
+      <Formula type="Simple" base="500" perAp="5" min="500" max="2500">Damage</Formula>
+      <Formula type="flat" base="50">Penetration</Formula>
+      <Formula type="Simple" base="2" perAp="0.02" min="2" max="8">Radius</Formula>
+    </AbilityPerTick>
+  </Ability>
+  <Ability type="0x017" id="Judgement">
+    <Class>Priest</Class>
+    <Description>Damages and burns all enemies within {Radius} tiles. Deals {Damage} direct damage and {TotalDamage} fire damage over {DurationMS} seconds.</Description>
+    <Texture>
+      <File>abilities</File>
+      <Index>0x00</Index>
+    </Texture>
+    <Formula type="Simple" base="80" perAp="1.2" min="80" max="600" rounding="Ceiling">MpCost</Formula>
+    <Formula type="Simple" base="8000" perAp="-10" min="4000" max="8000" rounding="Ceiling">Cooldown</Formula>
+    <ActivateAbility id="Judgement">
+      <Formula type="Simple" base="10000" perAp="-20" min="2000" max="10000">DurationMS</Formula>
+      <Formula type="Simple" base="1000" perAp="20" min="1000" max="9000" >Damage</Formula>
+      <Formula type="Simple" base="500" perAp="15" min="500" max="7000">TotalDamage</Formula>
+      <Formula type="Flat" base="50">Penetration</Formula>
+      <Formula type="Simple" base="2" perAp="0.025" min="2" max="10">Radius</Formula>
+    </ActivateAbility>
+  </Ability>
+  <!--#EndRegion Specialization: Battle Priest-->
+  <!--#Region Specialization: Bishop-->
+  <Ability type="0x018" id="Healing Wave">
+    <Class>Priest</Class>
+    <Description>Heals players  within {Radius} tiles, the amount depends of the distance between the center and the target. Heals +100% in the center of the circle, with a base amount of {Amount}.</Description>
+    <Texture>
+      <File>abilities</File>
+      <Index>0x00</Index>
+    </Texture>
+    <Formula type="Simple" base="60" perAp="1.5" min="60" max="700" rounding="Ceiling">MpCost</Formula>
+    <Formula type="Simple" base="6000" perAp="-5" min="4000" max="6000" rounding="Ceiling">Cooldown</Formula>
+    <ActivateAbility id="HealingWave">
+      <Formula type="Simple" base="100" perAp="4" min="100" max="2000">Amount</Formula>
+      <Formula type="Simple" base="2" perAp="0.02" min="2" max="8">Radius</Formula>
+    </ActivateAbility>
+  </Ability>
+  <Ability type="0x019" id="Shield of Faith">
+    <Class>Priest</Class>
+    <Description>For {ActiveDuration} seconds, if the player's health falls below 33%, heals the player for {Amount} health and grants an armored effect for {DurationMS} seconds.</Description>
+    <Texture>
+      <File>abilities</File>
+      <Index>0x00</Index>
+    </Texture>
+    <Formula type="Simple" base="80" perAp="1.2" min="80" max="600" rounding="Ceiling">MpCost</Formula>
+    <Formula type="Simple" base="10000" perAp="-10" min="6000" max="10000" rounding="Ceiling">Cooldown</Formula>
+    <Formula type="Simple" base="7000" perAp="20" min="7000" max="15000">ActiveDuration</Formula>
+    <AbilityPerTick id="ShieldofFaith">
+      <Formula type="Simple" base="300" perAp="10" min="300" max="4500">Amount</Formula>
+      <Formula type="Simple" base="3000" perAp="10" min="3000" max="7000">DurationMS</Formula>
+    </AbilityPerTick>
+  </Ability>
+  <Ability type="0x01a" id="Immunity to Evil">
+    <Class>Priest</Class>
+    <Description>For {ActiveDuration} seconds, all damage is negated and 10% of all damage is added to the player's health.</Description>
+    <Texture>
+      <File>abilities</File>
+      <Index>0x00</Index>
+    </Texture>
+    <Formula type="Simple" base="150" perAp="1.2" min="150" max="500">MpCost</Formula>
+    <Formula type="Simple" base="8000" perAp="-5" min="6000" max="8000" rounding="Ceiling">Cooldown</Formula>
+    <Formula type="Simple" base="1000" perAp="5" max="3000">ActiveDuration</Formula>
+    <AbilityPerTick id="ImmunitytoEvil">
+    </AbilityPerTick>
+  </Ability>
+  <!--#EndRegion Specialization: Bishop-->
+  <!--#Region Specialization: Martyr-->
+  <Ability type="0x01b" id="Sufferer's Prayer">
+    <Class>Priest</Class>
+    <Description>Heals the user and nearby players. Amount is based of the user's health, with a base amount of {Amount}.</Description>
+    <Texture>
+      <File>abilities</File>
+      <Index>0x00</Index>
+    </Texture>
+    <Formula type="Simple" base="60" perAp="1.2" min="60" max="700" rounding="Ceiling">MpCost</Formula>
+    <Formula type="Simple" base="6000" perAp="-5" min="3000" max="5000" rounding="Ceiling">Cooldown</Formula>
+    <ActivateAbility id="SufferersPrayer">
+      <Formula type="Simple" base="100" perAp="4" min="100" max="2000">Amount</Formula>
+      <Formula type="Simple" base="2" perAp="0.02" min="2" max="8">Radius</Formula>
+    </ActivateAbility>
+  </Ability>
+  <Ability type="0x01c" id="Spilled Blood">
+    <Class>Priest</Class>
+    <Description>For {ActiveDuration} seconds. 50% of all damage is negated and sent back to enemies.</Description>
+    <Texture>
+      <File>abilities</File>
+      <Index>0x00</Index>
+    </Texture>
+    <Formula type="Simple" base="80" perAp="1.2" min="80" max="600" rounding="Ceiling">MpCost</Formula>
+    <Formula type="Simple" base="8000" perAp="-5" min="6000" max="8000" rounding="Ceiling">Cooldown</Formula>
+    <Formula type="Simple" base="4000" perAp="10" min="4000" max="8000">ActiveDuration</Formula>
+    <AbilityPerTick id="SpilledBlood">
+    </AbilityPerTick>
+  </Ability>
+  <Ability type="0x01d" id="Follower's Faith">
+    <Class>Priest</Class>
+    <Description>For {ActiveDuration} seconds, all damage dealt is increased based on how high your health is, and all damage taken is decreased based on how low your health is.</Description>
+    <Texture>
+      <File>abilities</File>
+      <Index>0x00</Index>
+    </Texture>
+    <Formula type="Simple" base="180" perAp="1.2" min="80" max="700" rounding="Ceiling">MpCost</Formula>
+    <Formula type="Simple" base="8000" perAp="-5" min="6000" max="8000" rounding="Ceiling">Cooldown</Formula>
+    <Formula type="Simple" base="4000" perAp="10" min="4000" max="8000">ActiveDuration</Formula>
+    <AbilityPerTick id="FollowersFaith">
+    </AbilityPerTick>
+  </Ability>
+  <!--#EndRegion Specialization: Martyr-->
+  <!--#EndRegion Priest Abilities-->
+  <!--#Region Rogue Abilities-->
+  <!--Reserved ids: 01e, 01f, 020, 021, 022, 023, 024, 025, 026, 027-->
+  <Ability type="0x01e" id="Shadow Cloak">
+    <Class>Rogue</Class>
+    <Description>Enters you into a different world that enemies can't see for {DurationMS} seconds.</Description>
+    <Texture>
+      <File>abilities</File>
+      <Index>0x00</Index>
+    </Texture>
+    <Formula type="Simple" base="100" perAp="1" min="80" max="150" rounding="Ceiling">MpCost</Formula>
+    <Formula type="Simple" base="4000" perAp="-7" min="3000" max="4000" rounding="Ceiling">Cooldown</Formula>
+    <Formula type="Simple" base="4000" perAp="12" min="2500" max="5500">ActiveDuration</Formula>
+    <AbilityPerTick id="ShadowCloak">
+    </AbilityPerTick>
+  </Ability>
+  <!--#Region Specialization: Bandit-->
+  <Ability type="0x01f" id="Bandit's Cloak">
+    <Class>Rogue</Class>
+    <Description></Description>
+    <Texture>
+      <File>abilities</File>
+      <Index>0x00</Index>
+    </Texture>
+    <Formula type="Simple" base="100" perAp="1" min="80" max="150" rounding="Ceiling">MpCost</Formula>
+    <Formula type="Simple" base="4000" perAp="-7" min="3000" max="4000" rounding="Ceiling">Cooldown</Formula>
+    <Formula type="Simple" base="2500" perAp="12" min="2500" max="5500">ActiveDuration</Formula>
+    <AbilityPerTick id="BanditCloak">
+      <Formula type="Simple" base="2" perAp="0.01" min="2" max="3" rounding="Ceiling">Radius</Formula>
+      <Formula type="Simple" base="150" perAp="4" min="150" max="500" rounding="Ceiling">Damage</Formula>
+    </AbilityPerTick>
+  </Ability>
+  <Ability type="0x020" id="Hidden Blade">
+    <Class>Rogue</Class>
+    <Description></Description>
+    <Texture>
+      <File>abilities</File>
+      <Index>0x00</Index>
+    </Texture>
+    <Formula type="Simple" base="150" perAp="3" min="150" max="300" rounding="Ceiling">MpCost</Formula>
+    <Formula type="Simple" base="6000" perAp="-10" min="4000" max="6000" rounding="Ceiling">Cooldown</Formula>
+    <ActivateAbility id="HiddenBlade">
+      <Formula type="Simple" base="2500" perAp="11" min="2500" max="5000" rounding="Ceiling">DurationMS</Formula>
+      <Formula type="Simple" base="1" perAp="0.1" min="1" max="3" rounding="Ceiling">Range</Formula>
+      <Formula type="Simple" base="150" perAp="20" min="150" max="1500" rounding="Ceiling">TotalDamage</Formula>
+      <Formula type="Simple" base="50" perAp="5" min="50" max="350" rounding="Ceiling">Damage</Formula>
+    </ActivateAbility>
+  </Ability>
+  <Ability type="0x021" id="Disabling Strike">
+    <Class>Rogue</Class>
+    <Description></Description>
+    <Texture>
+      <File>abilities</File>
+      <Index>0x00</Index>
+    </Texture>
+    <Formula type="Simple" base="250" perAp="3" min="250" max="400" rounding="Ceiling">MpCost</Formula>
+    <Formula type="Simple" base="7000" perAp="-13" min="4000" max="7000" rounding="Ceiling">Cooldown</Formula>
+    <Projectile>
+      <ObjectId>Blue Bolt</ObjectId>
+      <Formula type="Simple" base="100" perAp="0" min="100" max="100" rounding="Ceiling">Speed</Formula>
+      <Formula type="Simple" base="35" perAp="0.4" min="250" max="300" rounding="Ceiling">MinDamage</Formula>
+      <Formula type="Simple" base="50" perAp="0.4" min="500" max="1100" rounding="Ceiling">MaxDamage</Formula>
+      <Formula type="Simple" base="1200" perAp="4" min="1200" max="2000" rounding="Ceiling">LifetimeMS</Formula>
+      <Formula type="Flat" base="50">Penetration</Formula>
+      <ConditionEffect duration="3">Slowed</ConditionEffect>
+    </Projectile>
+    <Projectile>
+      <ObjectId>Blue Bolt</ObjectId>
+      <Formula type="Simple" base="100" perAp="0" min="100" max="100" rounding="Ceiling">Speed</Formula>
+      <Formula type="Simple" base="35" perAp="5" min="500" max="600" rounding="Ceiling">MinDamage</Formula>
+      <Formula type="Simple" base="50" perAp="5" min="1000" max="2200" rounding="Ceiling">MaxDamage</Formula>
+      <Formula type="Simple" base="300" perAp="1" min="300" max="400" rounding="Ceiling">LifetimeMS</Formula>
+      <Formula type="Flat" base="50">Penetration</Formula>
+      <ConditionEffect duration="3">Paralyzed</ConditionEffect>
+    </Projectile>
+    <ActivateAbility id="DisablingStrike">
+      <Formula type="Simple" base="2500" perAp="11" min="2500" max="5000" rounding="Ceiling">DurationMS</Formula>
+    </ActivateAbility>
+  </Ability>
+  <!--#EndRegion Specialization: Bandit-->
+  <!--#Region Specialization: Scout-->
+  <Ability type="0x022" id="Speed Cloak">
+    <Class>Rogue</Class>
+    <Description></Description>
+    <Texture>
+      <File>abilities</File>
+      <Index>0x00</Index>
+    </Texture>
+    <Formula type="Simple" base="60" perAp="1.3" min="80" max="150" rounding="Ceiling">MpCost</Formula>
+    <Formula type="Simple" base="4000" perAp="-7" min="3000" max="4000" rounding="Ceiling">Cooldown</Formula>
+    <Formula type="Simple" base="2500" perAp="15" min="2500" max="5500" rounding="Ceiling">ActiveDuration</Formula>
+    <AbilityPerTick id="SpeedCloak">
+    </AbilityPerTick>
+  </Ability>
+  <Ability type="0x023" id="Portable Eye">
+    <Class>Rogue</Class>
+    <Description></Description>
+    <Texture>
+      <File>abilities</File>
+      <Index>0x00</Index>
+    </Texture>
+    <Formula type="Simple" base="60" perAp="1.2" min="200" max="280" rounding="Ceiling">MpCost</Formula>
+    <Formula type="Simple" base="4000" perAp="-20" min="9000" max="15000" rounding="Ceiling">Cooldown</Formula>
+    <ActivateAbility id="PortableEye">
+      <Formula type="Simple" base="5000" perAp="15" min="1000" max="3000" rounding="Ceiling">DurationMS</Formula>
+      <Formula type="Simple" base="5" perAp="0.1" min="5" max="15" rounding="Ceiling">Radius</Formula>
+      <Formula type="Simple" base="10" perAp="0.5" min="5" max="20" rounding="Ceiling">Amount</Formula>
+    </ActivateAbility>
+  </Ability>
+  <Ability type="0x024" id="Warp Crystal">
+    <Class>Rogue</Class>
+    <Description></Description>
+    <Texture>
+      <File>abilities</File>
+      <Index>0x00</Index>
+    </Texture>
+    <Formula type="Simple" base="100" perAp="0" min="100" max="100" rounding="Ceiling">MpCost</Formula>
+    <Formula type="Simple" base="4000" perAp="-7" min="3000" max="4000" rounding="Ceiling">Cooldown</Formula>
+    <ActivateAbility id="WarpCrystal">
+    </ActivateAbility>
+  </Ability>
+  <!--#EndRegion Specialization: Scout-->
+  <Ability type="0x025" id="Night Cloak">
+    <Class>Rogue</Class>
+    <Description></Description>
+    <Texture>
+      <File>abilities</File>
+      <Index>0x00</Index>
+    </Texture>
+    <Formula type="Simple" base="60" perAp="1.3" min="80" max="150" rounding="Ceiling">MpCost</Formula>
+    <Formula type="Simple" base="4000" perAp="-7" min="3000" max="4000" rounding="Ceiling">Cooldown</Formula>
+    <Formula type="Flat" base="15">MpCostPerSec</Formula>
+    <Toggle/>
+    <AbilityPerTick id="NightCloak">
+    </AbilityPerTick>
+  </Ability>
+<Ability type="0x026" id="Knockout Strike">
+    <Class>Rogue</Class>
+    <Description></Description>
+    <Texture>
+      <File>abilities</File>
+      <Index>0x00</Index>
+    </Texture>
+    <Formula type="Simple" base="60" perAp="0.5" min="150" max="220" rounding="Ceiling">MpCost</Formula>
+    <Formula type="Simple" base="8000" perAp="-15" min="4000" max="8000" rounding="Ceiling">Cooldown</Formula>
+    <ActivateAbility id="KnockoutStrike">
+      <Formula type="Simple" base="3" perAp="0.2" min="3" max="5" rounding="Ceiling">Range</Formula>
+      <Formula type="Simple" base="150" perAp="4" min="150" max="450" rounding="Ceiling">Damage</Formula>
+      <Formula type="Simple" base="4000" perAp="10" min="4000" max="6000" rounding="Ceiling">DurationMS</Formula>
+    </ActivateAbility>
+  </Ability>
+<Ability type="0x027" id="Pickpocket">
+    <Class>Rogue</Class>
+    <Description></Description>
+    <Texture>
+      <File>abilities</File>
+      <Index>0x00</Index>
+    </Texture>
+    <Formula type="Simple" base="60" perAp="-2" min="150" max="250" rounding="Ceiling">MpCost</Formula>
+    <Formula type="Simple" base="4000" perAp="-5" min="3000" max="4000" rounding="Ceiling">Cooldown</Formula>
+    <ActivateAbility id="Pickpocket">
+      <Formula type="Simple" base="3" perAp="0.2" min="3" max="5" rounding="Ceiling">Radius</Formula>
+    </ActivateAbility>
+  </Ability>
+  <!--#EndRegion Rogue Abilities-->
+
+  <!--#Region Knight Abilities-->
+  <!--Reserved ids: 028, 029, 02a, 02b, 02c, 02d, 02e, 02f, 030, 031-->
+  <Ability type="0x028" id="Shield Bash">
+    <Class>Knight</Class>
+    <Description>Fires 3 short range projectiles towards the cursor, each dealing between {MinDamage} and {MaxDamage} damage, and stunning the enemy for 3 seconds.</Description>
+    <Texture>
+      <File>abilities</File>
+      <Index>0x00</Index>
+    </Texture>
+    <Formula type="Simple" base="80" perAp="1.2" min="80" max="130" rounding="Ceiling">MpCost</Formula>
+    <Formula type="Simple" base="5000" perAp="-5" min="3000" max="5000" rounding="Ceiling">Cooldown</Formula>
+    <Projectile>
+      <ObjectId>Silver Shield</ObjectId>
+      <Speed>160</Speed>
+      <Formula type="Simple" base="55" perAp="5" min="55" max="280" rounding="Ceiling">MinDamage</Formula>
+      <Formula type="Simple" base="90" perAp="5" min="90" max="320" rounding="Ceiling">MaxDamage</Formula>
+      <LifetimeMS>200</LifetimeMS>
+      <Size>140</Size>
+      <ConditionEffect duration="3">Stunned</ConditionEffect>
+      <MultiHit />
+      <PassesCover />
+      <ParticleTrail />
+    </Projectile>
+    <NumProjectiles>3</NumProjectiles>
+    <ActivateAbility id="Shoot">
+    </ActivateAbility>
+  </Ability>
+  <!--#Region Guardian Abilities-->
+  <Ability type="0x029" id="Wide Guard">
+    <Class>Knight</Class>
+    <Description>Shoots 5 short range projectiles in a wide arch, dealing between {MinDamage} and {MaxDamage} damage each. Also applies an armored effect for {DurationMS} seconds to all players within a radius of {Radius}. </Description>
+    <Texture>
+      <File>abilities</File>
+      <Index>0x00</Index>
+    </Texture>
+    <Formula type="Simple" base="80" perAp="1.2" min="80" max="560" rounding="Ceiling">MpCost</Formula>
+    <Formula type="Simple" base="5000" perAp="-5" min="3000" max="5000" rounding="Ceiling">Cooldown</Formula>
+    <Projectile>
+      <ObjectId>Silver Shield</ObjectId>
+      <Speed>160</Speed>
+      <Formula type="Simple" base="300" perAp="5" min="55" max="2300" rounding="Ceiling">MinDamage</Formula>
+      <Formula type="Simple" base="350" perAp="5" min="90" max="2500" rounding="Ceiling">MaxDamage</Formula>
+      <LifetimeMS>200</LifetimeMS>
+      <Size>140</Size>
+      <MultiHit />
+      <PassesCover />
+      <ParticleTrail />
+    </Projectile>
+    <NumProjectiles>5</NumProjectiles>
+    <ActivateAbility id="WideGuard">
+      <Formula type="Simple" base="3000" perAp="10" min="3000" max="7500" rounding="Ceiling">DurationMS</Formula>
+      <Formula type="Simple" base="2" perAp="0.01" min="2" max="6" rounding="Floor">Radius</Formula>
+    </ActivateAbility>
+  </Ability>
+  <Ability type="0x02a" id="Enrage">
+    <Class>Knight</Class>
+    <Description>All enemies within a radius of {Radius} will lower their armor and become enraged at the player for {DurationMS} seconds, making them attack the player regardless if other players are nearby.</Description>
+    <Texture>
+      <File>abilities</File>
+      <Index>0x00</Index>
+    </Texture>
+    <Formula type="Simple" base="80" perAp="1.2" min="80" max="560" rounding="Ceiling">MpCost</Formula>
+    <Formula type="Simple" base="7000" perAp="-5" min="5000" max="7000" rounding="Ceiling">Cooldown</Formula>
+    <ActivateAbility id="Enrage">
+      <Formula type="Simple" base="3000" perAp="10" min="2000" max="6500" rounding="Ceiling">DurationMS</Formula>
+      <Formula type="Simple" base="3" perAp="0.01" min="3" max="7" rounding="Floor">Radius</Formula>
+    </ActivateAbility>
+  </Ability>
+  <Ability type="0x02b" id="Stone Guards">
+    <Class>Knight</Class>
+    <Description>Spawns 3 Stone Guard familiars in front of the player with {Amount} HP each. They will attract enemies and take hits for the player.</Description>
+    <Texture>
+      <File>abilities</File>
+      <Index>0x00</Index>
+    </Texture>
+    <Formula type="Simple" base="80" perAp="1.2" min="80" max="560" rounding="Ceiling">MpCost</Formula>
+    <Formula type="Simple" base="7000" perAp="-5" min="5000" max="7000" rounding="Ceiling">Cooldown</Formula>
+    <ActivateAbility id="StoneGuards">
+      <Formula type="Simple" base="500" perAp="50" min="500" max="25000">Amount</Formula>
+    </ActivateAbility>
+  </Ability>
+  <!--#EndRegion Guardian Abilities-->
+  <!--#Region Slayer Abilities-->
+  <Ability type="0x02c" id="Shield Crush">
+    <Class>Knight</Class>
+    <Description>Shoots a single very high damage short range projectile that will deal between {MinDamage} and {MaxDamage} to any one target.</Description>
+    <Texture>
+      <File>abilities</File>
+      <Index>0x00</Index>
+    </Texture>
+    <Formula type="Simple" base="100" perAp="1.5" min="80" max="700" rounding="Ceiling">MpCost</Formula>
+    <Formula type="Simple" base="6000" perAp="-5" min="4000" max="6000" rounding="Ceiling">Cooldown</Formula>
+    <Projectile>
+      <ObjectId>Silver Shield</ObjectId>
+      <Speed>160</Speed>
+      <Formula type="Simple" base="1000" perAp="25" min="1000" max="11000" rounding="Ceiling">MinDamage</Formula>
+      <Formula type="Simple" base="1500" perAp="25" min="1500" max="12000" rounding="Ceiling">MaxDamage</Formula>
+      <LifetimeMS>200</LifetimeMS>
+      <Size>250</Size>
+      <PassesCover />
+      <ParticleTrail />
+    </Projectile>
+    <NumProjectiles>1</NumProjectiles>
+    <ActivateAbility id="ShieldCrush">
+    </ActivateAbility>
+  </Ability>
+  <Ability type="0x02d" id="Giant's Slash">
+    <Class>Knight</Class>
+    <Description>An AOE with a radius of {Radius} slightly in front of the player that deals {Damage} damage and applies bleeding for {DurationMS} seconds to all enemies inside.</Description>
+    <Texture>
+      <File>abilities</File>
+      <Index>0x00</Index>
+    </Texture>
+    <Formula type="Simple" base="80" perAp="1.2" min="80" max="560" rounding="Ceiling">MpCost</Formula>
+    <Formula type="Simple" base="7000" perAp="-5" min="5000" max="7000" rounding="Ceiling">Cooldown</Formula>
+    <ActivateAbility id="GiantsSlash">
+      <Formula type="Simple" base="300" perAp="25" min="300" max="11000">Damage</Formula>
+      <Formula type="Simple" base="6000" perAp="10" min="6000" max="10000" rounding="Ceiling">DurationMS</Formula>
+      <Formula type="Simple" base="2" perAp="0.005" min="2" max="4" rounding="Floor">Radius</Formula>
+    </ActivateAbility>
+  </Ability>
+  <Ability type="0x02e" id="Slay">
+    <Class>Knight</Class>
+    <Description>An AOE on the player with a radius of {Radius} that deals damage to the closest enemy based on how low their health is, with a base damage of {Damage}.</Description>
+    <Texture>
+      <File>abilities</File>
+      <Index>0x00</Index>
+    </Texture>
+    <Formula type="Simple" base="100" perAp="1.5" min="80" max="700" rounding="Ceiling">MpCost</Formula>
+    <Formula type="Simple" base="8000" perAp="-10" min="4000" max="8000" rounding="Ceiling">Cooldown</Formula>
+    <ActivateAbility id="Slay">
+      <Formula type="Simple" base="5000" perAp="50" min="5000" max="25000">Damage</Formula>
+      <Formula type="Simple" base="2" perAp="0.005" min="2" max="4" rounding="Floor">Radius</Formula>
+    </ActivateAbility>
+  </Ability>
+  <!--#EndRegion Slayer Abilities-->
+  <!--#Region Sentinel Abilities-->
+  <Ability type="0x02f" id="Shield Lunge">
+    <Class>Knight</Class>
+    <Description>Fires 3 medium range projectiles that will each deal between {MinDamage} and {MaxDamage} damage, and will paralyze the foe for 3 seconds.</Description>
+    <Texture>
+      <File>abilities</File>
+      <Index>0x00</Index>
+    </Texture>
+    <Projectile>
+      <ObjectId>Silver Shield</ObjectId>
+      <Speed>160</Speed>
+      <Formula type="Simple" base="300" perAp="5" min="55" max="2300" rounding="Ceiling">MinDamage</Formula>
+      <Formula type="Simple" base="350" perAp="5" min="90" max="2500" rounding="Ceiling">MaxDamage</Formula>
+      <LifetimeMS>300</LifetimeMS>
+      <Size>140</Size>
+      <ConditionEffect duration="3">Stunned</ConditionEffect>
+      <PassesCover />
+      <ParticleTrail />
+    </Projectile>
+    <NumProjectiles>3</NumProjectiles>
+    <Formula type="Simple" base="80" perAp="1.2" min="80" max="560" rounding="Ceiling">MpCost</Formula>
+    <Formula type="Simple" base="5000" perAp="-5" min="3000" max="5000" rounding="Ceiling">Cooldown</Formula>
+    <ActivateAbility id="ShieldLunge">
+    </ActivateAbility>
+  </Ability>
+  <Ability type="0x030" id="Defensive Stance">
+    <Class>Knight</Class>
+    <Description>Gives the user an armored effect while active.</Description>
+    <Texture>
+      <File>abilities</File>
+      <Index>0x00</Index>
+    </Texture>
+    <Toggle />
+    <Formula type="Simple" base="100" perAp="1.5" min="80" max="700" rounding="Ceiling">MpCost</Formula>
+    <Formula type="Simple" base="8000" perAp="-10" min="4000" max="8000" rounding="Ceiling">Cooldown</Formula>
+    <Formula type="Simple" base="10" perAp="0.5" min="10" max="250" rounding="Ceiling">MpCostPerSec</Formula>
+    <AbilityPerTick id="DefensiveStance">
+    </AbilityPerTick>
+  </Ability>
+  <Ability type="0x031" id="Dragon Skin">
+    <Class>Knight</Class>
+    <Description>For the very short duration of {DurationMS} seconds, the user is completely immune to all damage taken.</Description>
+    <Texture>
+      <File>abilities</File>
+      <Index>0x00</Index>
+    </Texture>
+    <Formula type="Simple" base="150" perAp="2" min="150" max="1000" rounding="Ceiling">MpCost</Formula>
+    <Formula type="Simple" base="10000" perAp="-5" min="8000" max="10000" rounding="Ceiling">Cooldown</Formula>
+    <ActivateAbility id="DragonSkin">
+      <Formula type="Simple" base="1500" perAp="5" min="1500" max="3500">DurationMS</Formula>
+    </ActivateAbility>
+  </Ability>
+  <!--#EndRegion Sentinel Abilities-->
+  <!--#EndRegion Knight Abilities-->
+  
+  <!--#Region Assassin Abilities-->
+  <!--Reserved ids: 032, 033, 034, 035, 036, 037, 038, 039, 03a, 03b-->
+  <Ability type="0x032" id="Poison Toss">
+    <Class>Assassin</Class>
+    <Description>Tosses a vial of poison that explodes to deal {TotalDamage} over {DurationMS} seconds to all enemies within a radius of {Radius}.</Description>
+    <Texture>
+      <File>abilities</File>
+      <Index>0x00</Index>
+    </Texture>
+    <Formula type="Simple" base="50" perAp="1.2" min="50" max="120" rounding="Ceiling">MpCost</Formula>
+    <Formula type="Simple" base="5000" perAp="-5" min="4500" max="5000" rounding="Ceiling">Cooldown</Formula>
+    <ActivateAbility id="PoisonToss">
+      <Formula type="Simple" base="5000" perAp="-5" min="4500" max="5000" rounding="Ceiling">DurationMS</Formula>
+      <Formula type="Simple" base="200" perAp="1" min="200" max="250" rounding="Ceiling">TotalDamage</Formula>
+      <Formula type="Simple" base="3" perAp="0.0125" min="3" max="4" rounding="Ceiling">Radius</Formula>
+    </ActivateAbility>
+  </Ability>
+  <!--#Region Night Elf Abilities-->
+  <Ability type="0x033" id="Poison Burst">
+    <Class>Assassin</Class>
+    <Description>An instant blast of poison on the cursor that deals {TotalDamage} over {DurationMS} seconds to all enemies within a radius of {Radius}.</Description>
+    <Texture>
+      <File>abilities</File>
+      <Index>0x00</Index>
+    </Texture>
+    <Formula type="Simple" base="100" perAp="1.5" min="100" max="700" rounding="Ceiling">MpCost</Formula>
+    <Formula type="Simple" base="5000" perAp="-5" min="3000" max="5000" rounding="Ceiling">Cooldown</Formula>
+    <ActivateAbility id="PoisonBurst">
+      <Formula type="Simple" base="5000" perAp="-5" min="3000" max="5000" rounding="Ceiling">DurationMS</Formula>
+      <Formula type="Simple" base="400" perAp="2" min="400" max="1200" rounding="Ceiling">TotalDamage</Formula>
+      <Formula type="Simple" base="3" perAp="0.0125" min="3" max="8" rounding="Ceiling">Radius</Formula>
+    </ActivateAbility>
+  </Ability>
+  <Ability type="0x034" id="Night Veil">
+    <Class>Assassin</Class>
+    <Description>Blinds all enemies for {DurationMS} seconds within a radius of {Radius} from the cursor.</Description>
+    <Texture>
+      <File>abilities</File>
+      <Index>0x00</Index>
+    </Texture>
+    <Formula type="Simple" base="150" perAp="1.5" min="150" max="750" rounding="Ceiling">MpCost</Formula>
+    <Formula type="Simple" base="7000" perAp="-5" min="5000" max="7000" rounding="Ceiling">Cooldown</Formula>
+    <ActivateAbility id="NightVeil">
+      <Formula type="Simple" base="2000" perAp="2.5" min="2000" max="3000" rounding="Ceiling">DurationMS</Formula>
+      <Formula type="Simple" base="2" perAp="0.005" min="2" max="4" rounding="Ceiling">Radius</Formula>
+    </ActivateAbility>
+  </Ability>
+      <Ability type="0x035" id="Death Mark">
+    <Class>Assassin</Class>
+    <Description>Applies a death mark to all enemies within a radius of {Radius} from the cursor for {DurationMS} seconds. Death Marked enemies take 10% damage for all damage you inflict to other enemies.</Description>
+    <Texture>
+      <File>abilities</File>
+      <Index>0x00</Index>
+    </Texture>
+        <Formula type="Simple" base="100" perAp="1.5" min="100" max="700" rounding="Ceiling">MpCost</Formula>
+        <Formula type="Simple" base="5000" perAp="-5" min="3000" max="5000" rounding="Ceiling">Cooldown</Formula>
+    <ActivateAbility id="DeathMark">
+      <Formula type="Simple" base="4000" perAp="10" min="4000" max="8000" rounding="Ceiling">DurationMS</Formula>
+      <Formula type="Simple" base="3" perAp="0.0125" min="3" max="8" rounding="Ceiling">Radius</Formula>
+    </ActivateAbility>
+  </Ability>
+  <!--#EndRegion NightElf Abilities-->
+  <!--#Region Eliminator Abilities-->
+  <Ability type="0x036" id="Deathvenom Toss">
+    <Class>Assassin</Class>
+    <Description>Tosses a much stronger more concentrated poison that deals {TotalDamage} over {DurationMS} seconds to all enemies within a radius of {Radius}.</Description>
+    <Texture>
+      <File>abilities</File>
+      <Index>0x00</Index>
+    </Texture>
+    <Formula type="Simple" base="100" perAp="1.5" min="100" max="700" rounding="Ceiling">MpCost</Formula>
+    <Formula type="Simple" base="2000" perAp="-5" min="2000" max="4000" rounding="Ceiling">Cooldown</Formula>
+    <ActivateAbility id="DeadlyToss">
+      <Formula type="Simple" base="5000" perAp="-5" min="3000" max="5000" rounding="Ceiling">DurationMS</Formula>
+      <Formula type="Simple" base="1000" perAp="5" min="1000" max="3000" rounding="Ceiling">TotalDamage</Formula>
+      <Formula type="Simple" base="2" perAp="0.005" min="2" max="4" rounding="Ceiling">Radius</Formula>
+    </ActivateAbility>
+  </Ability>
+  <Ability type="0x037" id="Poison Dagger">
+    <Class>Assassin</Class>
+    <Description>Fires a short range poison dagger that deals between {MinDamage} and {MaxDamage} direct damage, {TotalDamage} poison damage and chance to apply a slow, blind or paralyze effect for {DurationMS} seconds.</Description>
+    <Texture>
+      <File>abilities</File>
+      <Index>0x00</Index>
+    </Texture>
+    <Formula type="Simple" base="100" perAp="1.5" min="100" max="700" rounding="Ceiling">MpCost</Formula>
+    <Formula type="Simple" base="2000" perAp="-5" min="2000" max="4000" rounding="Ceiling">Cooldown</Formula>
+    <Projectile>
+      <ObjectId>Blue Bolt</ObjectId>
+      <Formula type="Flat" base="150">Speed</Formula>
+      <Formula type="Simple" base="1000" perAp="2" min="1000" max="1800" rounding="Ceiling">MinDamage</Formula>
+      <Formula type="Simple" base="1600" perAp="2" min="1600" max="2400" rounding="Ceiling">MaxDamage</Formula>
+      <Formula type="Flat" base="500">LifetimeMS</Formula>
+      <Formula type="Flat" base="50">Penetration</Formula>
+      <ConditionEffect duration="4">Slowed</ConditionEffect>
+    </Projectile>
+    <Projectile>
+      <ObjectId>Blue Bolt</ObjectId>
+      <Formula type="Flat" base="150">Speed</Formula>
+      <Formula type="Simple" base="1000" perAp="2" min="1000" max="1800" rounding="Ceiling">MinDamage</Formula>
+      <Formula type="Simple" base="1600" perAp="2" min="1600" max="2400" rounding="Ceiling">MaxDamage</Formula>
+      <Formula type="Flat" base="500">LifetimeMS</Formula>
+      <Formula type="Flat" base="50">Penetration</Formula>
+      <ConditionEffect duration="4">Paralyzed</ConditionEffect>
+    </Projectile>
+    <Projectile>
+      <ObjectId>Blue Bolt</ObjectId>
+      <Formula type="Flat" base="150">Speed</Formula>
+      <Formula type="Simple" base="1000" perAp="2" min="1000" max="1800" rounding="Ceiling">MinDamage</Formula>
+      <Formula type="Simple" base="1600" perAp="2" min="1600" max="2400" rounding="Ceiling">MaxDamage</Formula>
+      <Formula type="Flat" base="500">LifetimeMS</Formula>
+      <Formula type="Flat" base="50">Penetration</Formula>
+      <ConditionEffect duration="4">Blind</ConditionEffect>
+    </Projectile>
+    <Projectile>
+      <ObjectId>Blue Bolt</ObjectId>
+      <Formula type="Flat" base="150">Speed</Formula>
+      <Formula type="Simple" base="1000" perAp="2" min="1000" max="1800" rounding="Ceiling">MinDamage</Formula>
+      <Formula type="Simple" base="1600" perAp="2" min="1600" max="2400" rounding="Ceiling">MaxDamage</Formula>
+      <Formula type="Flat" base="500">LifetimeMS</Formula>
+      <Formula type="Flat" base="50">Penetration</Formula>
+    </Projectile>
+    <ActivateAbility id="PoisonDagger">
+      <Formula type="Simple" base="5000" perAp="-5" min="3000" max="5000" rounding="Ceiling">DurationMS</Formula>
+      <Formula type="Simple" base="1000" perAp="5" min="1000" max="3000" rounding="Ceiling">TotalDamage</Formula>
+    </ActivateAbility>
+  </Ability>
+      <Ability type="0x038" id="Finishing Strike">
+    <Class>Assassin</Class>
+    <Description>An aoe that deals {Damage} damage to the closest enemy within a radius of {Radius}. Deals double damage if the enemy hp is less than 10%. Applies a bleeding effect of {DurationMS} seconds.</Description>
+    <Texture>
+      <File>abilities</File>
+      <Index>0x00</Index>
+    </Texture>
+    <Formula type="Simple" base="100" perAp="1.5" min="100" max="700" rounding="Ceiling">MpCost</Formula>
+    <Formula type="Simple" base="5000" perAp="-5" min="3000" max="5000" rounding="Ceiling">Cooldown</Formula>
+    <ActivateAbility id="FinishingStrike">
+      <Formula type="Simple" base="2" perAp="0.005" min="2" max="4" rounding="Ceiling">Radius</Formula>
+      <Formula type="Simple" base="2000" perAp="10" min="2000" max="6000" rounding="Ceiling">Damage</Formula>
+      <Formula type="Simple" base="3000" perAp="5" min="3000" max="5000">DurationMS</Formula>
+    </ActivateAbility>
+  </Ability>
+  <!--#EndRegion Eliminator Abilities-->
+  <!--#Region Chemist Abilities-->
+  <Ability type="0x039" id="Split Bomb">
+    <Class>Assassin</Class>
+    <Description>Tosses a poison that tosses out three more poisons in random directions. Poisons deal {TotalDamage} damage over {DurationMS} seconds to all enemies within a radius of {Radius}.</Description>
+    <Texture>
+      <File>abilities</File>
+      <Index>0x00</Index>
+    </Texture>
+    <Formula type="Simple" base="100" perAp="1.5" min="100" max="700" rounding="Ceiling">MpCost</Formula>
+    <Formula type="Simple" base="5000" perAp="-5" min="3000" max="5000" rounding="Ceiling">Cooldown</Formula>
+    <ActivateAbility id="SplitBomb">
+      <Formula type="Simple" base="3" perAp="0.0125" min="3" max="8" rounding="Ceiling">Radius</Formula>
+      <Formula type="Simple" base="400" perAp="2" min="400" max="1200" rounding="Ceiling">TotalDamage</Formula>
+      <Formula type="Simple" base="5000" perAp="-5" min="3000" max="5000" rounding="Ceiling">DurationMS</Formula>
+    </ActivateAbility>
+  </Ability>
+  <Ability type="0x03a" id="Acid Bomb">
+    <Class>Assassin</Class>
+    <Description>tosses an acid bomb that will blow up in a large poison AOE when an enemy comes near. Deals {TotalDamage} damage over {DurationMS} seconds to all enemies within a radius of {Radius}.</Description>
+    <Texture>
+      <File>abilities</File>
+      <Index>0x00</Index>
+    </Texture>
+    <Formula type="Simple" base="100" perAp="1.5" min="100" max="700" rounding="Ceiling">MpCost</Formula>
+    <Formula type="Simple" base="5000" perAp="-5" min="3000" max="5000" rounding="Ceiling">Cooldown</Formula>
+    <ActivateAbility id="AcidBomb">
+      <Formula type="Simple" base="5" perAp="0.0125" min="5" max="10" rounding="Ceiling">Radius</Formula>
+      <Formula type="Simple" base="400" perAp="2" min="400" max="1200" rounding="Ceiling">TotalDamage</Formula>
+      <Formula type="Simple" base="5000" perAp="-5" min="3000" max="5000" rounding="Ceiling">DurationMS</Formula>
+    </ActivateAbility>
+  </Ability>
+      <Ability type="0x03b" id="Toxic Bolt">
+    <Class>Assassin</Class>
+    <Description>Fires 11 toxic bolts in the direction of the cursor, which will explode in a small poisonous AOE when hitting enemies. Each bolt does between {MinDamage} and {MaxDamage} direct damage and {TotalDamage} poison damage over {DurationMS} seconds within a radius of {Radius}</Description>
+    <Texture>
+      <File>abilities</File>
+      <Index>0x00</Index>
+    </Texture>
+        <Formula type="Simple" base="100" perAp="1.5" min="150" max="750" rounding="Ceiling">MpCost</Formula>
+        <Formula type="Simple" base="6000" perAp="-5" min="4000" max="6000" rounding="Ceiling">Cooldown</Formula>
+    <Projectile>
+      <ObjectId>Blue Bolt</ObjectId>
+      <Formula type="Flat" base="150">Speed</Formula>
+      <Formula type="Simple" base="80" perAp="0.5" min="80" max="300" rounding="Ceiling">MinDamage</Formula>
+      <Formula type="Simple" base="120" perAp="0.5" min="120" max="320" rounding="Ceiling">MaxDamage</Formula>
+      <Formula type="Flat" base="500">LifetimeMS</Formula>
+      <Formula type="Flat" base="50">Penetration</Formula>
+      <Toxic/>
+      <Poison/>
+    </Projectile>
+    <NumProjectiles>11</NumProjectiles>
+    <ArcGap>2</ArcGap>
+    <ActivateAbility id="ToxicBolt">
+      <Formula type="Simple" base="200" perAp="1" min="200" max="600" rounding="Ceiling">TotalDamage</Formula>
+      <Formula type="Simple" base="4000" perAp="-5" min="2000" max="4000" rounding="Ceiling">DurationMS</Formula>
+      <Formula type="Simple" base="2" perAp="0.0025" min="2" max="3" rounding="Ceiling">Radius</Formula>
+    </ActivateAbility>
+  </Ability>
+  <!--#EndRegion Chemist Abilities-->
+  <!--#EndRegion Assassin Abilities-->
+  
+  <!--#Region Archer Abilities-->
+  <!--Reserved ids: 03c 03d, 03e, 03f, 040, 041, 042, 043, 044, 045-->
+  <Ability type="0x03c" id="Focused Shot">
+    <Class>Archer</Class>
+    <Description>Fires a single piercing arrow that deals between {MinDamage} and {MaxDamage} damage and slows down all enemies it hits.</Description>
+    <Texture>
+      <File>abilities</File>
+      <Index>0x00</Index>
+    </Texture>
+    <Formula type="Simple" base="60" perAp="1.2" min="60" max="110" rounding="Ceiling">MpCost</Formula>
+    <Formula type="Simple" base="4000" perAp="-5" min="2000" max="4000" rounding="Ceiling">Cooldown</Formula>
+    <Projectile>
+      <ObjectId>Red Arrow</ObjectId>
+      <Size>150</Size>
+      <Formula type="Flat" base="120">Speed</Formula>
+      <Formula type="Simple" base="100" perAp="3" min="100" max="250" rounding="Ceiling">MinDamage</Formula>
+      <Formula type="Simple" base="150" perAp="3" min="150" max="300" rounding="Ceiling">MaxDamage</Formula>
+      <Formula type="Flat" base="800">LifetimeMS</Formula>
+      <Formula type="Flat" base="50">Penetration</Formula>
+      <ConditionEffect duration="4">Slowed</ConditionEffect>
+      <MultiHit />
+      <PassesCover />
+      <ParticleTrail />
+    </Projectile>
+    <ActivateAbility id="FocusedShot">
+    </ActivateAbility>
+  </Ability>
+  <!--#Region Artillery Abilities-->
+  <Ability type="0x03d" id="Bombard">
+    <Class>Archer</Class>
+    <Description>Fires 5 piercing arrows in a spread that deal between {MinDamage} and {MaxDamage} damage and slow down enemies they hit.</Description>
+    <Texture>
+      <File>abilities</File>
+      <Index>0x00</Index>
+    </Texture>
+    <Formula type="Simple" base="60" perAp="1.2" min="60" max="550" rounding="Ceiling">MpCost</Formula>
+    <Formula type="Simple" base="4000" perAp="-5" min="2000" max="4000" rounding="Ceiling">Cooldown</Formula>
+    <Projectile>
+      <ObjectId>Red Arrow</ObjectId>
+      <Formula type="Flat" base="120">Speed</Formula>
+      <Formula type="Simple" base="100" perAp="2" min="100" max="950" rounding="Ceiling">MinDamage</Formula>
+      <Formula type="Simple" base="150" perAp="2" min="150" max="1000" rounding="Ceiling">MaxDamage</Formula>
+      <Formula type="Flat" base="800">LifetimeMS</Formula>
+      <Formula type="Flat" base="50">Penetration</Formula>
+      <ConditionEffect duration="3">Slowed</ConditionEffect>
+      <MultiHit />
+      <PassesCover />
+      <ParticleTrail />
+    </Projectile>
+    <NumProjectiles>5</NumProjectiles>
+    <ActivateAbility id="Bombard">
+    </ActivateAbility>
+  </Ability>
+  <Ability type="0x03e" id="Flame Volley">
+    <Class>Archer</Class>
+    <Description>Fires 5 non-piercing arrows in a spread that will deal between {MinDamage} and {MaxDamage} to enemies and will burn them for {TotalDamage} over {DurationMS} seconds.</Description>
+    <Texture>
+      <File>abilities</File>
+      <Index>0x00</Index>
+    </Texture>
+    <Formula type="Simple" base="100" perAp="1.3" min="100" max="650" rounding="Ceiling">MpCost</Formula>
+    <Formula type="Simple" base="8000" perAp="-10" min="4000" max="8000" rounding="Ceiling">Cooldown</Formula>
+    <Projectile>
+      <ObjectId>Red Arrow</ObjectId>
+      <Formula type="Flat" base="120">Speed</Formula>
+      <Formula type="Simple" base="100" perAp="2" min="100" max="950" rounding="Ceiling">MinDamage</Formula>
+      <Formula type="Simple" base="150" perAp="2" min="150" max="1000" rounding="Ceiling">MaxDamage</Formula>
+      <Formula type="Flat" base="800">LifetimeMS</Formula>
+      <Formula type="Flat" base="50">Penetration</Formula>
+      <PassesCover />
+      <ParticleTrail />
+    </Projectile>
+    <NumProjectiles>5</NumProjectiles>
+    <ActivateAbility id="FlameVolley">
+      <Formula type="Simple" base="5000" perAp="-5" min="3000" max="5000" rounding="Ceiling">DurationMS</Formula>
+      <Formula type="Simple" base="200" perAp="2" min="200" max="1000" rounding="Ceiling">TotalDamage</Formula>
+    </ActivateAbility>
+  </Ability>
+  <Ability type="0x04f" id="Blast Volley">
+    <Class>Archer</Class>
+    <Description>Fires 5 arrows that will deal between {MinDamage} and {MaxDamage} damage and will explode and damage all enemies within a radius of {Radius}. If the target is burning the explosion will also apply a burn effect of {TotalDamage} damage over {DurationMS} seconds.</Description>
+    <Texture>
+      <File>abilities</File>
+      <Index>0x00</Index>
+    </Texture>
+    <Formula type="Simple" base="100" perAp="1.3" min="100" max="650" rounding="Ceiling">MpCost</Formula>
+    <Formula type="Simple" base="8000" perAp="-10" min="4000" max="8000" rounding="Ceiling">Cooldown</Formula>
+    <Projectile>
+      <ObjectId>Red Arrow</ObjectId>
+      <Formula type="Flat" base="120">Speed</Formula>
+      <Formula type="Simple" base="100" perAp="2" min="100" max="950" rounding="Ceiling">MinDamage</Formula>
+      <Formula type="Simple" base="150" perAp="2" min="150" max="1000" rounding="Ceiling">MaxDamage</Formula>
+      <Formula type="Flat" base="800">LifetimeMS</Formula>
+      <Formula type="Flat" base="50">Penetration</Formula>
+      <PassesCover />
+      <ParticleTrail />
+    </Projectile>
+    <NumProjectiles>5</NumProjectiles>
+    <ActivateAbility id="BlastVolley">
+      <Formula type="Simple" base="5000" perAp="-5" min="3000" max="5000" rounding="Ceiling">DurationMS</Formula>
+      <Formula type="Simple" base="200" perAp="2" min="200" max="1000" rounding="Ceiling">TotalDamage</Formula>
+      <Formula type="Simple" base="200" perAp="2" min="200" max="1000" rounding="Ceiling">Damage</Formula>
+      <Formula type="Simple" base="2" perAp="0.005" min="2" max="4" rounding="Ceiling">Radius</Formula>
+    </ActivateAbility>
+  </Ability>
+  <!--#EndRegion Artillery Abilities-->
+  <!--#Region Sharpshooter Abilities-->
+  <Ability type="0x040" id="Snipe">
+    <Class>Archer</Class>
+    <Description>Fires a single high speed arrow that will deal between {MinDamage} and {MaxDamage} damage.</Description>
+    <Texture>
+      <File>abilities</File>
+      <Index>0x00</Index>
+    </Texture>
+    <Formula type="Simple" base="80" perAp="1.2" min="80" max="600" rounding="Ceiling">MpCost</Formula>
+    <Formula type="Simple" base="6000" perAp="-5" min="4000" max="6000" rounding="Ceiling">Cooldown</Formula>
+    <Projectile>
+      <ObjectId>Red Arrow</ObjectId>
+      <Formula type="Flat" base="200">Speed</Formula>
+      <Formula type="Simple" base="500" perAp="4" min="500" max="2200" rounding="Ceiling">MinDamage</Formula>
+      <Formula type="Simple" base="800" perAp="4" min="800" max="2500" rounding="Ceiling">MaxDamage</Formula>
+      <Formula type="Flat" base="1000">LifetimeMS</Formula>
+      <Formula type="Flat" base="50">Penetration</Formula>
+      <PassesCover />
+      <ParticleTrail />
+    </Projectile>
+    <ActivateAbility id="Snipe">
+    </ActivateAbility>
+  </Ability>
+  <Ability type="0x041" id="Skill Shot">
+    <Class>Archer</Class>
+    <Description>Fires a single high range arrow that will deal more damage based on how far the arrow travels, with a base damage between {MinDamage} and {MaxDamage}.</Description>
+    <Texture>
+      <File>abilities</File>
+      <Index>0x00</Index>
+    </Texture>
+    <Formula type="Simple" base="80" perAp="1.3" min="80" max="650" rounding="Ceiling">MpCost</Formula>
+    <Formula type="Simple" base="8000" perAp="-5" min="4000" max="6000" rounding="Ceiling">Cooldown</Formula>
+    <Projectile>
+      <ObjectId>Red Arrow</ObjectId>
+      <Formula type="Flat" base="150">Speed</Formula>
+      <Formula type="Simple" base="500" perAp="2" min="500" max="1400" rounding="Ceiling">MinDamage</Formula>
+      <Formula type="Simple" base="800" perAp="2" min="800" max="1700" rounding="Ceiling">MaxDamage</Formula>
+      <Formula type="Flat" base="1500">LifetimeMS</Formula>
+      <Formula type="Flat" base="50">Penetration</Formula>
+      <PassesCover />
+      <ParticleTrail />
+    </Projectile>
+    <ActivateAbility id="SkillShot">
+    </ActivateAbility>
+  </Ability>
+  <Ability type="0x042" id="Death's Arrow">
+    <Class>Archer</Class>
+    <Description>Fires a single arrow that heavily increases in damage for each target it hits, with a base damage between {MinDamage} and {MaxDamage}</Description>
+    <Texture>
+      <File>abilities</File>
+      <Index>0x00</Index>
+    </Texture>
+    <Formula type="Simple" base="80" perAp="1.3" min="80" max="650" rounding="Ceiling">MpCost</Formula>
+    <Formula type="Simple" base="8000" perAp="-5" min="6000" max="8000" rounding="Ceiling">Cooldown</Formula>
+    <Projectile>
+      <ObjectId>Red Arrow</ObjectId>
+      <Formula type="Flat" base="120">Speed</Formula>
+      <Formula type="Simple" base="500" perAp="2" min="500" max="1400" rounding="Ceiling">MinDamage</Formula>
+      <Formula type="Simple" base="800" perAp="2" min="800" max="1700" rounding="Ceiling">MaxDamage</Formula>
+      <Formula type="Flat" base="2000">LifetimeMS</Formula>
+      <Formula type="Flat" base="50">Penetration</Formula>
+      <MultiHit/>
+      <PassesCover />
+      <ParticleTrail />
+    </Projectile>
+    <ActivateAbility id="DeathArrow">
+    </ActivateAbility>
+  </Ability>
+  <!--#EndRegion Sharpshooter Abilities-->
+  <!--#Region Marksman Abilities-->
+  <Ability type="0x043" id="Disabling Arrow">
+    <Class>Archer</Class>
+    <Description>Fires a single piercing arrow that will deal between {MinDamage} and {MaxDamage} damage and paralyze targets it hits.</Description>
+    <Texture>
+      <File>abilities</File>
+      <Index>0x00</Index>
+    </Texture>
+    <Formula type="Simple" base="60" perAp="1.2" min="60" max="550" rounding="Ceiling">MpCost</Formula>
+    <Formula type="Simple" base="4000" perAp="-5" min="2000" max="4000" rounding="Ceiling">Cooldown</Formula>
+    <Projectile>
+      <ObjectId>Red Arrow</ObjectId>
+      <Formula type="Flat" base="120">Speed</Formula>
+      <Formula type="Simple" base="100" perAp="4" min="100" max="1800" rounding="Ceiling">MinDamage</Formula>
+      <Formula type="Simple" base="150" perAp="4" min="150" max="1850" rounding="Ceiling">MaxDamage</Formula>
+      <Formula type="Flat" base="800">LifetimeMS</Formula>
+      <Formula type="Flat" base="50">Penetration</Formula>
+      <ConditionEffect duration="4">Paralyzed</ConditionEffect>
+      <MultiHit/>
+      <PassesCover />
+      <ParticleTrail />
+    </Projectile>
+    <ActivateAbility id="DisablingArrow">
+    </ActivateAbility>
+  </Ability>
+        <Ability type="0x044" id="Rapid Fire">
+    <Class>Archer</Class>
+    <Description>For {ActiveDuration} seconds, fires batches of 3 shots at rapid intervals at the nearest enemy, each dealing between {MinDamage} and {MaxDamage} damage.</Description>
+    <Texture>
+      <File>abilities</File>
+      <Index>0x00</Index>
+    </Texture>
+    <Formula type="Simple" base="120" perAp="1.2" min="120" max="650" rounding="Ceiling">MpCost</Formula>
+    <Formula type="Simple" base="6000" perAp="-5" min="4000" max="6000" rounding="Ceiling">Cooldown</Formula>
+    <Formula type="Simple" base="4000" perAp="10" min="4000" max="8000">ActiveDuration</Formula>
+    <Projectile>
+      <ObjectId>Red Arrow</ObjectId>
+      <Formula type="Flat" base="120">Speed</Formula>
+      <Formula type="Simple" base="100" perAp="1" min="100" max="600" rounding="Ceiling">MinDamage</Formula>
+      <Formula type="Simple" base="150" perAp="1" min="150" max="650" rounding="Ceiling">MaxDamage</Formula>
+      <Formula type="Flat" base="800">LifetimeMS</Formula>
+      <Formula type="Flat" base="50">Penetration</Formula>
+      <PassesCover />
+      <ParticleTrail />
+    </Projectile>
+    <AbilityPerTick id="RapidFire">
+    </AbilityPerTick>
+  </Ability>
+  <Ability type="0x045" id="Bowman's Blessing">
+    <Class>Archer</Class>
+    <Description>For {ActiveDuration} seconds, every shot that hits an enemy will give you a 5% increase in damage to both ability and weapon damage.</Description>
+    <Texture>
+      <File>abilities</File>
+      <Index>0x00</Index>
+    </Texture>
+    <Formula type="Simple" base="80" perAp="1.5" min="80" max="700" rounding="Ceiling">MpCost</Formula>
+    <Formula type="Simple" base="8000" perAp="-5" min="6000" max="8000" rounding="Ceiling">Cooldown</Formula>
+    <Formula type="Simple" base="4000" perAp="15" min="4000" max="10000">ActiveDuration</Formula>
+    <AbilityPerTick id="BowmanBlessing">
+    </AbilityPerTick>
+  </Ability>
+  <!--#EndRegion Marksman Abilities-->
+  <!--#EndRegion Archer Abilities-->
+  
+  <!--#Region Admin/Testing Abilities-->
+  <!-- Reserved ID's: 0x200+-->
+  <Ability type="0x200" id="Eagle Vision">
+    <Class>Wizard</Class>
+    <Description>Places your vision in an area. Cast again to stop.</Description>
+    <Texture>
+      <File>abilities</File>
+      <Index>0x06</Index>
+    </Texture>
+    <MpCost>0</MpCost>
+    <Cooldown>0</Cooldown>
+    <ActivateAbility id="MoveCamera"></ActivateAbility>
+  </Ability>
+  <Ability type="0x201" id="GlowyToggle">
+    <Class>Wizard</Class>
+    <Description>makes you glow like a fairie</Description>
+    <Texture>
+      <File>abilities</File>
+      <Index>0x06</Index>
+    </Texture>
+    <Toggle />
+    <Formula type="Simple" base="60" perAp="1.2" min="60" max="110" rounding="Ceiling">MpCost</Formula>
+    <Formula type="Simple" base="4000" perAp="10" min="4000" max="7000" rounding="Ceiling">Cooldown</Formula>
+    <Formula type="Simple" base="5" perAp="1" min="5" max="100" rounding="Ceiling">MpCostPerSec</Formula>
+    <AbilityPerTick id="GlowyToggle">
+    </AbilityPerTick>
+  </Ability>
+  <Ability type="0x202" id="TestBurstOrb">
+    <Class>Sorcerer</Class>
+    <Description>Fires off an orb to cursor location that lasts for {DurationMS} seconds. The orb unleashes a burst of electricity for {Damage} damage within a range of {Radius} tiles when it is hit by Chain Blast.</Description>
+    <Texture>
+      <File>abilities</File>
+      <Index>0x00</Index>
+    </Texture>
+    <Formula type="Simple" base="0" perAp="1.5" min="60" max="650" rounding="Ceiling">MpCost</Formula>
+    <Formula type="Simple" base="2500" perAp="-2.5" min="1000" max="2500" rounding="Ceiling">Cooldown</Formula>
+    <ActivateAbility id="BurstOrb">
+      <Formula type="Simple" base="15000" perAp="0" min="3000" max="15000" rounding="Ceiling">DurationMS</Formula>
+      <Formula type="Simple" base="300" perAp="1.5" min="300" max="950" rounding="Ceiling">Damage</Formula>
+      <Formula type="Simple" base="2" perAp="0.01" min="2" max="6" rounding="Floor">Radius</Formula>
+      <Formula type="Flat" base="100">Penetration</Formula>
+    </ActivateAbility>
+  </Ability>
+  <!--#EndRegion Admin/Testing Abilities-->
+</Abilities>

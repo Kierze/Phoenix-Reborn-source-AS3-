@@ -1,0 +1,35 @@
+<Talksprites>
+    <Talksprite type="0x00" id="Rose Idle">
+        <Texture>
+            <File>Talksprites</File><Index>0x00</Index>
+        </Texture>
+        <Animation prob="1.0" period="0.0">
+            <Frame time="21.0">
+                <!-- Default Frame -->
+                <Texture>
+                    <File>Talksprites</File><Index>0x00</Index>
+                </Texture>
+            </Frame>
+            <Frame time="0.5">
+                <Texture>
+                    <File>Talksprites</File><Index>0x01</Index>
+                </Texture>
+            </Frame>
+            <Frame time="0.4">
+                <Texture>
+                    <File>Talksprites</File><Index>0x02</Index>
+                </Texture>
+            </Frame>
+            <Frame time="0.4">
+                <Texture>
+                    <File>Talksprites</File><Index>0x03</Index>
+                </Texture>
+            </Frame>
+        </Animation>
+    </Talksprite>
+    <Talksprite type="0x01" id="Rose Happy">
+        <Texture>
+            <File>Talksprites</File><Index>0x04</Index>
+        </Texture>
+    </Talksprite>
+</Talksprites>

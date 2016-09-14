@@ -1,0 +1,12 @@
+<Objects>
+    <Object type="0x2400" id="TestingNPC">
+        <DisplayId>TestNPC1</DisplayId>
+        <Class>InteractNPC</Class>
+        <CharName>Cubey</CharName>
+        <CharTitle>the Cube</CharTitle>
+        <Texture>
+            <File>lofiChar8x8</File>
+            <Index>0xbc</Index>
+        </Texture>
+    </Object>
+</Objects>

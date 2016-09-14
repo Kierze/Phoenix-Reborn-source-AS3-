@@ -1,0 +1,692 @@
+<Objects>
+  <!-- Player Classes -->
+  <Object type="0x0300" id="Rogue">
+    <Class>Player</Class>
+    <Description>The rogue relies on his speed to deal damage at medium range while avoiding attacks.</Description>
+    <AnimatedTexture>
+      <File>players</File>
+      <Index>0</Index>
+    </AnimatedTexture>
+    <HitSound>player/rogue_hit</HitSound>
+    <DeathSound>player/rogue_death</DeathSound>
+    <Player />
+    <BloodProb>1.0</BloodProb>
+    <SlotTypes>2, 13, 6, 9, 0, 0, 0, 0, 0, 0, 0, 0</SlotTypes>
+    <Equipment>0xa14, 0xa56, 0xffff, 0xffff, 0xa22, 0xffff, 0xffff, 0xffff, 0xffff, 0xffff, 0xffff, 0xffff</Equipment>
+    <!-- Resilient - MaxHp -->
+    <MaxHitPoints max="4100">500</MaxHitPoints>
+    <LevelIncrease min="34" max="36">MaxHitPoints</LevelIncrease>
+    <!-- Subcaster - MaxMp -->
+    <MaxMagicPoints max="2250">275</MaxMagicPoints>
+    <LevelIncrease min="18" max="20">MaxMagicPoints</LevelIncrease>
+    <!-- Low - Attack -->
+    <Attack max="700">90</Attack>
+    <LevelIncrease min="5" max="7">Attack</LevelIncrease>
+    <!-- Resilient - Defense -->
+    <Defense max="40">0</Defense>
+    <LevelIncrease min="0" max="0">Defense</LevelIncrease>
+    <!-- Tactical - Speed -->
+    <Speed max="1000">130</Speed>
+    <LevelIncrease min="8" max="10">Speed</LevelIncrease>
+    <!-- Normal - Dexterity -->
+    <Dexterity max="800">100</Dexterity>
+    <LevelIncrease min="6" max="8">Dexterity</LevelIncrease>
+    <!-- Resilient - Vitality -->
+    <Vitality max="850">65</Vitality>
+    <LevelIncrease min="8" max="9">Vitality</LevelIncrease>
+    <!-- Subcaster - Wisdom -->
+    <Wisdom max="900">105</Wisdom>
+    <LevelIncrease min="7" max="9">Wisdom</LevelIncrease>
+    <!-- Default - Aptitude -->
+    <Aptitude max="100">11</Aptitude>
+    <LevelIncrease min="1" max="1">Aptitude</LevelIncrease>
+    <!-- Resilient - Resilience -->
+    <Resilience max="700">80</Resilience>
+    <LevelIncrease min="5" max="7">Resilience</LevelIncrease>
+    <!-- Default - Penetration -->
+    <Penetration max="100">0</Penetration>
+    <LevelIncrease min="0" max="0">Penetration</LevelIncrease>
+    <DefaultAbility>Shadow Cloak</DefaultAbility>
+    <Specialization id="Placeholder" name="Bandit">Bandit's Cloak, Hidden Blade, Disabling Strike</Specialization> <!-- Robbery -->
+    <Specialization id="Stealth" name="Thief">Night Cloak, Knockout Strike, Pickpocket</Specialization>
+    <Specialization id="Tracking" name="Scout">Speed Cloak, Portable Eye, Warp Crystal</Specialization>
+  </Object>
+  <Object type="0x0301" id="Archer">
+    <Class>Player</Class>
+    <Description>The archer has a long-range attack and can acquire very powerful weapons.</Description>
+    <AnimatedTexture>
+      <File>players</File>
+      <Index>1</Index>
+    </AnimatedTexture>
+    <HitSound>player/archer_hit</HitSound>
+    <DeathSound>player/archer_death</DeathSound>
+    <Player />
+    <BloodProb>1.0</BloodProb>
+    <SlotTypes>3, 15, 6, 9, 0, 0, 0, 0, 0, 0, 0, 0</SlotTypes>
+    <Equipment>0xa1a, 0xa61, 0xffff, 0xffff, 0xa22, 0xffff, 0xffff, 0xffff, 0xffff, 0xffff, 0xffff, 0xffff</Equipment>
+    <!-- Lower - MaxHp -->
+    <MaxHitPoints max="3700">450</MaxHitPoints>
+    <LevelIncrease min="31" max="33">MaxHitPoints</LevelIncrease>
+    <!-- Normal - MaxMp -->
+    <MaxMagicPoints max="2050">250</MaxMagicPoints>
+    <LevelIncrease min="16" max="18">MaxMagicPoints</LevelIncrease>
+    <!-- High Damager - Attack -->
+    <Attack max="1000">130</Attack>
+    <LevelIncrease min="8" max="10">Attack</LevelIncrease>
+    <!-- Lower - Defense -->
+    <Defense max="35">0</Defense>
+    <LevelIncrease min="0" max="0">Defense</LevelIncrease>
+    <!-- Slow - Speed -->
+    <Speed max="700">90</Speed>
+    <LevelIncrease min="5" max="7">Speed</LevelIncrease>
+    <!-- High Damager - Dexterity -->
+    <Dexterity max="1000">130</Dexterity>
+    <LevelIncrease min="8" max="10">Dexterity</LevelIncrease>
+    <!-- Lower - Vitality -->
+    <Vitality max="700">75</Vitality>
+    <LevelIncrease min="5" max="7">Vitality</LevelIncrease>
+    <!-- Normal - Wisdom -->
+    <Wisdom max="800">90</Wisdom>
+    <LevelIncrease min="6" max="8">Wisdom</LevelIncrease>
+    <!-- Default - Aptitude -->
+    <Aptitude max="100">11</Aptitude>
+    <LevelIncrease min="1" max="1">Aptitude</LevelIncrease>
+    <!-- Lower - Resilience -->
+    <Resilience max="600">70</Resilience>
+    <LevelIncrease min="4" max="6">Resilience</LevelIncrease>
+    <!-- Default - Penetration -->
+    <Penetration max="100">0</Penetration>
+    <LevelIncrease min="0" max="0">Penetration</LevelIncrease>
+    <DefaultAbility>Focused Shot</DefaultAbility>
+    <Specialization id="War" name="Artilleryman">Bombard, Flame Volley, Blast Volley</Specialization> <!-- Artillery -->
+    <Specialization id="Sharpshooting" name="Sharpshooter">Snipe, Skill Shot, Death's Arrow</Specialization>
+    <Specialization id="Marksmanship" name="Marksman">Disabling Arrow, Rapid Fire, Bowman's Blessing</Specialization>
+  </Object>
+  <Object type="0x0302" id="Wizard">
+    <Class>Player</Class>
+    <Description>The wizard deals damage from a long distance and blasts enemies with powerful spells.</Description>
+    <AnimatedTexture>
+      <File>players</File>
+      <Index>2</Index>
+    </AnimatedTexture>
+    <HitSound>player/wizard_hit</HitSound>
+    <DeathSound>player/wizard_death</DeathSound>
+    <Player />
+    <BloodProb>1.0</BloodProb>
+    <SlotTypes>17, 11, 14, 9, 0, 0, 0, 0, 0, 0, 0, 0</SlotTypes>
+    <Equipment>0xa97, 0xa2e, 0xffff, 0xffff, 0xa22, 0xffff, 0xffff, 0xffff, 0xffff, 0xffff, 0xffff, 0xffff</Equipment>
+    <!-- Lower - MaxHp -->
+    <MaxHitPoints max="3700">450</MaxHitPoints>
+    <LevelIncrease min="31" max="33">MaxHitPoints</LevelIncrease>
+    <!-- Caster - MaxMp -->
+    <MaxMagicPoints max="2500">325</MaxMagicPoints>
+    <LevelIncrease min="20" max="22">MaxMagicPoints</LevelIncrease>
+    <!-- Normal - Attack -->
+    <Attack max="800">100</Attack>
+    <LevelIncrease min="6" max="8">Attack</LevelIncrease>
+    <!-- Lower - Defense -->
+    <Defense max="35">0</Defense>
+    <LevelIncrease min="0" max="0">Defense</LevelIncrease>
+    <!-- Slow - Speed -->
+    <Speed max="700">90</Speed>
+    <LevelIncrease min="5" max="7">Speed</LevelIncrease>
+    <!-- Normal - Dexterity -->
+    <Dexterity max="800">100</Dexterity>
+    <LevelIncrease min="6" max="8">Dexterity</LevelIncrease>
+    <!-- Lower - Vitality -->
+    <Vitality max="700">75</Vitality>
+    <LevelIncrease min="5" max="7">Vitality</LevelIncrease>
+    <!-- Caster - Wisdom -->
+    <Wisdom max="1000">105</Wisdom>
+    <LevelIncrease min="8" max="10">Wisdom</LevelIncrease>
+    <!-- Default - Aptitude -->
+    <Aptitude max="100">11</Aptitude>
+    <LevelIncrease min="1" max="1">Aptitude</LevelIncrease>
+    <!-- Lower - Resilience -->
+    <Resilience max="600">70</Resilience>
+    <LevelIncrease min="4" max="6">Resilience</LevelIncrease>
+    <!-- Default - Penetration -->
+    <Penetration max="100">0</Penetration>
+    <LevelIncrease min="0" max="0">Penetration</LevelIncrease>
+    <DefaultAbility>Power Blast</DefaultAbility>
+    <Specialization id="Fire" name="Pyromancer">Fireblast, Fireball, Incinerate</Specialization>
+    <Specialization id="Ice" name="Frost Mage">Ice Burst, Freeze Bolt, Blizzard</Specialization>
+    <Specialization id="Doom" name="Doom Mage">Psychic Burst, Phase Blast, Chaos Anomaly</Specialization>
+  </Object>
+  <Object type="0x0303" id="Priest">
+    <Class>Player</Class>
+    <Description>The priest attacks at long range and can heal himself and his allies.</Description>
+    <AnimatedTexture>
+      <File>players</File>
+      <Index>3</Index>
+    </AnimatedTexture>
+    <HitSound>player/priest_hit</HitSound>
+    <DeathSound>player/priest_death</DeathSound>
+    <Player />
+    <BloodProb>1.0</BloodProb>
+    <SlotTypes>8, 4, 14, 9, 0, 0, 0, 0, 0, 0, 0, 0</SlotTypes>
+    <Equipment>0xa04, 0xa31, 0xffff, 0xffff, 0xa22, 0xffff, 0xffff, 0xffff, 0xffff, 0xffff, 0xffff, 0xffff</Equipment>
+    <!-- Resilient - MaxHp -->
+    <MaxHitPoints max="4100">500</MaxHitPoints>
+    <LevelIncrease min="34" max="36">MaxHitPoints</LevelIncrease>
+    <!-- Caster - MaxMp -->
+    <MaxMagicPoints max="2500">325</MaxMagicPoints>
+    <LevelIncrease min="20" max="22">MaxMagicPoints</LevelIncrease>
+    <!-- Low - Attack-->
+    <Attack max="700">90</Attack>
+    <LevelIncrease min="5" max="7">Attack</LevelIncrease>
+    <!-- Lower - Defense -->
+    <Defense max="35">0</Defense>
+    <LevelIncrease min="0" max="0">Defense</LevelIncrease>
+    <!-- Normal - Speed -->
+    <Speed max="800">100</Speed>
+    <LevelIncrease min="6" max="8">Speed</LevelIncrease>
+    <!-- Low - Dexterity -->
+    <Dexterity max="700">90</Dexterity>
+    <LevelIncrease min="5" max="7">Dexterity</LevelIncrease>
+    <!-- Lower - Vitality -->
+    <Vitality max="700">75</Vitality>
+    <LevelIncrease min="5" max="7">Vitality</LevelIncrease>
+    <!-- Caster - Wisdom -->
+    <Wisdom max="1000">105</Wisdom>
+    <LevelIncrease min="8" max="10">Wisdom</LevelIncrease>
+    <!-- Default - Aptitude-->
+    <Aptitude max="100">11</Aptitude>
+    <LevelIncrease min="1" max="1">Aptitude</LevelIncrease>
+    <!-- Resilient - Resilience -->
+    <Resilience max="700">80</Resilience>
+    <LevelIncrease min="5" max="7">Resilience</LevelIncrease>
+    <!-- Default - Penetration -->
+    <Penetration max="100">0</Penetration>
+    <LevelIncrease min="0" max="0">Penetration</LevelIncrease>
+    <DefaultAbility>Heal</DefaultAbility>
+    <Specialization id="Purity" name="Battle Priest">Smite, Shield of Repent, Judgement</Specialization>
+    <Specialization id="Light" name="Bishop">Healing Wave, Shield of Faith, Immunity to Evil</Specialization>
+    <Specialization id="Blood" name="Martyr">Sufferer's Prayer, Spilled Blood, Follower's Faith</Specialization>
+  </Object>
+  <Object type="0x0304" id="Warrior">
+    <Class>Player</Class>
+    <Description>The warrior wears strong armor and uses his magic helmet to inspire his allies in battle.</Description>
+    <AnimatedTexture>
+      <File>players</File>
+      <Index>4</Index>
+    </AnimatedTexture>
+    <HitSound>player/warrior_hit</HitSound>
+    <DeathSound>player/warrior_death</DeathSound>
+    <Player />
+    <BloodProb>1.0</BloodProb>
+    <SlotTypes>1, 16, 7, 9, 0, 0, 0, 0, 0, 0, 0, 0</SlotTypes>
+    <Equipment>0xa00, 0x0a66, 0xffff, 0xffff, 0xa22, 0xffff, 0xffff, 0xffff, 0xffff, 0xffff, 0xffff, 0xffff</Equipment>
+    <!-- Offtank - MaxHp -->
+    <MaxHitPoints max="4500">550</MaxHitPoints>
+    <LevelIncrease min="37" max="39">MaxHitPoints</LevelIncrease>
+    <!-- Non-reliant - MaxMp-->
+    <MaxMagicPoints max="1850">225</MaxMagicPoints>
+    <LevelIncrease min="15" max="17">MaxMagicPoints</LevelIncrease>
+    <!-- Damager - Attack -->
+    <Attack max="900">110</Attack>
+    <LevelIncrease min="7" max="9">Attack</LevelIncrease>
+    <!-- Offtank - Defense-->
+    <Defense max="45">0</Defense>
+    <LevelIncrease min="0" max="0">Defense</LevelIncrease>
+    <!-- Normal - Speed-->
+    <Speed max="800">100</Speed>
+    <LevelIncrease min="6" max="8">Speed</LevelIncrease>
+    <!-- Damager - Dexterity -->
+    <Dexterity max="900">110</Dexterity>
+    <LevelIncrease min="7" max="9">Dexterity</LevelIncrease>
+    <!-- Offtank - Vitality -->
+    <Vitality max="900">105</Vitality>
+    <LevelIncrease min="7" max="9">Vitality</LevelIncrease>
+    <!-- Non-reliant - Wisdom-->
+    <Wisdom max="700">75</Wisdom>
+    <LevelIncrease min="5" max="7">Wisdom</LevelIncrease>
+    <!-- Default - Aptitude-->
+    <Aptitude max="100">11</Aptitude>
+    <LevelIncrease min="1" max="1">Aptitude</LevelIncrease>
+    <!-- Offtank - Resilience -->
+    <Resilience max="850">90</Resilience>
+    <LevelIncrease min="6" max="8">Resilience</LevelIncrease>
+    <!-- Default - Penetration -->
+    <Penetration max="100">0</Penetration>
+    <LevelIncrease min="0" max="0">Penetration</LevelIncrease>
+    <DefaultAbility>Power Blast</DefaultAbility>
+    <Specialization id="Placeholder" name="Warrior">Power Blast, Fireball, Incinerate</Specialization>
+  </Object>
+  <Object type="0x0305" id="Knight">
+    <Class>Player</Class>
+    <Description>The knight fights at close range, wears very heavy armor, and uses his shield to stun enemies.</Description>
+    <AnimatedTexture>
+      <File>players</File>
+      <Index>5</Index>
+    </AnimatedTexture>
+    <HitSound>player/knight_hit</HitSound>
+    <DeathSound>player/knight_death</DeathSound>
+    <Player />
+    <BloodProb>1.0</BloodProb>
+    <SlotTypes>1, 5, 7, 9, 0, 0, 0, 0, 0, 0, 0, 0</SlotTypes>
+    <Equipment>0xa00, 0x0a08, 0xffff, 0xffff, 0xa22, 0xffff, 0xffff, 0xffff, 0xffff, 0xffff, 0xffff, 0xffff</Equipment>
+    <!-- Tank - MaxHp -->
+    <MaxHitPoints max="5000">650</MaxHitPoints>
+    <LevelIncrease min="41" max="43">MaxHitPoints</LevelIncrease>
+    <!-- Non-reliant - MaxMp-->
+    <MaxMagicPoints max="1850">225</MaxMagicPoints>
+    <LevelIncrease min="15" max="17">MaxMagicPoints</LevelIncrease>
+    <!-- Normal - Attack -->
+    <Attack max="800">100</Attack>
+    <LevelIncrease min="6" max="8">Attack</LevelIncrease>
+    <!-- Tank - Defense-->
+    <Defense max="50">0</Defense>
+    <LevelIncrease min="0" max="0">Defense</LevelIncrease>
+    <!-- Normal - Speed-->
+    <Speed max="800">100</Speed>
+    <LevelIncrease min="6" max="8">Speed</LevelIncrease>
+    <!-- Normal - Dexterity -->
+    <Dexterity max="800">100</Dexterity>
+    <LevelIncrease min="6" max="8">Dexterity</LevelIncrease>
+    <!-- Tank - Vitality -->
+    <Vitality max="1000">105</Vitality>
+    <LevelIncrease min="8" max="10">Vitality</LevelIncrease>
+    <!-- Non-reliant - Wisdom-->
+    <Wisdom max="700">75</Wisdom>
+    <LevelIncrease min="5" max="7">Wisdom</LevelIncrease>
+    <!-- Default - Aptitude-->
+    <Aptitude max="100">11</Aptitude>
+    <LevelIncrease min="1" max="1">Aptitude</LevelIncrease>
+    <!-- Tank - Resilience -->
+    <Resilience max="1000">110</Resilience>
+    <LevelIncrease min="6" max="8">Resilience</LevelIncrease>
+    <!-- Default - Penetration -->
+    <Penetration max="100">0</Penetration>
+    <LevelIncrease min="0" max="0">Penetration</LevelIncrease>
+    <DefaultAbility>Shield Bash</DefaultAbility>
+    <Specialization id="Protection" name="Guardian">Wide Guard, Enrage, Stone Guards</Specialization>
+    <Specialization id="Destruction" name="Slayer">Shield Crush, Giant's Slash, Slay</Specialization>
+    <Specialization id="Defense" name="Sentinel">Shield Lunge, Defensive Stance, Dragon Skin</Specialization>
+  </Object>
+  <Object type="0x0306" id="Paladin">
+    <Class>Player</Class>
+    <Description>The paladin can deal damage at close range, wear armor and heal himself and his allies.</Description>
+    <AnimatedTexture>
+      <File>players</File>
+      <Index>6</Index>
+    </AnimatedTexture>
+    <HitSound>player/paladin_hit</HitSound>
+    <DeathSound>player/paladin_death</DeathSound>
+    <Player />
+    <BloodProb>1.0</BloodProb>
+    <SlotTypes>1, 12, 7, 9, 0, 0, 0, 0, 0, 0, 0, 0</SlotTypes>
+    <Equipment>0xa00, 0xa52, 0xffff, 0xffff, 0xa22, 0xffff, 0xffff, 0xffff, 0xffff, 0xffff, 0xffff, 0xffff</Equipment>
+    <!-- Offtank - MaxHp -->
+    <MaxHitPoints max="4500">550</MaxHitPoints>
+    <LevelIncrease min="37" max="39">MaxHitPoints</LevelIncrease>
+    <!-- Subcaster - MaxMp-->
+    <MaxMagicPoints max="2250">275</MaxMagicPoints>
+    <LevelIncrease min="18" max="20">MaxMagicPoints</LevelIncrease>
+    <!-- Normal - Attack -->
+    <Attack max="800">100</Attack>
+    <LevelIncrease min="6" max="8">Attack</LevelIncrease>
+    <!-- Offtank - Defense-->
+    <Defense max="45">0</Defense>
+    <LevelIncrease min="0" max="0">Defense</LevelIncrease>
+    <!-- Slow - Speed-->
+    <Speed max="700">90</Speed>
+    <LevelIncrease min="5" max="7">Speed</LevelIncrease>
+    <!-- Normal - Dexterity -->
+    <Dexterity max="800">100</Dexterity>
+    <LevelIncrease min="6" max="8">Dexterity</LevelIncrease>
+    <!-- Offtank - Vitality -->
+    <Vitality max="900">105</Vitality>
+    <LevelIncrease min="7" max="9">Vitality</LevelIncrease>
+    <!-- Subcaster - Wisdom-->
+    <Wisdom max="900">105</Wisdom>
+    <LevelIncrease min="7" max="9">Wisdom</LevelIncrease>
+    <!-- Default - Aptitude-->
+    <Aptitude max="100">11</Aptitude>
+    <LevelIncrease min="1" max="1">Aptitude</LevelIncrease>
+    <!-- Offtank - Resilience -->
+    <Resilience max="850">90</Resilience>
+    <LevelIncrease min="6" max="8">Resilience</LevelIncrease>
+    <!-- Default - Penetration -->
+    <Penetration max="100">0</Penetration>
+    <LevelIncrease min="0" max="0">Penetration</LevelIncrease>
+    <DefaultAbility>Power Blast</DefaultAbility>
+    <Specialization id="Placeholder" name="Paladin">Power Blast, Fireball, Incinerate</Specialization>
+  </Object>
+  <Object type="0x0307" id="Assassin">
+    <Class>Player</Class>
+    <Description>The assassin fights from medium range and uses poison to damage his enemies over time.</Description>
+    <AnimatedTexture>
+      <File>players</File>
+      <Index>7</Index>
+    </AnimatedTexture>
+    <HitSound>player/rogue_hit</HitSound>
+    <DeathSound>player/rogue_death</DeathSound>
+    <Player />
+    <BloodProb>1.0</BloodProb>
+    <SlotTypes>2, 18, 6, 9, 0, 0, 0, 0, 0, 0, 0, 0</SlotTypes>
+    <Equipment>0xa14, 0xaa3, 0xffff, 0xffff, 0xa22, 0xffff, 0xffff, 0xffff, 0xffff, 0xffff, 0xffff, 0xffff</Equipment>
+    <!-- Resilient - MaxHp -->
+    <MaxHitPoints max="4100">500</MaxHitPoints>
+    <LevelIncrease min="34" max="36">MaxHitPoints</LevelIncrease>
+    <!-- Subcaster - MaxMp -->
+    <MaxMagicPoints max="2250">275</MaxMagicPoints>
+    <LevelIncrease min="18" max="20">MaxMagicPoints</LevelIncrease>
+    <!-- Low - Attack -->
+    <Attack max="700">90</Attack>
+    <LevelIncrease min="5" max="7">Attack</LevelIncrease>
+    <!-- Resilient - Defense -->
+    <Defense max="40">0</Defense>
+    <LevelIncrease min="0" max="0">Defense</LevelIncrease>
+    <!-- Swift - Speed -->
+    <Speed max="1000">130</Speed>
+    <LevelIncrease min="8" max="10">Speed</LevelIncrease>
+    <!-- Low - Dexterity -->
+    <Dexterity max="700">90</Dexterity>
+    <LevelIncrease min="5" max="7">Dexterity</LevelIncrease>
+    <!-- Resilient - Vitality -->
+    <Vitality max="850">65</Vitality>
+    <LevelIncrease min="8" max="9">Vitality</LevelIncrease>
+    <!-- Subcaster - Wisdom -->
+    <Wisdom max="900">105</Wisdom>
+    <LevelIncrease min="7" max="9">Wisdom</LevelIncrease>
+    <!-- Default - Aptitude -->
+    <Aptitude max="100">11</Aptitude>
+    <LevelIncrease min="1" max="1">Aptitude</LevelIncrease>
+    <!-- Resilient - Resilience -->
+    <Resilience max="700">80</Resilience>
+    <LevelIncrease min="5" max="7">Resilience</LevelIncrease>
+    <!-- Default - Penetration -->
+    <Penetration max="100">0</Penetration>
+    <LevelIncrease min="0" max="0">Penetration</LevelIncrease>
+    <DefaultAbility>Poison Toss</DefaultAbility>
+    <Specialization id="Nigth Elf Magic" name="Night Elf Assassin">Poison Burst, Night Veil, Death Mark</Specialization>
+    <Specialization id="Elimination" name="Eliminator">Deathvenom Toss, Poison Dagger, Finishing Strike</Specialization>
+    <Specialization id="Chemistry" name="Chemist">Split Bomb, Acid Bomb, Toxic Bolt</Specialization>
+  </Object>
+  <Object type="0x0308" id="Necromancer">
+    <Class>Player</Class>
+    <Description>The necromancer drains life from his enemies to heal himself and his allies.</Description>
+    <AnimatedTexture>
+      <File>players</File>
+      <Index>8</Index>
+    </AnimatedTexture>
+    <HitSound>player/wizard_hit</HitSound>
+    <DeathSound>player/wizard_death</DeathSound>
+    <Player />
+    <BloodProb>1.0</BloodProb>
+    <SlotTypes>17, 19, 14, 9, 0, 0, 0, 0, 0, 0, 0, 0</SlotTypes>
+    <Equipment>0xa97, 0xaaa, 0xffff, 0xffff, 0xa22, 0xffff, 0xffff, 0xffff, 0xffff, 0xffff, 0xffff, 0xffff</Equipment>
+    <!-- Lower - MaxHp -->
+    <MaxHitPoints max="3700">450</MaxHitPoints>
+    <LevelIncrease min="31" max="33">MaxHitPoints</LevelIncrease>
+    <!-- Caster - MaxMp -->
+    <MaxMagicPoints max="2500">325</MaxMagicPoints>
+    <LevelIncrease min="20" max="22">MaxMagicPoints</LevelIncrease>
+    <!-- Normal - Attack -->
+    <Attack max="800">100</Attack>
+    <LevelIncrease min="6" max="8">Attack</LevelIncrease>
+    <!-- Lower - Defense -->
+    <Defense max="35">0</Defense>
+    <LevelIncrease min="0" max="0">Defense</LevelIncrease>
+    <!-- Slow - Speed -->
+    <Speed max="700">90</Speed>
+    <LevelIncrease min="5" max="7">Speed</LevelIncrease>
+    <!-- Normal - Dexterity -->
+    <Dexterity max="800">100</Dexterity>
+    <LevelIncrease min="6" max="8">Dexterity</LevelIncrease>
+    <!-- Lower - Vitality -->
+    <Vitality max="700">75</Vitality>
+    <LevelIncrease min="5" max="7">Vitality</LevelIncrease>
+    <!-- Caster - Wisdom -->
+    <Wisdom max="1000">105</Wisdom>
+    <LevelIncrease min="8" max="10">Wisdom</LevelIncrease>
+    <!-- Default - Aptitude -->
+    <Aptitude max="100">11</Aptitude>
+    <LevelIncrease min="1" max="1">Aptitude</LevelIncrease>
+    <!-- Lower - Resilience -->
+    <Resilience max="600">70</Resilience>
+    <LevelIncrease min="4" max="6">Resilience</LevelIncrease>
+    <!-- Default - Penetration -->
+    <Penetration max="100">0</Penetration>
+    <LevelIncrease min="0" max="0">Penetration</LevelIncrease>
+    <DefaultAbility>Power Blast</DefaultAbility>
+    <Specialization id="Placeholder" name="Necromancer">Power Blast, Fireball, Incinerate</Specialization>
+  </Object>
+  <Object type="0x0309" id="Huntress">
+    <Class>Player</Class>
+    <Description>The huntress uses arrows and traps to defeat her enemies.</Description>
+    <AnimatedTexture>
+      <File>players</File>
+      <Index>9</Index>
+    </AnimatedTexture>
+    <HitSound>player/archer_hit</HitSound>
+    <DeathSound>player/archer_death</DeathSound>
+    <Player />
+    <BloodProb>1.0</BloodProb>
+    <SlotTypes>3, 20, 6, 9, 0, 0, 0, 0, 0, 0, 0, 0</SlotTypes>
+    <Equipment>0xa1a, 0xab1, 0xffff, 0xffff, 0xa22, 0xffff, 0xffff, 0xffff, 0xffff, 0xffff, 0xffff, 0xffff</Equipment>
+    <!-- Lower - MaxHp -->
+    <MaxHitPoints max="3700">450</MaxHitPoints>
+    <LevelIncrease min="31" max="33">MaxHitPoints</LevelIncrease>
+    <!-- Subcaster - MaxMp -->
+    <MaxMagicPoints max="2250">275</MaxMagicPoints>
+    <LevelIncrease min="18" max="20">MaxMagicPoints</LevelIncrease>
+    <!-- Damager - Attack -->
+    <Attack max="900">110</Attack>
+    <LevelIncrease min="7" max="9">Attack</LevelIncrease>
+    <!-- Lower - Defense -->
+    <Defense max="35">0</Defense>
+    <LevelIncrease min="0" max="0">Defense</LevelIncrease>
+    <!-- Slow - Speed -->
+    <Speed max="700">90</Speed>
+    <LevelIncrease min="5" max="7">Speed</LevelIncrease>
+    <!-- Damager - Dexterity -->
+    <Dexterity max="900">110</Dexterity>
+    <LevelIncrease min="7" max="9">Dexterity</LevelIncrease>
+    <!-- Lower - Vitality -->
+    <Vitality max="700">75</Vitality>
+    <LevelIncrease min="5" max="7">Vitality</LevelIncrease>
+    <!-- Subcaster - Wisdom -->
+    <Wisdom max="900">15</Wisdom>
+    <LevelIncrease min="7" max="9">Wisdom</LevelIncrease>
+    <!-- Default - Aptitude -->
+    <Aptitude max="100">11</Aptitude>
+    <LevelIncrease min="1" max="1">Aptitude</LevelIncrease>
+    <!-- Lower - Resilience -->
+    <Resilience max="600">70</Resilience>
+    <LevelIncrease min="4" max="6">Resilience</LevelIncrease>
+    <!-- Default - Penetration -->
+    <Penetration max="100">0</Penetration>
+    <LevelIncrease min="0" max="0">Penetration</LevelIncrease>
+    <DefaultAbility>Power Blast</DefaultAbility>
+    <Specialization id="Placeholder" name="Huntress">Power Blast, Fireball, Incinerate</Specialization>
+  </Object>
+  <Object type="0x030a" id="Mystic">
+    <Class>Player</Class>
+    <Description>The mystic fights with a staff and uses her crystal orb to bind enemies to a distant plane. </Description>
+    <AnimatedTexture>
+      <File>players</File>
+      <Index>10</Index>
+    </AnimatedTexture>
+    <HitSound>player/wizard_hit</HitSound>
+    <DeathSound>player/wizard_death</DeathSound>
+    <Player />
+    <BloodProb>1.0</BloodProb>
+    <SlotTypes>17, 21, 14, 9, 0, 0, 0, 0, 0, 0, 0, 0</SlotTypes>
+    <Equipment>0xa97, 0xae4, 0xffff, 0xffff, 0xa22, 0xffff, 0xffff, 0xffff, 0xffff, 0xffff, 0xffff, 0xffff</Equipment>
+    <!-- Lower - MaxHp -->
+    <MaxHitPoints max="3700">450</MaxHitPoints>
+    <LevelIncrease min="31" max="33">MaxHitPoints</LevelIncrease>
+    <!-- Caster - MaxMp -->
+    <MaxMagicPoints max="2500">325</MaxMagicPoints>
+    <LevelIncrease min="20" max="22">MaxMagicPoints</LevelIncrease>
+    <!-- Low - Attack -->
+    <Attack max="700">90</Attack>
+    <LevelIncrease min="5" max="7">Attack</LevelIncrease>
+    <!-- Lower - Defense -->
+    <Defense max="35">0</Defense>
+    <LevelIncrease min="0" max="0">Defense</LevelIncrease>
+    <!-- Normal - Speed -->
+    <Speed max="800">100</Speed>
+    <LevelIncrease min="6" max="8">Speed</LevelIncrease>
+    <!-- Low - Dexterity -->
+    <Dexterity max="700">90</Dexterity>
+    <LevelIncrease min="5" max="7">Dexterity</LevelIncrease>
+    <!-- Lower - Vitality -->
+    <Vitality max="700">75</Vitality>
+    <LevelIncrease min="5" max="7">Vitality</LevelIncrease>
+    <!-- Caster - Wisdom -->
+    <Wisdom max="1000">105</Wisdom>
+    <LevelIncrease min="8" max="10">Wisdom</LevelIncrease>
+    <!-- Default - Aptitude -->
+    <Aptitude max="100">11</Aptitude>
+    <LevelIncrease min="1" max="1">Aptitude</LevelIncrease>
+    <!-- Lower - Resilience -->
+    <Resilience max="600">70</Resilience>
+    <LevelIncrease min="4" max="6">Resilience</LevelIncrease>
+    <!-- Default - Penetration -->
+    <Penetration max="100">0</Penetration>
+    <LevelIncrease min="0" max="0">Penetration</LevelIncrease>
+    <DefaultAbility>Power Blast</DefaultAbility>
+    <Specialization id="Placeholder" name="Mystic">GlowyToggle, Fireball, Incinerate</Specialization>
+  </Object>
+  <Object type="0x030b" id="Trickster">
+    <Class>Player</Class>
+    <Description>The trickster fights with a dagger while using her magical prism to distract enemies.</Description>
+    <AnimatedTexture>
+      <File>players</File>
+      <Index>11</Index>
+    </AnimatedTexture>
+    <HitSound>player/rogue_hit</HitSound>
+    <DeathSound>player/rogue_death</DeathSound>
+    <Player />
+    <BloodProb>1.0</BloodProb>
+    <SlotTypes>2, 22, 6, 9, 0, 0, 0, 0, 0, 0, 0, 0</SlotTypes>
+    <Equipment>0xa14, 0xae3, 0xffff, 0xffff, 0xa22, 0xffff, 0xffff, 0xffff, 0xffff, 0xffff, 0xffff, 0xffff</Equipment>
+    <!-- Resilient - MaxHp -->
+    <MaxHitPoints max="4100">500</MaxHitPoints>
+    <LevelIncrease min="34" max="36">MaxHitPoints</LevelIncrease>
+    <!-- Subcaster - MaxMp -->
+    <MaxMagicPoints max="2250">275</MaxMagicPoints>
+    <LevelIncrease min="18" max="20">MaxMagicPoints</LevelIncrease>
+    <!-- Normal - Attack -->
+    <Attack max="800">100</Attack>
+    <LevelIncrease min="6" max="8">Attack</LevelIncrease>
+    <!-- Resilient - Defense -->
+    <Defense max="40">0</Defense>
+    <LevelIncrease min="0" max="0">Defense</LevelIncrease>
+    <!-- Swift - Speed -->
+    <Speed max="900">110</Speed>
+    <LevelIncrease min="7" max="9">Speed</LevelIncrease>
+    <!-- Damager - Dexterity -->
+    <Dexterity max="900">110</Dexterity>
+    <LevelIncrease min="7" max="9">Dexterity</LevelIncrease>
+    <!-- Resilient - Vitality -->
+    <Vitality max="850">65</Vitality>
+    <LevelIncrease min="8" max="9">Vitality</LevelIncrease>
+    <!-- Subcaster - Wisdom -->
+    <Wisdom max="900">105</Wisdom>
+    <LevelIncrease min="7" max="9">Wisdom</LevelIncrease>
+    <!-- Default - Aptitude -->
+    <Aptitude max="100">11</Aptitude>
+    <LevelIncrease min="1" max="1">Aptitude</LevelIncrease>
+    <!-- Resilient - Resilience -->
+    <Resilience max="700">80</Resilience>
+    <LevelIncrease min="5" max="7">Resilience</LevelIncrease>
+    <!-- Default - Penetration -->
+    <Penetration max="100">0</Penetration>
+    <LevelIncrease min="0" max="0">Penetration</LevelIncrease>
+    <DefaultAbility>Power Blast</DefaultAbility>
+    <Specialization id="Placeholder" name="Trickster">Power Blast, Fireball, Incinerate</Specialization>
+  </Object>
+  <Object type="0x030c" id="Sorcerer">
+    <Class>Player</Class>
+    <Description>The sorcerer uses his scepter to fire blasts of chain lightning at his enemies.</Description>
+    <AnimatedTexture>
+      <File>players</File>
+      <Index>12</Index>
+    </AnimatedTexture>
+    <HitSound>player/priest_hit</HitSound>
+    <DeathSound>player/priest_death</DeathSound>
+    <Player />
+    <BloodProb>1.0</BloodProb>
+    <SlotTypes>8, 23, 14, 9, 0, 0, 0, 0, 0, 0, 0, 0</SlotTypes>
+    <Equipment>0xa04, 0xae5, 0xffff, 0xffff, 0xa22, 0xffff, 0xffff, 0xffff, 0xffff, 0xffff, 0xffff, 0xffff</Equipment>
+    <!-- Lower - MaxHp -->
+    <MaxHitPoints max="3700">450</MaxHitPoints>
+    <LevelIncrease min="31" max="33">MaxHitPoints</LevelIncrease>
+    <!-- Caster - MaxMp -->
+    <MaxMagicPoints max="2500">325</MaxMagicPoints>
+    <LevelIncrease min="20" max="22">MaxMagicPoints</LevelIncrease>
+    <!-- Normal - Attack -->
+    <Attack max="800">100</Attack>
+    <LevelIncrease min="6" max="8">Attack</LevelIncrease>
+    <!-- Lower - Defense -->
+    <Defense max="35">0</Defense>
+    <LevelIncrease min="0" max="0">Defense</LevelIncrease>
+    <!-- Slow - Speed -->
+    <Speed max="700">90</Speed>
+    <LevelIncrease min="5" max="7">Speed</LevelIncrease>
+    <!-- Normal - Dexterity -->
+    <Dexterity max="800">100</Dexterity>
+    <LevelIncrease min="6" max="8">Dexterity</LevelIncrease>
+    <!-- Lower - Vitality -->
+    <Vitality max="700">75</Vitality>
+    <LevelIncrease min="5" max="7">Vitality</LevelIncrease>
+    <!-- Caster - Wisdom -->
+    <Wisdom max="1000">105</Wisdom>
+    <LevelIncrease min="8" max="10">Wisdom</LevelIncrease>
+    <!-- Default - Aptitude -->
+    <Aptitude max="100">11</Aptitude>
+    <LevelIncrease min="1" max="1">Aptitude</LevelIncrease>
+    <!-- Lower - Resilience -->
+    <Resilience max="600">70</Resilience>
+    <LevelIncrease min="4" max="6">Resilience</LevelIncrease>
+    <!-- Default - Penetration -->
+    <Penetration max="100">0</Penetration>
+    <LevelIncrease min="0" max="0">Penetration</LevelIncrease>
+    <DefaultAbility>Lightning Blast</DefaultAbility>
+    <Specialization id="Chain" name="Chain Sorcerer">Chain Blast, Lightning Orb, Burst Orb</Specialization>
+    <Specialization id="Storm" name="Storm Sorcerer">Storm Surge, Storm Cloud, Cloud Burst</Specialization>
+    <Specialization id="Chaos" name="Chaos Sorcerer">Chaos Burst, Chaos Bolt, Chaos Orb</Specialization>
+  </Object>
+  <Object type="0x030d" id="Ninja">
+    <Class>Player</Class>
+    <Description>The ninja relies on speed and skill, using katanas and ninja stars.</Description>
+    <AnimatedTexture>
+      <File>players</File>
+      <Index>13</Index>
+    </AnimatedTexture>
+    <HitSound>player/rogue_hit</HitSound>
+    <DeathSound>player/rogue_death</DeathSound>
+    <Player />
+    <BloodProb>1.0</BloodProb>
+    <SlotTypes>24, 25, 6, 9, 0, 0, 0, 0, 0, 0, 0, 0</SlotTypes>
+    <Equipment>0xc44, 0xc53, 0xffff, 0xffff, 0xa22, 0xffff, 0xffff, 0xffff, 0xffff, 0xffff, 0xffff, 0xffff</Equipment>
+    <MaxHitPoints max="720">150</MaxHitPoints>
+    <MaxMagicPoints max="252">100</MaxMagicPoints>
+    <Attack max="70">15</Attack>
+    <Defense max="25">0</Defense>
+    <Speed max="60">10</Speed>
+    <Dexterity max="70">12</Dexterity>
+    <Vitality max="40">10</Vitality>
+    <Wisdom max="70">12</Wisdom>
+    <LevelIncrease min="20" max="30">MaxHitPoints</LevelIncrease>
+    <LevelIncrease min="2" max="8">MaxMagicPoints</LevelIncrease>
+    <LevelIncrease min="1" max="2">Attack</LevelIncrease>
+    <LevelIncrease min="0" max="0">Defense</LevelIncrease>
+    <LevelIncrease min="0" max="2">Speed</LevelIncrease>
+    <LevelIncrease min="1" max="2">Dexterity</LevelIncrease>
+    <LevelIncrease min="0" max="1">Vitality</LevelIncrease>
+    <LevelIncrease min="1" max="2">Wisdom</LevelIncrease>
+    <Aptitude max="100">11</Aptitude>
+    <LevelIncrease min="1" max="1">Aptitude</LevelIncrease>
+    <Resilience max="600">70</Resilience>
+    <LevelIncrease min="4" max="6">Resilience</LevelIncrease>
+    <Penetration max="100">0</Penetration>
+    <LevelIncrease min="0" max="0">Penetration</LevelIncrease>
+    <DefaultAbility>Power Blast</DefaultAbility>
+    <Specialization id="Placeholder" name="Ninja">Power Blast, Fireball, Incinerate</Specialization>
+  </Object>
+</Objects>

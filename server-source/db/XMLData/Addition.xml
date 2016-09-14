@@ -1,0 +1,363 @@
+<Addition>
+  <!--    
+    Note that the client should support 2 byte tile id, but the protocol doesn't support
+    Due to the same reason, some kind of object can only be within signed part because
+    the client read them as signed short then cast to int, making them becomes negative
+    number:
+      Character: UpdatePacket -> Signed
+           Item: ObjectStats  -> Full    BUT if it creates projectile (e.g. spell, quiver) THEN ShootPacket -> Signed
+    Environment: UpdatePacket -> Signed
+     Projectile: Client side  -> Full
+        Textile: ObjectStats  -> Full
+    Auto assign feature takes care of the limitations.
+    
+    Also to use remote texture, the client should have Parameters._-IO call patch to
+    true in assembleegameclient.objects._-ZH and the texture should stored in 32 bits
+    png format.
+    
+    And remember add 'ext' attributes
+    
+    Available Tile IDs : 
+    08 09 0a 0b 0d 0e 0f
+    10 11 12
+    20 27 28 29 2a 2b
+    37 38 39 3a 3b 3d 3e 3f
+    44 45 4a 4b 4c 4d 4e 4f
+    59 5a 5b 5c 5d 5e 5f
+    6d 6e 6f
+    71
+    86 87 88 89 8a 8b 8c 8d 8e 8f
+    ab ac ae af
+    b0 ba bb
+    c1 c2
+    db dc dd de df
+  -->
+  <Character>
+    <!-- Super Cube God (Realm.RealmSuperBoss) -->
+    <Object type="0x3a00" id="Super Cube God" ext="true">
+      <Class>Character</Class>
+      <Texture>
+        <File>lofiChar216x16</File>
+        <Index>0x37</Index>
+      </Texture>
+      <HitSound>monster/cubes_hit</HitSound>
+      <DeathSound>monster/cubes_death</DeathSound>
+      <Size>250</Size>
+      <MaxHitPoints>250000</MaxHitPoints>
+      <Hero />
+      <Quest />
+      <God />
+      <Encounter />
+      <StasisImmune />
+      <Level>20</Level>
+      <Defense>999999</Defense>
+      <Enemy/>
+      <Projectile id="0">
+        <ObjectId>Dark Blue Magic</ObjectId>
+        <Speed>100</Speed>
+        <Damage>100</Damage>
+        <LifetimeMS>2400</LifetimeMS>
+      </Projectile>
+      <Projectile id="1">
+        <ObjectId>Blue Bolt</ObjectId>
+        <Speed>80</Speed>
+        <Damage>150</Damage>
+        <LifetimeMS>2500</LifetimeMS>
+      </Projectile>
+      <Projectile id="2">
+        <ObjectId>Blue Boomerang</ObjectId>
+        <Speed>80</Speed>
+        <Damage>150</Damage>
+        <LifetimeMS>2500</LifetimeMS>
+      </Projectile>
+      <Projectile id="3">
+        <ObjectId>Blue Mystic Shot</ObjectId>
+        <Speed>40</Speed>
+        <Damage>150</Damage>
+        <LifetimeMS>6000</LifetimeMS>
+      </Projectile>
+    </Object>
+
+    <Object type="0x3a01" id="Super Cube Overseer" ext="true">
+      <Class>Character</Class>
+      <Enemy />
+      <Texture>
+        <File>lofiChar28x8</File>
+        <Index>0x40</Index>
+      </Texture>
+      <HitSound>monster/cubes_hit</HitSound>
+      <DeathSound>monster/cubes_death</DeathSound>
+      <MaxHitPoints>35000</MaxHitPoints>
+      <Projectile id="0">
+        <ObjectId>Orange Magic</ObjectId>
+        <Speed>100</Speed>
+        <Damage>60</Damage>
+        <LifetimeMS>2400</LifetimeMS>
+      </Projectile>
+      <Projectile id="1">
+        <ObjectId>Fire Bolt</ObjectId>
+        <Speed>80</Speed>
+        <Damage>100</Damage>
+        <LifetimeMS>2500</LifetimeMS>
+      </Projectile>
+      <Size>180</Size>
+      <XpMult>0.1</XpMult>
+    </Object>
+
+    <Object type="0x3a02" id="Super Cube Defender" ext="true">
+      <Group>Cube Minions</Group>
+      <Class>Character</Class>
+      <Enemy />
+      <Texture>
+        <File>lofiChar28x8</File>
+        <Index>0x41</Index>
+      </Texture>
+      <HitSound>monster/cubes_hit</HitSound>
+      <DeathSound>monster/cubes_death</DeathSound>
+      <MaxHitPoints>15000</MaxHitPoints>
+      <Defense>45</Defense>
+      <Projectile id="0">
+        <ObjectId>Yellow Magic</ObjectId>
+        <Speed>130</Speed>
+        <Damage>70</Damage>
+        <LifetimeMS>2400</LifetimeMS>
+        <Wavy />
+      </Projectile>
+      <Projectile id="1">
+        <ObjectId>Yellow Star</ObjectId>
+        <Speed>80</Speed>
+        <Damage>100</Damage>
+        <LifetimeMS>5000</LifetimeMS>
+        <Wavy />
+      </Projectile>
+      <Projectile id="2">
+        <ObjectId>Zedshot</ObjectId>
+        <Speed>60</Speed>
+        <Damage>250</Damage>
+        <LifetimeMS>2400</LifetimeMS>
+        <Boomerang/>
+      </Projectile>
+      <Projectile id="3">
+        <ObjectId>Yellow Missile</ObjectId>
+        <Speed>110</Speed>
+        <Damage>30</Damage>
+        <LifetimeMS>2400</LifetimeMS>
+        <Wavy/>
+        <ArmorPiercing/>
+      </Projectile>
+
+      <Size>150</Size>
+      <XpMult>0.1</XpMult>
+    </Object>
+
+    <Object type="0x3a03" id="Super Cube Blaster" ext="true">
+      <Group>Cube Minions</Group>
+      <Class>Character</Class>
+      <Enemy />
+      <Texture>
+        <File>lofiChar28x8</File>
+        <Index>0x42</Index>
+      </Texture>
+      <HitSound>monster/cubes_hit</HitSound>
+      <DeathSound>monster/cubes_death</DeathSound>
+      <MaxHitPoints>2000</MaxHitPoints>
+      <Cube />
+      <Projectile id="0">
+        <ObjectId>Green Star</ObjectId>
+        <Speed>60</Speed>
+        <Damage>10</Damage>
+        <ConditionEffect duration="3">Slowed</ConditionEffect>
+        <LifetimeMS>2700</LifetimeMS>
+      </Projectile>
+      <Projectile id="1">
+        <ObjectId>Cyan Magic</ObjectId>
+        <Speed>100</Speed>
+        <Damage>40</Damage>
+        <LifetimeMS>2400</LifetimeMS>
+      </Projectile>
+      <Size>110</Size>
+      <XpMult>0.1</XpMult>
+    </Object>
+
+
+    <Object id="Forgotten Archmage of Flame" ext="true">
+      <Enemy />
+      <Class>Character</Class>
+      <RemoteTexture>
+        <Instance>local</Instance>
+        <Id>forgotten_archmage_of_flame</Id>
+      </RemoteTexture>
+      <HitSound>monster/abyss_demons_hit</HitSound>
+      <DeathSound>monster/abyss_demons_death</DeathSound>
+      <Size>150</Size>
+      <MaxHitPoints>5000</MaxHitPoints>
+      <Defense>30</Defense>
+      <Projectile id="0">
+        <ObjectId>Fire Mystic Shot</ObjectId>
+        <Damage>200</Damage>
+        <Speed>50</Speed>
+        <LifetimeMS>10000</LifetimeMS>
+        <PassesCover />
+      </Projectile>
+    </Object>
+
+    <Object id="Custom Boss" ext="true">
+      <Enemy />
+      <Class>Character</Class>
+      <RemoteTexture>
+        <Instance>production</Instance>
+        <Id>169257590</Id>
+      </RemoteTexture>
+      <Hitsound>monster/dwarves_hit</Hitsound>
+      <DeathSound>monster/dwarves_death</DeathSound>
+      <Size>150</Size>
+      <MaxHitPoints>150000</MaxHitPoints>
+      <Defense>150</Defense>
+      <Projectile id="0">
+        <ObjectId>Custom Shot 1</ObjectId>
+        <Damage>220</Damage>
+        <Speed>50</Speed>
+        <LifetimeMS>10000</LifetimeMS>
+        <PassesCover />
+      </Projectile>
+      <Projectile id="1">
+        <ObjectId>Custom Shot 2</ObjectId>
+        <Damage>0</Damage>
+        <Speed>60</Speed>
+        <LifetimeMS>5000</LifetimeMS>
+        <PassesCover />
+        <ConditionEffect duration="3">Confused</ConditionEffect>
+      </Projectile>
+    </Object>
+
+    <Object id="Test Miniboss 1" ext="true">
+      <Enemy />
+      <Class>Character</Class>
+      <AnimatedTexture>
+        <File>chars16x16rEncounters</File>
+        <Index>47</Index>
+      </AnimatedTexture>
+      <HitSound>monster/abyss_brutes_hit</HitSound>
+      <DeathSound>monster/abyss_brutes_death</DeathSound>
+      <Size>150</Size>
+      <MaxHitPoints>10000</MaxHitPoints>
+      <Defense>100</Defense>
+      <Projectile id="0">
+        <ObjectId>Steel Claw</ObjectId>
+        <Damage>100</Damage>
+        <Speed>100</Speed>
+        <LifetimeMS>1000</LifetimeMS>
+      </Projectile>
+    </Object>
+  </Character>
+
+  <Item>
+    <ItemGroup type="testing">
+      <Object type="0x3619" id="Test Item" ext="true">
+        <Class>Equipment</Class>
+        <Item />
+        <Texture>
+          <File>lofiChar216x16</File>
+          <Index>0x3d</Index>
+        </Texture>
+        <ScaleValue>2.5</ScaleValue>
+        <SlotType>10</SlotType>
+        <Description>Test Item using 16x16 Texture.</Description>
+        <AdminOnly/>
+      </Object>
+
+      <Object type="0x22fe" id="Banana" ext="true">
+        <Class>Equipment</Class>
+        <Item />
+        <Texture>
+          <File>lofiObj3</File>
+          <Index>0x22e</Index>
+        </Texture>
+        <SlotType>10</SlotType>
+        <Description>Yellow thing</Description>
+        <Sound>use_key</Sound>
+        <BagType>0</BagType>
+        <Consumable />
+        <Activate id="Banana Phone">SwitchMusic</Activate>
+      </Object>
+    </ItemGroup>
+
+    <ItemGroup type="ability">
+
+    </ItemGroup>
+
+    <ItemGroup type="key">
+    </ItemGroup>
+
+    <ItemGroup type="admin">
+
+    </ItemGroup>
+  </Item>
+
+  <Environment>
+  </Environment>
+
+  <Projectile>
+    <Object id="Custom Shot 1" ext="true">
+      <Class>Projectile</Class>
+      <RemoteTexture>
+        <Instance>production</Instance>
+        <Id>15664322</Id>
+      </RemoteTexture>
+    </Object>
+
+    <Object id="Custom Shot 2" ext="true">
+      <Class>Projectile</Class>
+      <Size>75</Size>
+      <RemoteTexture>
+        <Instance>production</Instance>
+        <Id>19016304</Id>
+      </RemoteTexture>
+      <Rotation>90</Rotation>
+    </Object>
+
+    <Object id="Flame Mystic Shot" ext="true">
+      <Class>Projectile</Class>
+      <Size>50</Size>
+      <RemoteTexture>
+        <Instance>local</Instance>
+        <Id>fire_mystic_shot</Id>
+      </RemoteTexture>
+    </Object>
+
+    <Object id="Dark Fire" ext="true">
+      <Class>Projectile</Class>
+      <RemoteTexture>
+        <Instance>local</Instance>
+        <Id>dark_fire</Id>
+      </RemoteTexture>
+      <AngleCorrection>1</AngleCorrection>
+    </Object>
+
+    <Object id="Admin Projectile" ext="true">
+      <Class>Projectile</Class>
+      <RemoteTexture>
+        <Instance>production</Instance>
+        <Id>741389360</Id>
+      </RemoteTexture>
+      <AngleCorrection>1</AngleCorrection>
+    </Object>
+  </Projectile>
+
+  <Textile>
+
+  </Textile>
+
+  <Misc>
+
+  </Misc>
+
+  <Tile>
+    <Ground type="0x08" id="Firey Floor" ext="true">
+      <RemoteTexture>
+        <Instance>local</Instance>
+        <Id>firey_floor</Id>
+      </RemoteTexture>
+    </Ground>
+  </Tile>
+</Addition>

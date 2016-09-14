@@ -1,0 +1,90 @@
+  <Object id="M" ext="true">
+      <Enemy />
+      <Class>Character</Class>
+      <Group>Jungle Men</Group>
+
+      <AnimatedTexture>
+        <File>chars16x16rEncounters</File>
+        <Index>16</Index>
+      </AnimatedTexture>
+
+      <AltTexture id="1">
+        <AnimatedTexture>
+          <File>chars16x16dEncounters2</File>
+          <Index>25</Index>
+        </AnimatedTexture>
+      </AltTexture>
+      <AltTexture id="2">
+        <AnimatedTexture>
+          <File>chars16x16dEncounters2</File>
+          <Index>26</Index>
+        </AnimatedTexture>
+      </AltTexture>
+
+      <AltTexture id="3">
+        <AnimatedTexture>
+          <File>chars16x16dEncounters2</File>
+          <Index>27</Index>
+        </AnimatedTexture>
+      </AltTexture>
+      <AltTexture id="4">
+        <AnimatedTexture>
+          <File>chars16x16dEncounters2</File>
+          <Index>28</Index>
+        </AnimatedTexture>
+      </AltTexture>
+
+      <AltTexture id="5">
+        <AnimatedTexture>
+          <File>chars16x16dEncounters2</File>
+          <Index>29</Index>
+        </AnimatedTexture>
+      </AltTexture>
+      <AltTexture id="6">
+        <AnimatedTexture>
+          <File>chars16x16dEncounters2</File>
+          <Index>30</Index>
+        </AnimatedTexture>
+      </AltTexture>
+
+      <HitSound>monster/slimes_death</HitSound>
+      <DeathSound>monster/flying_brain_death</DeathSound>
+      <Size>140</Size>
+      <ShadowSize>100</ShadowSize>
+      <MaxHitPoints>4200</MaxHitPoints>
+      <Defense>15</Defense>
+      <XpMult>0.85</XpMult>
+
+      <God />
+      <StasisImmune />
+      <Quest />
+      <Level>1</Level>
+      <NoArticle />
+
+      <Projectile id="0">
+        <ObjectId>Mask Powerwave</ObjectId>
+        <Damage>60</Damage>
+        <Speed>30</Speed>
+        <Size>100</Size>
+        <LifetimeMS>800</LifetimeMS>
+      </Projectile>
+
+      <Projectile id="1">
+        <ObjectId>Mask Powershot</ObjectId>
+        <Damage>60</Damage>
+        <Speed>60</Speed>
+        <Size>80</Size>
+        <LifetimeMS>1200</LifetimeMS>
+      </Projectile>
+
+      <Projectile id="2">
+        <ObjectId>Fireball 2</ObjectId>
+        <MinDamage>45</MinDamage>
+        <MaxDamage>65</MaxDamage>
+        <Speed>60</Speed>
+        <Size>80</Size>
+        <LifetimeMS>1200</LifetimeMS>
+      </Projectile>
+
+
+    </Object>

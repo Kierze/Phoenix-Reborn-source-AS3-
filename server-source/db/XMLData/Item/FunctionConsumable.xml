@@ -1,0 +1,83 @@
+﻿<Objects>
+  <Object type="0x230c" id="Supply Crate Key">
+    <Class>Equipment</Class>
+    <Item />
+    <Texture>
+      <File>lofiObj3</File>
+      <Index>0xae</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Tier>1</Tier>
+    <Sound>use_potion</Sound>
+    <Description>A key used to open a supply crate. Outstanding!</Description>
+    <BagType>2</BagType>
+    <Activate>OpenCrate</Activate>
+    <Potion/>
+    <Consumable />
+    <InvUse/>
+  </Object>
+  <Object type="0x231b" id="Another Supply Crate Key">
+    <DisplayId>Supply Crate Key</DisplayId>
+    <Class>Equipment</Class>
+    <Item />
+    <Texture>
+      <File>lofiObj3</File>
+      <Index>0xae</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Tier>1</Tier>
+    <Sound>use_potion</Sound>
+    <Description>A key used to open a supply crate. Outstanding!</Description>
+    <BagType>2</BagType>
+    <Activate>OpenCrate</Activate>
+    <Potion/>
+    <Consumable />
+    <Soulbound/>
+    <InvUse/>
+  </Object>
+  <Object type="0x230e" id="Name Tag">
+    <Class>Equipment</Class>
+    <Item />
+    <Texture>
+      <File>lofiObj3</File>
+      <Index>0x232</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Tier>1</Tier>
+    <Sound>use_potion</Sound>
+    <Description>Sometimes you just need to add a little personal mark to your items.</Description>
+    <BagType>2</BagType>
+    <Activate>RenameItem</Activate>
+    <Consumable />
+    <InvUse/>
+  </Object>
+
+  <Object type="0x2312" id="Strange Part">
+    <Class>Equipment</Class>
+    <Item />
+    <Texture>
+      <File>lofiObj3</File>
+      <Index>0x237</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>Adds a new kill counter to any strange weapon of your choice.</Description>
+    <BagType>2</BagType>
+    <Activate>StrangePart</Activate>
+    <Consumable/>
+    <InvUse/>
+  </Object>
+  <Object type="0x2313" id="Strangifier">
+    <Class>Equipment</Class>
+    <Item />
+    <Texture>
+      <File>lofiObj3</File>
+      <Index>0x23a</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>Turns a specific item into a strange item.</Description>
+    <BagType>2</BagType>
+    <Activate>Strangify</Activate>
+    <Consumable/>
+    <InvUse/>
+  </Object>
+</Objects>

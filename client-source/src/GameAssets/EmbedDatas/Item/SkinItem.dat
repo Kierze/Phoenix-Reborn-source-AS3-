@@ -1,0 +1,892 @@
+<Objects>
+    <!-- Skin tools-->
+
+    <Object type="0x2310" id="Skin Remover">
+        <Class>Equipment</Class>
+        <Item />
+        <Texture>
+            <File>lofiObj3</File>
+            <Index>0x235</Index>
+        </Texture>
+        <SlotType>10</SlotType>
+        <Description>Removes your skin and gives you back the item for it. Warning: Removal of skin may cause major blood loss.</Description>
+        <BagType>2</BagType>
+        <Activate>RemoveSkin</Activate>
+        <Consumable/>
+        <InvUse/>
+    </Object>
+    <Object type="0x2311" id="Skin Keeper">
+        <Class>Equipment</Class>
+        <Item />
+        <Texture>
+            <File>lofiObj3</File>
+            <Index>0x236</Index>
+        </Texture>
+        <SlotType>10</SlotType>
+        <Description>Turns a skin in your inventory into a soulbound, multi-use version of itself.</Description>
+        <BagType>2</BagType>
+        <Activate>BindSkin</Activate>
+        <Consumable/>
+        <InvUse/>
+    </Object>
+
+    <Object type="0x2318" id="Skin Disowner">
+        <Class>Equipment</Class>
+        <Item />
+        <Texture>
+            <File>lofiObj3</File>
+            <Index>0x239</Index>
+        </Texture>
+        <SlotType>10</SlotType>
+        <Description>Reverses the effects of a skin keeper on a certain skin. Only works if you currently have no skin equipped.</Description>
+        <BagType>2</BagType>
+        <Activate>UnbindSkin</Activate>
+        <InvUse/>
+    </Object>
+
+    <!-- Skin ITEMS-->
+
+    <Object type="0x2200" id="Robobuddy Skin">
+        <Class>Equipment</Class>
+        <Item />
+        <AnimatedTexture>
+            <File>playerskins</File>
+            <Index>0</Index>
+        </AnimatedTexture>
+        <SlotType>10</SlotType>
+        <Description>The rumors say that a mad scientist turned dead heroes into his own personal robot army.</Description>
+        <Activate skinType="832">UnlockSkin</Activate>
+        <Consumable />
+        <BagType>1</BagType>
+        <DisplayId>Robobuddy</DisplayId>
+        <Premium/>
+    </Object>
+    <Object type="0x2201" id="Bandit Skin">
+        <Class>Equipment</Class>
+        <Item />
+        <AnimatedTexture>
+            <File>playerskins</File>
+            <Index>1</Index>
+        </AnimatedTexture>
+        <SlotType>10</SlotType>
+        <Description>Now, who said killing people for their stuff was less fun than just stealing it?</Description>
+        <Activate skinType="833">UnlockSkin</Activate>
+        <Consumable />
+        <BagType>1</BagType>
+        <DisplayId>Bandit</DisplayId>
+    </Object>
+    <Object type="0x2202" id="Robin Hood Skin">
+        <Class>Equipment</Class>
+        <Item />
+        <AnimatedTexture>
+            <File>playerskins</File>
+            <Index>2</Index>
+        </AnimatedTexture>
+        <SlotType>10</SlotType>
+        <Description>Steal from the rich and give to the poor! Can things get better than that?</Description>
+        <Activate skinType="834">UnlockSkin</Activate>
+        <Consumable />
+        <BagType>1</BagType>
+        <DisplayId>Robin Hood</DisplayId>
+    </Object>
+    <Object type="0x2203" id="Merlin Skin">
+        <Class>Equipment</Class>
+        <Item />
+        <AnimatedTexture>
+            <File>playerskins</File>
+            <Index>3</Index>
+        </AnimatedTexture>
+        <SlotType>10</SlotType>
+        <Description>The name is MER-LIN and I happen to be the world's most powerful wizard!</Description>
+        <Activate skinType="835">UnlockSkin</Activate>
+        <Consumable />
+        <BagType>1</BagType>
+        <DisplayId>Merlin</DisplayId>
+    </Object>
+    <Object type="0x2204" id="Traditional Skin">
+        <Class>Equipment</Class>
+        <Item />
+        <AnimatedTexture>
+            <File>playerskins</File>
+            <Index>4</Index>
+        </AnimatedTexture>
+        <SlotType>10</SlotType>
+        <Description>With the power of the lord I will vanquish all evil!</Description>
+        <Activate skinType="836">UnlockSkin</Activate>
+        <Consumable />
+        <BagType>1</BagType>
+        <DisplayId>Traditional</DisplayId>
+    </Object>
+    <Object type="0x2205" id="Juggernaut Skin">
+        <Class>Equipment</Class>
+        <Item />
+        <AnimatedTexture>
+            <File>playerskins</File>
+            <Index>5</Index>
+        </AnimatedTexture>
+        <SlotType>10</SlotType>
+        <Description>Just you try to stop me.</Description>
+        <Activate skinType="837">UnlockSkin</Activate>
+        <Consumable />
+        <BagType>1</BagType>
+        <DisplayId>Juggernaut</DisplayId>
+    </Object>
+    <Object type="0x2206" id="Knight of the Round Skin">
+        <Class>Equipment</Class>
+        <Item />
+        <AnimatedTexture>
+            <File>playerskins</File>
+            <Index>6</Index>
+        </AnimatedTexture>
+        <SlotType>10</SlotType>
+        <Description>In war we're tough and able, Quite in-de-fa-ti-gable. Between our quests we sequin vests and impersonate Clark Gable.</Description>
+        <Activate skinType="838">UnlockSkin</Activate>
+        <Consumable />
+        <BagType>1</BagType>
+        <DisplayId>Knight of the Round</DisplayId>
+    </Object>
+    <Object type="0x2207" id="Decorated Skin">
+        <Class>Equipment</Class>
+        <Item />
+        <AnimatedTexture>
+            <File>playerskins</File>
+            <Index>7</Index>
+        </AnimatedTexture>
+        <SlotType>10</SlotType>
+        <Description>I heard women liked men in costumes. So decided to make one for myself.</Description>
+        <Activate skinType="839">UnlockSkin</Activate>
+        <Consumable />
+        <BagType>1</BagType>
+        <DisplayId>Decorated</DisplayId>
+    </Object>
+    <Object type="0x2208" id="Stealth Skin">
+        <Class>Equipment</Class>
+        <Item />
+        <AnimatedTexture>
+            <File>playerskins</File>
+            <Index>8</Index>
+        </AnimatedTexture>
+        <SlotType>10</SlotType>
+        <Description>I have to be seen by my enemies!</Description>
+        <Activate skinType="840">UnlockSkin</Activate>
+        <Consumable />
+        <BagType>1</BagType>
+        <DisplayId>Stealth</DisplayId>
+    </Object>
+    <Object type="0x2209" id="Death Mage Skin">
+        <Class>Equipment</Class>
+        <Item />
+        <AnimatedTexture>
+            <File>playerskins</File>
+            <Index>9</Index>
+        </AnimatedTexture>
+        <SlotType>10</SlotType>
+        <Description>Wizardry is one thing, Using blood is another.</Description>
+        <Activate skinType="841">UnlockSkin</Activate>
+        <Consumable />
+        <BagType>1</BagType>
+        <DisplayId>Death Mage</DisplayId>
+    </Object>
+    <Object type="0x220a" id="Amazonian Skin">
+        <Class>Equipment</Class>
+        <Item />
+        <AnimatedTexture>
+            <File>playerskins</File>
+            <Index>10</Index>
+        </AnimatedTexture>
+        <SlotType>10</SlotType>
+        <Description>We stand proud and strong for the all female army!</Description>
+        <Activate skinType="842">UnlockSkin</Activate>
+        <Consumable />
+        <BagType>1</BagType>
+        <DisplayId>Amazonian</DisplayId>
+    </Object>
+    <Object type="0x220b" id="Seer Skin">
+        <Class>Equipment</Class>
+        <Item />
+        <AnimatedTexture>
+            <File>playerskins</File>
+            <Index>11</Index>
+        </AnimatedTexture>
+        <SlotType>10</SlotType>
+        <Description>There is nothing that I cannot see.</Description>
+        <Activate skinType="843">UnlockSkin</Activate>
+        <Consumable />
+        <BagType>1</BagType>
+        <DisplayId>Seer</DisplayId>
+    </Object>
+    <Object type="0x220c" id="Loki Skin">
+        <Class>Equipment</Class>
+        <Item />
+        <AnimatedTexture>
+            <File>playerskins</File>
+            <Index>12</Index>
+        </AnimatedTexture>
+        <SlotType>10</SlotType>
+        <Description>Say, would you like to make a trade?</Description>
+        <Activate skinType="844">UnlockSkin</Activate>
+        <Consumable />
+        <BagType>1</BagType>
+        <DisplayId>Loki</DisplayId>
+    </Object>
+    <Object type="0x220d" id="Warlock Skin">
+        <Class>Equipment</Class>
+        <Item />
+        <AnimatedTexture>
+            <File>playerskins</File>
+            <Index>13</Index>
+        </AnimatedTexture>
+        <SlotType>10</SlotType>
+        <Description>After long study, I've finally been granted the position as Warlock in all Realms!</Description>
+        <Activate skinType="845">UnlockSkin</Activate>
+        <Consumable />
+        <BagType>1</BagType>
+        <DisplayId>Warlock</DisplayId>
+        <Premium/>
+    </Object>
+    <Object type="0x220e" id="Shadow Skin">
+        <Class>Equipment</Class>
+        <Item />
+        <AnimatedTexture>
+            <File>playerskins</File>
+            <Index>14</Index>
+        </AnimatedTexture>
+        <SlotType>10</SlotType>
+        <Description>Swift like a needle and sharp like a blade. You'll never see me coming!</Description>
+        <Activate skinType="846">UnlockSkin</Activate>
+        <Consumable />
+        <BagType>1</BagType>
+        <DisplayId>Shadow</DisplayId>
+    </Object>
+    <Object type="0x220f" id="Elder Wizard Skin">
+        <Class>Equipment</Class>
+        <Item />
+        <AnimatedTexture>
+            <File>playerskins</File>
+            <Index>15</Index>
+        </AnimatedTexture>
+        <SlotType>10</SlotType>
+        <Description>Now, where did I put my staff again?</Description>
+        <Activate skinType="847">UnlockSkin</Activate>
+        <Consumable />
+        <BagType>1</BagType>
+        <DisplayId>Elder Wizard</DisplayId>
+    </Object>
+    <Object type="0x2210" id="Robed Priest Skin">
+        <Class>Equipment</Class>
+        <Item />
+        <AnimatedTexture>
+            <File>playerskins</File>
+            <Index>16</Index>
+        </AnimatedTexture>
+        <SlotType>10</SlotType>
+        <Description>May the name of the lord guide you on your journey.</Description>
+        <Activate skinType="848">UnlockSkin</Activate>
+        <Consumable />
+        <BagType>1</BagType>
+        <DisplayId>Robed Priest</DisplayId>
+    </Object>
+    <Object type="0x2211" id="Santa Skin">
+        <Class>Equipment</Class>
+        <Item />
+        <AnimatedTexture>
+            <File>playerskins</File>
+            <Index>17</Index>
+        </AnimatedTexture>
+        <SlotType>10</SlotType>
+        <Description>Naughty or Nice? Doesn't matter anymore, You're all getting punished!</Description>
+        <Activate skinType="849">UnlockSkin</Activate>
+        <Consumable />
+        <BagType>1</BagType>
+        <DisplayId>Santa</DisplayId>
+    </Object>
+    <Object type="0x2212" id="Little Helper Skin">
+        <Class>Equipment</Class>
+        <Item />
+        <AnimatedTexture>
+            <File>playerskins</File>
+            <Index>18</Index>
+        </AnimatedTexture>
+        <SlotType>10</SlotType>
+        <Description>Don't mind me, I'm just helping Santa with some errands.</Description>
+        <Activate skinType="850">UnlockSkin</Activate>
+        <Consumable />
+        <BagType>1</BagType>
+        <DisplayId>Little Helper</DisplayId>
+    </Object>
+    <Object type="0x2213" id="Father Time Skin">
+        <Class>Equipment</Class>
+        <Item />
+        <AnimatedTexture>
+            <File>playerskins</File>
+            <Index>19</Index>
+        </AnimatedTexture>
+        <SlotType>10</SlotType>
+        <Description>Time is nothing but a flow, Interrupt the stream and bad things will happen.</Description>
+        <Activate skinType="851">UnlockSkin</Activate>
+        <Consumable />
+        <BagType>1</BagType>
+        <DisplayId>Father Time</DisplayId>
+    </Object>
+    <Object type="0x2214" id="Down Under Skin">
+        <Class>Equipment</Class>
+        <Item />
+        <AnimatedTexture>
+            <File>playerskins</File>
+            <Index>20</Index>
+        </AnimatedTexture>
+        <SlotType>10</SlotType>
+        <Description>10 steps then turn around and shoot...</Description>
+        <Activate skinType="852">UnlockSkin</Activate>
+        <Consumable />
+        <BagType>1</BagType>
+        <DisplayId>Down Under</DisplayId>
+    </Object>
+    <Object type="0x2215" id="Founding Father Skin">
+        <Class>Equipment</Class>
+        <Item />
+        <AnimatedTexture>
+            <File>playerskins</File>
+            <Index>21</Index>
+        </AnimatedTexture>
+        <SlotType>10</SlotType>
+        <Description>There! His Majesty can now read my name without glasses. And he can double the reward on my head!</Description>
+        <Activate skinType="853">UnlockSkin</Activate>
+        <Consumable />
+        <BagType>1</BagType>
+        <DisplayId>Founding Father</DisplayId>
+    </Object>
+    <Object type="0x2216" id="Cupid Skin">
+        <Class>Equipment</Class>
+        <Item />
+        <AnimatedTexture>
+            <File>playerskins</File>
+            <Index>22</Index>
+        </AnimatedTexture>
+        <SlotType>10</SlotType>
+        <Description>I'm just a messenger for Love.</Description>
+        <Activate skinType="854">UnlockSkin</Activate>
+        <Consumable />
+        <BagType>1</BagType>
+        <DisplayId>Cupid</DisplayId>
+        <Premium/>
+    </Object>
+    <Object type="0x2217" id="Agent Skin">
+        <Class>Equipment</Class>
+        <Item />
+        <AnimatedTexture>
+            <File>playerskins</File>
+            <Index>23</Index>
+        </AnimatedTexture>
+        <SlotType>10</SlotType>
+        <Description>Patient X has escaped again... Guess it's my job to find him again.</Description>
+        <Activate skinType="855">UnlockSkin</Activate>
+        <Consumable />
+        <BagType>1</BagType>
+        <DisplayId>Agent</DisplayId>
+    </Object>
+    <Object type="0x2218" id="Shoveguy Skin">
+        <Class>Equipment</Class>
+        <Item />
+        <AnimatedTexture>
+            <File>playerskins</File>
+            <Index>24</Index>
+        </AnimatedTexture>
+        <SlotType>10</SlotType>
+        <Description>???</Description>
+        <Activate skinType="856">UnlockSkin</Activate>
+        <Consumable />
+        <BagType>1</BagType>
+        <DisplayId>Shoveguy</DisplayId>
+    </Object>
+    <Object type="0x2219" id="Nun Skin">
+        <Class>Equipment</Class>
+        <Item />
+        <AnimatedTexture>
+            <File>playerskins</File>
+            <Index>25</Index>
+        </AnimatedTexture>
+        <SlotType>10</SlotType>
+        <Description>Don't make me hit you with this ruler *BANG*</Description>
+        <Activate skinType="857">UnlockSkin</Activate>
+        <Consumable />
+        <BagType>1</BagType>
+        <DisplayId>Nun</DisplayId>
+        <Premium/>
+    </Object>
+    <Object type="0x221a" id="Holy Avenger Skin">
+        <Class>Equipment</Class>
+        <Item />
+        <AnimatedTexture>
+            <File>playerskins</File>
+            <Index>26</Index>
+        </AnimatedTexture>
+        <SlotType>10</SlotType>
+        <Description>I- The Knight of Light hereby banish you from this realm!</Description>
+        <Activate skinType="858">UnlockSkin</Activate>
+        <Consumable />
+        <BagType>1</BagType>
+        <DisplayId>Holy Avenger</DisplayId>
+    </Object>
+    <Object type="0x221b" id="Kunoichi Skin">
+        <Class>Equipment</Class>
+        <Item />
+        <AnimatedTexture>
+            <File>playerskins</File>
+            <Index>27</Index>
+        </AnimatedTexture>
+        <SlotType>10</SlotType>
+        <Description>If you follow the way of the sword- Even the weakest of people can be of use in war.</Description>
+        <Activate skinType="859">UnlockSkin</Activate>
+        <Consumable />
+        <BagType>1</BagType>
+        <DisplayId>Kunoichi</DisplayId>
+        <Premium/>
+    </Object>
+    <Object type="0x221c" id="Gentleman Skin">
+        <Class>Equipment</Class>
+        <Item />
+        <AnimatedTexture>
+            <File>playerskins</File>
+            <Index>28</Index>
+        </AnimatedTexture>
+        <SlotType>10</SlotType>
+        <Description>Say, How would you feel about a cup of tea?</Description>
+        <Activate skinType="860">UnlockSkin</Activate>
+        <Consumable />
+        <BagType>1</BagType>
+        <DisplayId>Gentleman</DisplayId>
+    </Object>
+    <Object type="0x221d" id="Ranger Skin">
+        <Class>Equipment</Class>
+        <Item />
+        <AnimatedTexture>
+            <File>playerskins</File>
+            <Index>29</Index>
+        </AnimatedTexture>
+        <SlotType>10</SlotType>
+        <Description>Let's see what we can do about all these demons.</Description>
+        <Activate skinType="861">UnlockSkin</Activate>
+        <Consumable />
+        <BagType>1</BagType>
+        <DisplayId>Ranger</DisplayId>
+    </Object>
+    <Object type="0x221e" id="Crusader Skin">
+        <Class>Equipment</Class>
+        <Item />
+        <AnimatedTexture>
+            <File>playerskins</File>
+            <Index>30</Index>
+        </AnimatedTexture>
+        <SlotType>10</SlotType>
+        <Description>I live only to serve the king.</Description>
+        <Activate skinType="862">UnlockSkin</Activate>
+        <Consumable />
+        <BagType>1</BagType>
+        <DisplayId>Crusader</DisplayId>
+    </Object>
+    <Object type="0x221f" id="Brigand Skin">
+        <Class>Equipment</Class>
+        <Item />
+        <AnimatedTexture>
+            <File>playerskins</File>
+            <Index>31</Index>
+        </AnimatedTexture>
+        <SlotType>10</SlotType>
+        <Description>I'm part of something that shouldn't exist- That's why you've never heard of me before.</Description>
+        <Activate skinType="863">UnlockSkin</Activate>
+        <Consumable />
+        <BagType>1</BagType>
+        <DisplayId>Brigand</DisplayId>
+    </Object>
+    <Object type="0x2220" id="Witch Doctor Skin">
+        <Class>Equipment</Class>
+        <Item />
+        <AnimatedTexture>
+            <File>playerskins</File>
+            <Index>32</Index>
+        </AnimatedTexture>
+        <SlotType>10</SlotType>
+        <Description>I'm not really sure where the term 'witch' came from</Description>
+        <Activate skinType="864">UnlockSkin</Activate>
+        <Consumable />
+        <BagType>1</BagType>
+        <DisplayId>Witch Doctor</DisplayId>
+    </Object>
+    <Object type="0x2221" id="Sorceress Skin">
+        <Class>Equipment</Class>
+        <Item />
+        <AnimatedTexture>
+            <File>playerskins</File>
+            <Index>33</Index>
+        </AnimatedTexture>
+        <SlotType>10</SlotType>
+        <Description>Not all sorcerers are male.</Description>
+        <Activate skinType="865">UnlockSkin</Activate>
+        <Consumable />
+        <BagType>1</BagType>
+        <DisplayId>Sorceress</DisplayId>
+    </Object>
+    <Object type="0x2222" id="Scarlett Skin">
+        <Class>Equipment</Class>
+        <Item />
+        <AnimatedTexture>
+            <File>playerskins</File>
+            <Index>34</Index>
+        </AnimatedTexture>
+        <SlotType>10</SlotType>
+        <Description>???</Description>
+        <Activate skinType="866">UnlockSkin</Activate>
+        <Consumable />
+        <BagType>1</BagType>
+        <DisplayId>Scarlett</DisplayId>
+    </Object>
+    <Object type="0x2223" id="Deadly Vixen Skin">
+        <Class>Equipment</Class>
+        <Item />
+        <AnimatedTexture>
+            <File>playerskins</File>
+            <Index>35</Index>
+        </AnimatedTexture>
+        <SlotType>10</SlotType>
+        <Description>Never judge a book by its cover.</Description>
+        <Activate skinType="867">UnlockSkin</Activate>
+        <Consumable />
+        <BagType>1</BagType>
+        <DisplayId>Deadly Vixen</DisplayId>
+    </Object>
+    <Object type="0x2224" id="Bashing Bride Skin">
+        <Class>Equipment</Class>
+        <Item />
+        <AnimatedTexture>
+            <File>playerskins</File>
+            <Index>36</Index>
+        </AnimatedTexture>
+        <SlotType>10</SlotType>
+        <Description>Blushing? I'm not blushing! Who's blushing?</Description>
+        <Activate skinType="868">UnlockSkin</Activate>
+        <Consumable />
+        <BagType>1</BagType>
+        <DisplayId>Bashing Bride</DisplayId>
+        <Premium/>
+    </Object>
+    <Object type="0x2225" id="Eligible Bachelor Skin">
+        <Class>Equipment</Class>
+        <Item />
+        <AnimatedTexture>
+            <File>playerskins</File>
+            <Index>37</Index>
+        </AnimatedTexture>
+        <SlotType>10</SlotType>
+        <Description>Looking for a Valentine.</Description>
+        <Activate skinType="869">UnlockSkin</Activate>
+        <Consumable />
+        <BagType>1</BagType>
+        <DisplayId>Eligible Bachelor</DisplayId>
+    </Object>
+    <Object type="0x2226" id="Artemis Skin">
+        <Class>Equipment</Class>
+        <Item />
+        <AnimatedTexture>
+            <File>playerskins</File>
+            <Index>38</Index>
+        </AnimatedTexture>
+        <SlotType>10</SlotType>
+        <Description>Respect all animal life for they bring us food and clothes!</Description>
+        <Activate skinType="870">UnlockSkin</Activate>
+        <Consumable />
+        <BagType>1</BagType>
+        <DisplayId>Artemis</DisplayId>
+    </Object>
+    <Object type="0x2227" id="Harsh Skin">
+        <Class>Equipment</Class>
+        <Item />
+        <AnimatedTexture>
+            <File>playerskins</File>
+            <Index>39</Index>
+        </AnimatedTexture>
+        <SlotType>10</SlotType>
+        <Description>Fight for the glory of the Roman Empire!</Description>
+        <Activate skinType="871">UnlockSkin</Activate>
+        <Consumable />
+        <BagType>1</BagType>
+        <DisplayId>Harsh</DisplayId>
+    </Object>
+    <Object type="0x2228" id="Bodeful Skin">
+        <Class>Equipment</Class>
+        <Item />
+        <AnimatedTexture>
+            <File>playerskins</File>
+            <Index>40</Index>
+        </AnimatedTexture>
+        <SlotType>10</SlotType>
+        <Description>We'll follow the commander to the end of time.</Description>
+        <Activate skinType="872">UnlockSkin</Activate>
+        <Consumable />
+        <BagType>1</BagType>
+        <DisplayId>Bodeful</DisplayId>
+    </Object>
+    <Object type="0x2229" id="Pudge Skin">
+        <Class>Equipment</Class>
+        <Item />
+        <AnimatedTexture>
+            <File>playerskins</File>
+            <Index>41</Index>
+        </AnimatedTexture>
+        <SlotType>10</SlotType>
+        <Description>I'll make sure you never see the light of day again.</Description>
+        <Activate skinType="873">UnlockSkin</Activate>
+        <Consumable />
+        <BagType>1</BagType>
+        <DisplayId>Pudge</DisplayId>
+    </Object>
+    <Object type="0x222a" id="B.B. Wolf Skin">
+        <Class>Equipment</Class>
+        <Item />
+        <AnimatedTexture>
+            <File>playerskins</File>
+            <Index>42</Index>
+        </AnimatedTexture>
+        <SlotType>10</SlotType>
+        <Description>"What a big mouth you have"</Description>
+        <Activate skinType="874">UnlockSkin</Activate>
+        <Consumable />
+        <BagType>1</BagType>
+        <DisplayId>B.B. Wolf</DisplayId>
+    </Object>
+    <Object type="0x222b" id="Lil Red Skin">
+        <Class>Equipment</Class>
+        <Item />
+        <AnimatedTexture>
+            <File>playerskins</File>
+            <Index>43</Index>
+        </AnimatedTexture>
+        <SlotType>10</SlotType>
+        <Description>"Grandma is ill. Take her this basket of cakes, but be very careful."</Description>
+        <Activate skinType="875">UnlockSkin</Activate>
+        <Consumable />
+        <BagType>1</BagType>
+        <DisplayId>Lil Red</DisplayId>
+    </Object>
+    <Object type="0x222c" id="King Knifeula Skin">
+        <Class>Equipment</Class>
+        <Item />
+        <AnimatedTexture>
+            <File>playerskins</File>
+            <Index>44</Index>
+        </AnimatedTexture>
+        <SlotType>10</SlotType>
+        <Description>It's time for the king to take matters into his own hands!</Description>
+        <Activate skinType="876">UnlockSkin</Activate>
+        <Consumable />
+        <BagType>1</BagType>
+        <DisplayId>King Knifeula</DisplayId>
+        <Premium/>
+    </Object>
+    <Object type="0x222d" id="The Unknown Skin">
+        <Class>Equipment</Class>
+        <Item />
+        <AnimatedTexture>
+            <File>playerskins</File>
+            <Index>45</Index>
+        </AnimatedTexture>
+        <SlotType>10</SlotType>
+        <Description>*Stories have been told about this creature- Yet no one knows where he came from*</Description>
+        <Activate skinType="877">UnlockSkin</Activate>
+        <Consumable />
+        <BagType>1</BagType>
+        <DisplayId>The Unknown</DisplayId>
+        <Premium/>
+    </Object>
+    <Object type="0x222e" id="Hero Skin">
+        <Class>Equipment</Class>
+        <Item />
+        <AnimatedTexture>
+            <File>playerskins</File>
+            <Index>46</Index>
+        </AnimatedTexture>
+        <SlotType>10</SlotType>
+        <Description>Fight to the end or cower in fear. We need no weak men on the battle field!</Description>
+        <Activate skinType="878">UnlockSkin</Activate>
+        <Consumable />
+        <BagType>1</BagType>
+        <DisplayId>Hero</DisplayId>
+    </Object>
+    <Object type="0x222f" id="Pyramid Revenant Skin">
+        <Class>Equipment</Class>
+        <Item />
+        <AnimatedTexture>
+            <File>playerskins</File>
+            <Index>47</Index>
+        </AnimatedTexture>
+        <SlotType>10</SlotType>
+        <Description>May the gods forgive my treason!</Description>
+        <Activate skinType="879">UnlockSkin</Activate>
+        <Consumable />
+        <BagType>1</BagType>
+        <DisplayId>Pyramid Revenant</DisplayId>
+        <Premium/>
+    </Object>
+    <Object type="0x2230" id="Morning Star Skin">
+        <Class>Equipment</Class>
+        <Item />
+        <AnimatedTexture>
+            <File>playerskins</File>
+            <Index>48</Index>
+        </AnimatedTexture>
+        <SlotType>10</SlotType>
+        <Description>The stars bring us light, The sun bring us strength, I bring you redemption!</Description>
+        <Activate skinType="880">UnlockSkin</Activate>
+        <Consumable />
+        <BagType>1</BagType>
+        <DisplayId>Morning Star</DisplayId>
+    </Object>
+    <Object type="0x2231" id="Chemist Skin">
+        <Class>Equipment</Class>
+        <Item />
+        <AnimatedTexture>
+            <File>playerskins</File>
+            <Index>49</Index>
+        </AnimatedTexture>
+        <SlotType>10</SlotType>
+        <Description>A true chemist can use what's around him to make something deadly!</Description>
+        <Activate skinType="881">UnlockSkin</Activate>
+        <Consumable />
+        <BagType>1</BagType>
+        <DisplayId>Chemist</DisplayId>
+        <Premium/>
+    </Object>
+    <Object type="0x2232" id="Theresa Skin">
+        <Class>Equipment</Class>
+        <Item />
+        <AnimatedTexture>
+            <File>playerskins</File>
+            <Index>50</Index>
+        </AnimatedTexture>
+        <SlotType>10</SlotType>
+        <Description>Who told you everyone needs eyes to be of use in battle?</Description>
+        <Activate skinType="882">UnlockSkin</Activate>
+        <Consumable />
+        <BagType>1</BagType>
+        <DisplayId>Theresa</DisplayId>
+    </Object>
+    <Object type="0x2233" id="Renfield Skin">
+        <Class>Equipment</Class>
+        <Item />
+        <AnimatedTexture>
+            <File>playerskins</File>
+            <Index>51</Index>
+        </AnimatedTexture>
+        <SlotType>10</SlotType>
+        <Description>Master said not to play with the brews. Renfield did not listen to master... Renfield became infected...</Description>
+        <Activate skinType="883">UnlockSkin</Activate>
+        <Consumable />
+        <BagType>1</BagType>
+        <DisplayId>Renfield</DisplayId>
+    </Object>
+    <Object type="0x2234" id="Nexus no Miko Skin">
+        <Class>Equipment</Class>
+        <Item />
+        <AnimatedTexture>
+            <File>playerskins</File>
+            <Index>52</Index>
+        </AnimatedTexture>
+        <SlotType>10</SlotType>
+        <Description>Let me guide you to the other side.</Description>
+        <Activate skinType="884">UnlockSkin</Activate>
+        <Consumable />
+        <BagType>1</BagType>
+        <DisplayId>Nexus no Miko</DisplayId>
+        <Premium/>
+    </Object>
+    <Object type="0x2235" id="Hobbit Skin">
+        <Class>Equipment</Class>
+        <Item />
+        <AnimatedTexture>
+            <File>playerskins</File>
+            <Index>53</Index>
+        </AnimatedTexture>
+        <SlotType>10</SlotType>
+        <Description>Swift and sharp cuts is the way to make sure your enemy doesn't stand up once more.</Description>
+        <Activate skinType="885">UnlockSkin</Activate>
+        <Consumable />
+        <BagType>1</BagType>
+        <DisplayId>Hobbit</DisplayId>
+        <Premium/>
+    </Object>
+    <Object type="0x2236" id="Drow Trickster Skin">
+        <Class>Equipment</Class>
+        <Item />
+        <AnimatedTexture>
+            <File>playerskins</File>
+            <Index>54</Index>
+        </AnimatedTexture>
+        <SlotType>10</SlotType>
+        <Description>???</Description>
+        <Activate skinType="886">UnlockSkin</Activate>
+        <Consumable />
+        <BagType>1</BagType>
+        <DisplayId>Drow Trickster</DisplayId>
+    </Object>
+    <Object type="0x2237" id="Witch Skin">
+        <Class>Equipment</Class>
+        <Item />
+        <AnimatedTexture>
+            <File>playerskins</File>
+            <Index>55</Index>
+        </AnimatedTexture>
+        <SlotType>10</SlotType>
+        <Description>The art of witchcraft is not something you play with. It can be very dangerous!</Description>
+        <Activate skinType="887">UnlockSkin</Activate>
+        <Consumable />
+        <BagType>1</BagType>
+        <DisplayId>Witch</DisplayId>
+        <Premium/>
+    </Object>
+    <Object type="0x2238" id="Experiment-7 Skin">
+        <Class>Equipment</Class>
+        <Item />
+        <AnimatedTexture>
+            <File>playerskins</File>
+            <Index>56</Index>
+        </AnimatedTexture>
+        <SlotType>10</SlotType>
+        <Description>A type of bio-computer that has been programmed to kill.</Description>
+        <Activate skinType="888">UnlockSkin</Activate>
+        <Consumable />
+        <BagType>1</BagType>
+        <DisplayId>Experiment-7</DisplayId>
+    </Object>
+    <Object type="0x2239" id="Succubus Skin">
+        <Class>Equipment</Class>
+        <Item />
+        <AnimatedTexture>
+            <File>playerskins</File>
+            <Index>57</Index>
+        </AnimatedTexture>
+        <SlotType>10</SlotType>
+        <Description>They say we are able to seduce anything that can experience lust. What do you say about that sweetie?</Description>
+        <Activate skinType="889">UnlockSkin</Activate>
+        <Consumable />
+        <BagType>1</BagType>
+        <DisplayId>Succubus</DisplayId>
+        <Premium/>
+    </Object>
+
+    <Object type="0x2240" id="Fairy Skin">
+        <Class>Equipment</Class>
+        <Item />
+        <AnimatedTexture>
+            <File>playerskins</File>
+            <Index>58</Index>
+        </AnimatedTexture>
+        <SlotType>10</SlotType>
+        <Description>Hey! Listen! I'm here to actually help you!</Description>
+        <Activate skinType="890">UnlockSkin</Activate>
+        <Consumable />
+        <BagType>1</BagType>
+        <DisplayId>Fairy</DisplayId>
+        <Premium/>
+    </Object>
+
+</Objects>

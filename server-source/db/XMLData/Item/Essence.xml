@@ -1,0 +1,150 @@
+﻿<Objects>
+  <!-- Essences-->
+  <!-- (Aspects) -->
+  <!-- Essences will be remade to follow the Aspects of the Realm.-->
+  <!-- -->
+  <Object type="0x2300" id="Unknown Essence">
+    <Class>Equipment</Class>
+    <Item />
+    <Texture>
+      <File>essences</File>
+      <Index>0</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>Little is known about this essence, other than the fact that it could have come from a god. But did it really?</Description>
+    <BagType>4</BagType>
+    <Material/>
+  </Object>
+  <Object type="0x2301" id="Ruined Essence">
+    <Class>Equipment</Class>
+    <Item />
+    <Texture>
+      <File>essences</File>
+      <Index>1</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>An old, cracked essence, thought to be from an ancient land. None have found any trace of its origins.</Description>
+    <BagType>4</BagType>
+    <Material/>
+  </Object>
+  <Object type="0x2302" id="Madness Essence">
+    <Class>Equipment</Class>
+    <Item />
+    <Texture>
+      <File>essences</File>
+      <Index>2</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>The essence of madness. Resembles the design of a horrific creature created by a mad scientist.</Description>
+    <BagType>4</BagType>
+    <Material/>
+  </Object>
+  <Object type="0x2303" id="Lost Essence">
+    <Class>Equipment</Class>
+    <Item />
+    <Texture>
+      <File>essences</File>
+      <Index>3</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>An essence of the lord of a land lost between dimensions. The land has since never been found.</Description>
+    <BagType>4</BagType>
+    <Material/>
+  </Object>
+  <Object type="0x2304" id="Blood Essence">
+    <Class>Equipment</Class>
+    <Item />
+    <Texture>
+      <File>essences</File>
+      <Index>4</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>Essence resembling dripping blood. Some say it represent's a vampire's lust for blood, others say it represents murder.</Description>
+    <BagType>4</BagType>
+    <Material/>
+  </Object>
+  <Object type="0x2305" id="Snake Essence">
+    <Class>Equipment</Class>
+    <Item />
+    <Texture>
+      <File>essences</File>
+      <Index>5</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>Essence of a snake queen who ruled in a secluded pit.</Description>
+    <BagType>4</BagType>
+    <Material/>
+  </Object>
+  <Object type="0x2306" id="Sprite Essence">
+    <Class>Equipment</Class>
+    <Item />
+    <Texture>
+      <File>essences</File>
+      <Index>6</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>The essence of all sprites of the land. These sprites originate from another dimension ruled by a sprite god, the creator of the sprites.</Description>
+    <BagType>4</BagType>
+    <Material/>
+  </Object>
+  <Object type="0x2307" id="Crystal Essence">
+    <Class>Equipment</Class>
+    <Item />
+    <Texture>
+      <File>essences</File>
+      <Index>7</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>A shiny, transparent essence, resembling a crystal. Legend says that long ago, an evil witch was imprisoned in a crystal somewhere in the land of the gods.</Description>
+    <BagType>4</BagType>
+    <Material/>
+  </Object>
+  <Object type="0x2308" id="Stone Essence">
+    <Class>Equipment</Class>
+    <Item />
+    <Texture>
+      <File>essences</File>
+      <Index>8</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>Essence of a powerful stone which has gone extinct from this world. In the past, it has been sculpted and imbued with magic to create stone creatures.</Description>
+    <BagType>4</BagType>
+    <Material/>
+  </Object>
+  <Object type="0x2309" id="Coral Essence">
+    <Class>Equipment</Class>
+    <Item />
+    <Texture>
+      <File>essences</File>
+      <Index>9</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>This essence of coral which originates from the deep sea, ruled by a mermaid queen. The king, however, has been lost in time.</Description>
+    <BagType>4</BagType>
+    <Material/>
+  </Object>
+  <Object type="0x230a" id="Doom Essence">
+    <Class>Equipment</Class>
+    <Item />
+    <Texture>
+      <File>essences</File>
+      <Index>10</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>Essence of an old king whose kingdom was met with an unfortunate doom. Its fading from white to black seems to represent this kingdom's fate.</Description>
+    <BagType>4</BagType>
+    <Material/>
+  </Object>
+  <Object type="0x230b" id="Demon Essence">
+    <Class>Equipment</Class>
+    <Item />
+    <Texture>
+      <File>essences</File>
+      <Index>11</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>Essence of a demon vanquished to the Abyss for eternity. Emanates a strange force unknown to man.</Description>
+    <BagType>4</BagType>
+    <Material/>
+  </Object>
+</Objects>

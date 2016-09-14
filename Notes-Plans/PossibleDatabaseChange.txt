@@ -1,0 +1,19 @@
+Written by Proph
+
+-----
+
+Trying to make database queries more efficient.
+
+Will move legends into own table. Make sure deaths table is not called upon often for it is huge.
+
+wServer will manage the legends table every x minutes using a similar system as AutoSave.
+
+server will use the listing in legends table. Also when glows are checked when player initializes will the legends table be utilized.
+
+Legends table is already made.
+
+ManageLegends query is WIP.
+
+wServer timed query is not started.
+
+server GetLegends query is not started.

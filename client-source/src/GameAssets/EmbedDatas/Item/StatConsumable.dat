@@ -1,0 +1,128 @@
+<Objects>
+    <Object type="0xa1f" id="Potion of Attack">
+        <Class>Equipment</Class>
+        <Item/>
+        <Texture>
+            <File>lofiObj2</File>
+            <Index>0x34</Index>
+        </Texture>
+        <SlotType>10</SlotType>
+        <Tier>2</Tier>
+        <Description>A potion that permanently increases attack power.</Description>
+        <Sound>use_potion</Sound>
+        <Activate stat="20" amount="1">IncrementStat</Activate>
+        <Consumable/>
+        <Potion/>
+        <BagType>3</BagType>
+    </Object>
+    <Object type="0xa20" id="Potion of Defense">
+        <Class>Equipment</Class>
+        <Item/>
+        <Texture>
+            <File>lofiObj2</File>
+            <Index>0x35</Index>
+        </Texture>
+        <SlotType>10</SlotType>
+        <Tier>2</Tier>
+        <Description>A potion that permanently increases defense power.</Description>
+        <Sound>use_potion</Sound>
+        <Activate stat="21" amount="1">IncrementStat</Activate>
+        <Consumable/>
+        <Potion/>
+        <BagType>3</BagType>
+    </Object>
+    <Object type="0xa21" id="Potion of Speed">
+        <Class>Equipment</Class>
+        <Item/>
+        <Texture>
+            <File>lofiObj2</File>
+            <Index>0x36</Index>
+        </Texture>
+        <SlotType>10</SlotType>
+        <Tier>2</Tier>
+        <Description>A potion that permanently increases speed.</Description>
+        <Sound>use_potion</Sound>
+        <Activate stat="22" amount="1">IncrementStat</Activate>
+        <Consumable/>
+        <Potion/>
+        <BagType>3</BagType>
+    </Object>
+    <Object type="0xa34" id="Potion of Vitality">
+        <Class>Equipment</Class>
+        <Item/>
+        <Texture>
+            <File>lofiObj2</File>
+            <Index>0x30</Index>
+        </Texture>
+        <SlotType>10</SlotType>
+        <Tier>2</Tier>
+        <Description>A potion that permanently increases vitality.</Description>
+        <Sound>use_potion</Sound>
+        <Activate stat="26" amount="1">IncrementStat</Activate>
+        <Consumable/>
+        <Potion/>
+        <BagType>3</BagType>
+    </Object>
+    <Object type="0xa35" id="Potion of Wisdom">
+        <Class>Equipment</Class>
+        <Item/>
+        <Texture>
+            <File>lofiObj2</File>
+            <Index>0x31</Index>
+        </Texture>
+        <SlotType>10</SlotType>
+        <Tier>2</Tier>
+        <Description>A potion that permanently increases wisdom.</Description>
+        <Sound>use_potion</Sound>
+        <Activate stat="27" amount="1">IncrementStat</Activate>
+        <Consumable/>
+        <Potion/>
+        <BagType>3</BagType>
+    </Object>
+    <Object type="0xa4c" id="Potion of Dexterity">
+        <Class>Equipment</Class>
+        <Item/>
+        <Texture>
+            <File>lofiObj2</File>
+            <Index>0x37</Index>
+        </Texture>
+        <SlotType>10</SlotType>
+        <Tier>2</Tier>
+        <Description>A potion that permanently increases dexterity.</Description>
+        <Sound>use_potion</Sound>
+        <Activate stat="28" amount="1">IncrementStat</Activate>
+        <Consumable/>
+        <Potion/>
+        <BagType>3</BagType>
+    </Object>
+    <Object type="0xae9" id="Potion of Life">
+        <Class>Equipment</Class>
+        <Item/>
+        <Texture>
+            <File>lofiObj2</File>
+            <Index>0x26</Index>
+        </Texture>
+        <SlotType>10</SlotType>
+        <Description>A potion that permanently increases health.</Description>
+        <Sound>use_potion</Sound>
+        <Activate stat="0" amount="5">IncrementStat</Activate>
+        <Consumable/>
+        <Potion/>
+        <BagType>3</BagType>
+    </Object>
+    <Object type="0xaea" id="Potion of Mana">
+        <Class>Equipment</Class>
+        <Item/>
+        <Texture>
+            <File>lofiObj2</File>
+            <Index>0x27</Index>
+        </Texture>
+        <SlotType>10</SlotType>
+        <Description>A potion that permanently increases magic.</Description>
+        <Sound>use_potion</Sound>
+        <Activate stat="3" amount="5">IncrementStat</Activate>
+        <Consumable/>
+        <Potion/>
+        <BagType>3</BagType>
+    </Object>
+</Objects>

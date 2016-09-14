@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<AppEngineSettings>
+  <CharSlotCurrency>1</CharSlotCurrency>
+  <SoundPacks>
+    <SoundPack id="default" displayId="Default Sounds">
+      <Description>The default sounds and old loved music from Realm of the Mad God.</Description>
+      <Sounds />
+      <Music />
+    </SoundPack>
+  </SoundPacks>
+</AppEngineSettings>

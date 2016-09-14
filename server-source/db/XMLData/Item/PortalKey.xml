@@ -1,0 +1,213 @@
+﻿<Objects>
+  <!-- Keys -->
+  <Object type="0x701" id="Undead Lair Key">
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj3</File>
+      <Index>0xf4</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>A key which opens an entrance to an Undead Lair.</Description>
+    <Sound>use_key</Sound>
+    <Consumable/>
+    <Soulbound/>
+    <Activate id="Undead Lair Portal">Create</Activate>
+    <Price>2000</Price>
+  </Object>
+  <Object type="0x705" id="Pirate Cave Key">
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj3</File>
+      <Index>0xf0</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>A key which opens an entrance to a Pirate Cave.</Description>
+    <Sound>use_key</Sound>
+    <Consumable/>
+    <Soulbound/>
+    <Activate id="Pirate Cave Portal">Create</Activate>
+    <Price>1500</Price>
+  </Object>
+  <Object type="0x706" id="Spider Den Key">
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj3</File>
+      <Index>0xf1</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>A key which opens an entrance to a Spider Den.</Description>
+    <Sound>use_key</Sound>
+    <Consumable/>
+    <Soulbound/>
+    <Activate id="Spider Den Portal">Create</Activate>
+    <Price>1750</Price>
+  </Object>
+  <Object type="0xc19" id="Totem Key">
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0x18</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>A key which opens a passage to the Forbidden Jungle.</Description>
+    <Sound>use_key</Sound>
+    <Consumable/>
+    <Soulbound/>
+    <Activate id="Forbidden Jungle Portal">Create</Activate>
+    <Price>1750</Price>
+  </Object>
+  <Object type="0x70a" id="Abyss of Demons Key">
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj3</File>
+      <Index>0xf3</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>A key which opens an entrance to an Abyss of Demons.</Description>
+    <Sound>use_key</Sound>
+    <Consumable/>
+    <Soulbound/>
+    <Activate id="Abyss of Demons Portal">Create</Activate>
+    <Price>2500</Price>
+  </Object>
+  <Object type="0xc2f" id="Lab Key">
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj3</File>
+      <Index>0x1b3</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>A key that reveals the way to the Mad Lab.</Description>
+    <Sound>use_key</Sound>
+    <Consumable/>
+    <Soulbound/>
+    <Activate id="Mad Lab Portal">Create</Activate>
+    <Price>2000</Price>
+  </Object>
+  <Object type="0xc23" id="Manor Key">
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0x29</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>A key which opens a passage to the Manor of the Immortals.</Description>
+    <Sound>use_key</Sound>
+    <Consumable/>
+    <Soulbound/>
+    <Activate id="Manor of the Immortals Portal">Create</Activate>
+    <Price>2000</Price>
+  </Object>
+  <Object type="0xc2e" id="Davy's Key">
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj3</File>
+      <Index>0x109</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>A key that opens the way to Davy Jones's Locker.</Description>
+    <Sound>use_key</Sound>
+    <Consumable/>
+    <Soulbound/>
+    <Activate id="Davy Jones's Locker Portal">Create</Activate>
+    <Price>2250</Price>
+  </Object>
+  <Object type="0x70b" id="Snake Pit Key">
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj3</File>
+      <Index>0xf5</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>A key which opens an entrance to a Snake Pit.</Description>
+    <Sound>use_key</Sound>
+    <Consumable/>
+    <Soulbound/>
+    <Activate id="Snake Pit Portal">Create</Activate>
+    <Price>2000</Price>
+  </Object>
+  <Object type="0x710" id="Tomb of the Ancients Key">
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj3</File>
+      <Index>0xf6</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>A key which opens an entrance to a Tomb of Ancients.</Description>
+    <Sound>use_key</Sound>
+    <Consumable/>
+    <Soulbound/>
+    <Activate id="Tomb of the Ancients Portal">Create</Activate>
+    <Price>4000</Price>
+  </Object>
+  <Object type="0x71f" id="Sprite World Key">
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj3</File>
+      <Index>0xf2</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>A key which opens an entrance to a Sprite World.</Description>
+    <Sound>use_key</Sound>
+    <Consumable/>
+    <Soulbound/>
+    <Activate id="Glowing Portal">Create</Activate>
+    <Price>2000</Price>
+  </Object>
+  <Object type="0x722" id="Wine Cellar Incantation">
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0xbb</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>An incantation that unlocks the Wine Cellar.</Description>
+    <Sound>use_key</Sound>
+    <Consumable/>
+    <BagType>4</BagType>
+    <Activate dungeonName="Wine Cellar" lockedName="Locked Wine Cellar Portal">UnlockPortal</Activate>
+    <Price>3000</Price>
+  </Object>
+  <Object type="0xc11" id="Ocean Trench Key">
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0x05</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>A key which opens an entrance to an Ocean Trench.</Description>
+    <Sound>use_key</Sound>
+    <Consumable/>
+    <Soulbound/>
+    <Activate id="Ocean Trench Portal">Create</Activate>
+    <Price>2500</Price>
+  </Object>
+  <Object type="0xc3d" id="Beachzone Key">
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj3</File>
+      <Index>0x177</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>A key which opens a portal to the Beachzone.</Description>
+    <Sound>use_key</Sound>
+    <Consumable/>
+    <Soulbound/>
+    <Activate id="Beachzone Portal">Create</Activate>
+    <Price>1000</Price>
+  </Object>
+</Objects>

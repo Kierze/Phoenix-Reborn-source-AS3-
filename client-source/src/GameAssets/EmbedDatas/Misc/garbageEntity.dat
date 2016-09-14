@@ -1,0 +1,290 @@
+<Objects>
+    <Object type="0x0940" id="XP Gift">
+        <Group>Evaluators</Group>
+        <Enemy />
+        <Class>Character</Class>
+        <Texture>
+            <File>lofiChar8x8</File>
+            <Index>0xcd</Index>
+        </Texture>
+        <HitSound>monster/chicken_hit</HitSound>
+        <DeathSound>monster/chicken_death</DeathSound>
+        <MaxHitPoints>600</MaxHitPoints>
+        <Size>180</Size>
+        <Defense>0</Defense>
+        <XpMult>70</XpMult>
+    </Object>
+    <Object type="0x0962" id="XP Gift A">
+        <Group>Evaluators</Group>
+        <Enemy />
+        <Class>Character</Class>
+        <Texture>
+            <File>lofiChar8x8</File>
+            <Index>0xcd</Index>
+        </Texture>
+        <HitSound>monster/chicken_hit</HitSound>
+        <DeathSound>monster/chicken_death</DeathSound>
+        <MaxHitPoints>400</MaxHitPoints>
+        <Size>180</Size>
+        <Defense>0</Defense>
+        <XpMult>70</XpMult>
+    </Object>
+    <Object type="0x0963" id="XP Gift B">
+        <Group>Evaluators</Group>
+        <Enemy />
+        <Class>Character</Class>
+        <Texture>
+            <File>lofiChar8x8</File>
+            <Index>0xcd</Index>
+        </Texture>
+        <HitSound>monster/chicken_hit</HitSound>
+        <DeathSound>monster/chicken_death</DeathSound>
+        <MaxHitPoints>800</MaxHitPoints>
+        <Size>180</Size>
+        <Defense>0</Defense>
+        <XpMult>70</XpMult>
+    </Object>
+    <Object type="0x0964" id="XP Gift C">
+        <Group>Evaluators</Group>
+        <Enemy />
+        <Class>Character</Class>
+        <Texture>
+            <File>lofiChar8x8</File>
+            <Index>0xcd</Index>
+        </Texture>
+        <HitSound>monster/chicken_hit</HitSound>
+        <DeathSound>monster/chicken_death</DeathSound>
+        <MaxHitPoints>600</MaxHitPoints>
+        <Size>180</Size>
+        <Defense>0</Defense>
+        <XpMult>50</XpMult>
+    </Object>
+    <Object type="0x0965" id="XP Gift D">
+        <Group>Evaluators</Group>
+        <Enemy />
+        <Class>Character</Class>
+        <Texture>
+            <File>lofiChar8x8</File>
+            <Index>0xcd</Index>
+        </Texture>
+        <HitSound>monster/chicken_hit</HitSound>
+        <DeathSound>monster/chicken_death</DeathSound>
+        <MaxHitPoints>600</MaxHitPoints>
+        <Size>180</Size>
+        <Defense>0</Defense>
+        <XpMult>90</XpMult>
+    </Object>
+    <Object type="0x0966" id="XP Gift E">
+        <Group>Evaluators</Group>
+        <Enemy />
+        <Class>Character</Class>
+        <Texture>
+            <File>lofiChar8x8</File>
+            <Index>0xcd</Index>
+        </Texture>
+        <HitSound>monster/chicken_hit</HitSound>
+        <DeathSound>monster/chicken_death</DeathSound>
+        <MaxHitPoints>600</MaxHitPoints>
+        <Size>180</Size>
+        <Defense>0</Defense>
+        <XpMult>120</XpMult>
+    </Object>
+    <Object type="0x0967" id="XP Gift F">
+        <Group>Evaluators</Group>
+        <Enemy />
+        <Class>Character</Class>
+        <Texture>
+            <File>lofiChar8x8</File>
+            <Index>0xcd</Index>
+        </Texture>
+        <HitSound>monster/chicken_hit</HitSound>
+        <DeathSound>monster/chicken_death</DeathSound>
+        <MaxHitPoints>600</MaxHitPoints>
+        <Size>180</Size>
+        <Defense>0</Defense>
+        <XpMult>200</XpMult>
+    </Object>
+    <Object type="0x0968" id="XP Gift G">
+        <Group>Evaluators</Group>
+        <Enemy />
+        <Class>Character</Class>
+        <Texture>
+            <File>lofiChar8x8</File>
+            <Index>0xcd</Index>
+        </Texture>
+        <HitSound>monster/chicken_hit</HitSound>
+        <DeathSound>monster/chicken_death</DeathSound>
+        <MaxHitPoints>60</MaxHitPoints>
+        <Size>100</Size>
+        <Defense>0</Defense>
+        <XpMult>30000</XpMult>
+    </Object>
+    <Object type="0x5e1d" id="Lab Rat">
+        <Enemy />
+        <Class>Character</Class>
+        <RemoteTexture>
+            <Instance>production</Instance>
+            <Id>140645719</Id>
+            <Right />
+        </RemoteTexture>
+        <AltTexture id="1">
+            <RemoteTexture>
+                <Instance>production</Instance>
+                <Id>140657536</Id>
+                <Right />
+            </RemoteTexture>
+        </AltTexture>
+        <HitSound>monster/default_hit</HitSound>
+        <DeathSound>monster/dark_elves_death</DeathSound>
+        <Size>100</Size>
+        <MaxHitPoints>4000</MaxHitPoints>
+        <Defense>80</Defense>
+        <Projectile id="0">
+            <ObjectId>H Baby Blast</ObjectId>
+            <Size>200</Size>
+            <Speed>65</Speed>
+            <Damage>160</Damage>
+            <LifetimeMS>1000</LifetimeMS>
+        </Projectile>
+    </Object>
+
+    <Object type="0x4300" id="Test Crystal">
+        <Group>Crystals</Group>
+        <Enemy />
+        <Class>Character</Class>
+        <AnimatedTexture>
+            <File>chars16x16dEncounters</File>
+            <Index>5</Index>
+        </AnimatedTexture>
+        <HitSound>monster/stone_walls_hit</HitSound>
+        <DeathSound>monster/stone_walls_death</DeathSound>
+        <Size>120</Size>
+        <MaxHitPoints>1000000</MaxHitPoints>
+        <Defense>0</Defense>
+        <XpMult>0</XpMult>
+        <Projectile id="0">
+            <ObjectId>White Bullet</ObjectId>
+            <Damage>90</Damage>
+            <Speed>10</Speed>
+            <LifetimeMS>6000</LifetimeMS>
+            <ConditionEffect duration="20">Quiet</ConditionEffect>
+        </Projectile>
+    </Object>
+
+    <Object type="0x4301" id="Test Crystal A">
+        <Group>Crystals</Group>
+        <Enemy />
+        <Class>Character</Class>
+        <AnimatedTexture>
+            <File>chars16x16dEncounters</File>
+            <Index>5</Index>
+        </AnimatedTexture>
+        <HitSound>monster/stone_walls_hit</HitSound>
+        <DeathSound>monster/stone_walls_death</DeathSound>
+        <Size>120</Size>
+        <MaxHitPoints>1000000</MaxHitPoints>
+        <Defense>20</Defense>
+        <XpMult>0</XpMult>
+        <Projectile id="0">
+            <ObjectId>White Bullet</ObjectId>
+            <Damage>90</Damage>
+            <Speed>10</Speed>
+            <LifetimeMS>6000</LifetimeMS>
+            <ConditionEffect duration="20">Quiet</ConditionEffect>
+        </Projectile>
+    </Object>
+
+    <Object type="0x4302" id="Test Crystal B">
+        <Group>Crystals</Group>
+        <Enemy />
+        <Class>Character</Class>
+        <AnimatedTexture>
+            <File>chars16x16dEncounters</File>
+            <Index>5</Index>
+        </AnimatedTexture>
+        <HitSound>monster/stone_walls_hit</HitSound>
+        <DeathSound>monster/stone_walls_death</DeathSound>
+        <Size>120</Size>
+        <MaxHitPoints>1000000</MaxHitPoints>
+        <Defense>40</Defense>
+        <Resilience>50</Resilience>
+        <XpMult>0</XpMult>
+        <Projectile id="0">
+            <ObjectId>White Bullet</ObjectId>
+            <Damage>90</Damage>
+            <Speed>10</Speed>
+            <LifetimeMS>6000</LifetimeMS>
+            <ConditionEffect duration="20">Quiet</ConditionEffect>
+        </Projectile>
+    </Object>
+
+    <Object type="0x4303" id="Test Crystal C">
+        <Group>Crystals</Group>
+        <Enemy />
+        <Class>Character</Class>
+        <AnimatedTexture>
+            <File>chars16x16dEncounters</File>
+            <Index>5</Index>
+        </AnimatedTexture>
+        <HitSound>monster/stone_walls_hit</HitSound>
+        <DeathSound>monster/stone_walls_death</DeathSound>
+        <Size>120</Size>
+        <MaxHitPoints>1000000</MaxHitPoints>
+        <Defense>50</Defense>
+        <Resilience>100</Resilience>
+        <XpMult>0</XpMult>
+        <Projectile id="0">
+            <ObjectId>White Bullet</ObjectId>
+            <Damage>90</Damage>
+            <Speed>10</Speed>
+            <LifetimeMS>6000</LifetimeMS>
+            <ConditionEffect duration="20">Quiet</ConditionEffect>
+        </Projectile>
+    </Object>
+
+    <Object type="0x4304" id="Test Crystal D">
+        <Group>Crystals</Group>
+        <Enemy />
+        <Class>Character</Class>
+        <AnimatedTexture>
+            <File>chars16x16dEncounters</File>
+            <Index>5</Index>
+        </AnimatedTexture>
+        <HitSound>monster/stone_walls_hit</HitSound>
+        <DeathSound>monster/stone_walls_death</DeathSound>
+        <Size>120</Size>
+        <MaxHitPoints>1000000</MaxHitPoints>
+        <Defense>70</Defense>
+        <Resilience>1250</Resilience>
+        <XpMult>0</XpMult>
+        <Projectile id="0">
+            <ObjectId>White Bullet</ObjectId>
+            <Damage>100</Damage>
+            <Speed>10</Speed>
+            <LifetimeMS>10000</LifetimeMS>
+        </Projectile>
+    </Object>
+
+    <Object type="0x4305" id="Test Crystal E">
+        <Group>Crystals</Group>
+        <Enemy />
+        <Class>Character</Class>
+        <AnimatedTexture>
+            <File>chars16x16dEncounters</File>
+            <Index>5</Index>
+        </AnimatedTexture>
+        <HitSound>monster/stone_walls_hit</HitSound>
+        <DeathSound>monster/stone_walls_death</DeathSound>
+        <Size>120</Size>
+        <MaxHitPoints>1000000</MaxHitPoints>
+        <Defense>70</Defense>
+        <Resilience>1250</Resilience>
+        <XpMult>0</XpMult>
+        <Projectile id="0">
+            <ObjectId>White Bullet</ObjectId>
+            <Damage>100</Damage>
+            <Speed>60</Speed>
+            <LifetimeMS>10000</LifetimeMS>
+        </Projectile>
+    </Object>
+</Objects>

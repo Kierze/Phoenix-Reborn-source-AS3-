@@ -1,0 +1,93 @@
+<Objects>
+    <!-- Drake Eggs -->
+    <Object type="0xaa9" id="Purple Drake Egg">
+        <Class>Equipment</Class>
+        <Item/>
+        <Texture>
+            <File>lofiChar8x8</File>
+            <Index>0xeb</Index>
+        </Texture>
+        <SlotType>10</SlotType>
+        <Description>An egg that when used, hatches a Purple Drake to help you in battle for a short time.</Description>
+        <Sound>spell/light_heal</Sound>
+        <Consumable/>
+        <BagType>2</BagType>
+        <Activate objectId="Purple Drake">Pet</Activate>
+        <OldSound>use_potion</OldSound>
+    </Object>
+    <Object type="0xaef" id="White Drake Egg">
+        <Class>Equipment</Class>
+        <Item/>
+        <Texture>
+            <File>lofiChar8x8</File>
+            <Index>0xe5</Index>
+        </Texture>
+        <SlotType>10</SlotType>
+        <Description>An egg that when used, hatches a White Drake to heal your wounds in battle for a short time.</Description>
+        <Sound>spell/light_heal</Sound>
+        <Consumable/>
+        <BagType>2</BagType>
+        <Activate objectId="White Drake">Pet</Activate>
+        <OldSound>use_potion</OldSound>
+    </Object>
+    <Object type="0xaf0" id="Blue Drake Egg">
+        <Class>Equipment</Class>
+        <Item/>
+        <Texture>
+            <File>lofiChar28x8</File>
+            <Index>0x52</Index>
+        </Texture>
+        <SlotType>10</SlotType>
+        <Description>An egg that when used, hatches a Blue Drake to help you in battle for a short time, paralyzing your enemies.</Description>
+        <Sound>spell/light_heal</Sound>
+        <Consumable/>
+        <BagType>2</BagType>
+        <Activate objectId="Blue Drake">Pet</Activate>
+        <OldSound>use_potion</OldSound>
+    </Object>
+    <Object type="0xaf1" id="Orange Drake Egg">
+        <Class>Equipment</Class>
+        <Item/>
+        <Texture>
+            <File>lofiChar28x8</File>
+            <Index>0x53</Index>
+        </Texture>
+        <SlotType>10</SlotType>
+        <Description>An egg that when used, hatches an Orange Drake to help you in battle for a short time, placing your enemies in stasis.</Description>
+        <Sound>spell/light_heal</Sound>
+        <Consumable/>
+        <BagType>2</BagType>
+        <Activate objectId="Orange Drake">Pet</Activate>
+        <OldSound>use_potion</OldSound>
+    </Object>
+    <Object type="0xaf2" id="Green Drake Egg">
+        <Class>Equipment</Class>
+        <Item/>
+        <Texture>
+            <File>lofiChar8x8</File>
+            <Index>0xe9</Index>
+        </Texture>
+        <SlotType>10</SlotType>
+        <Description>An egg that when used, hatches a Green Drake to help you in battle for a short time, casting slow upon your enemies.</Description>
+        <Sound>spell/light_heal</Sound>
+        <Consumable/>
+        <BagType>2</BagType>
+        <Activate objectId="Green Drake">Pet</Activate>
+        <OldSound>use_potion</OldSound>
+    </Object>
+    <Object type="0xaf3" id="Yellow Drake Egg">
+        <Class>Equipment</Class>
+        <Item/>
+        <Texture>
+            <File>lofiChar8x8</File>
+            <Index>0xe7</Index>
+        </Texture>
+        <SlotType>10</SlotType>
+        <Description>An egg that when used, hatches a Yellow Drake to help you in battle for a short time, causing bleeding to your enemies.</Description>
+        <Sound>spell/light_heal</Sound>
+        <Consumable/>
+        <BagType>2</BagType>
+        <Activate objectId="Yellow Drake">Pet</Activate>
+        <OldSound>use_potion</OldSound>
+    </Object>
+</Objects>

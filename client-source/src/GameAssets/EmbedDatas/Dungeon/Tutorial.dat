@@ -1,0 +1,151 @@
+<Objects>
+    <Object type="0x6b1" id="Evil Chicken God">
+        <Enemy />
+        <Class>Character</Class>
+        <AnimatedTexture>
+            <File>chars16x16rEncounters</File>
+            <Index>2</Index>
+        </AnimatedTexture>
+        <HitSound>monster/chicken_hit</HitSound>
+        <DeathSound>monster/chicken_death</DeathSound>
+        <Size>100</Size>
+        <MaxHitPoints>60</MaxHitPoints>
+        <Defense>0</Defense>
+        <Quest />
+        <Level>1</Level>
+    </Object>
+    <Object type="0x6af" id="Evil Chicken">
+        <Enemy />
+        <Class>Character</Class>
+        <AnimatedTexture>
+            <File>chars8x8rBeach</File>
+            <Index>8</Index>
+        </AnimatedTexture>
+        <HitSound>monster/chicken_hit</HitSound>
+        <DeathSound>monster/chicken_death</DeathSound>
+        <Size>80</Size>
+        <MaxHitPoints>5</MaxHitPoints>
+        <Defense>0</Defense>
+    </Object>
+    <Object type="0x6b0" id="Evil Chicken Minion">
+        <Enemy />
+        <Class>Character</Class>
+        <AnimatedTexture>
+            <File>chars8x8rBeach</File>
+            <Index>8</Index>
+        </AnimatedTexture>
+        <HitSound>monster/chicken_hit</HitSound>
+        <DeathSound>monster/chicken_death</DeathSound>
+        <Size>100</Size>
+        <MaxHitPoints>30</MaxHitPoints>
+        <Defense>0</Defense>
+    </Object>
+    <Object type="0x6b2" id="Evil Hen">
+        <Enemy />
+        <Class>Character</Class>
+        <AnimatedTexture>
+            <File>chars8x8rBeach</File>
+            <Index>9</Index>
+        </AnimatedTexture>
+        <HitSound>monster/chicken_hit</HitSound>
+        <DeathSound>monster/chicken_death</DeathSound>
+        <Size>80</Size>
+        <MaxHitPoints>5</MaxHitPoints>
+        <Defense>0</Defense>
+    </Object>
+    <Object type="0x0802" id="South Tutorial Gun">
+        <Class>GameObject</Class>
+        <Model>Tower</Model>
+        <Enemy />
+        <Texture>
+            <File>lofiEnvironment</File><Index>0xc8</Index>
+        </Texture>
+        <Projectile>
+            <ObjectId>Green Blob</ObjectId>
+            <Speed>40</Speed>
+            <Damage>5</Damage>
+            <LifetimeMS>3000</LifetimeMS>
+        </Projectile>
+    </Object>
+    <Object type="0x0803" id="North Tutorial Gun">
+        <Class>GameObject</Class>
+        <Model>Tower</Model>
+        <Enemy />
+        <Texture>
+            <File>lofiEnvironment</File><Index>0xc8</Index>
+        </Texture>
+        <Projectile>
+            <ObjectId>Green Blob</ObjectId>
+            <Speed>40</Speed>
+            <Damage>5</Damage>
+            <LifetimeMS>3000</LifetimeMS>
+        </Projectile>
+    </Object>
+    <Object type="0x0804" id="East Tutorial Gun">
+        <Class>GameObject</Class>
+        <Model>Tower</Model>
+        <Enemy />
+        <Texture>
+            <File>lofiEnvironment</File><Index>0xc8</Index>
+        </Texture>
+        <Projectile>
+            <ObjectId>Green Blob</ObjectId>
+            <Speed>40</Speed>
+            <Damage>5</Damage>
+            <LifetimeMS>3000</LifetimeMS>
+        </Projectile>
+    </Object>
+    <Object type="0x0805" id="West Tutorial Gun">
+        <Class>GameObject</Class>
+        <Model>Tower</Model>
+        <Enemy />
+        <Texture>
+            <File>lofiEnvironment</File><Index>0xc8</Index>
+        </Texture>
+        <Projectile>
+            <ObjectId>Green Blob</ObjectId>
+            <Speed>40</Speed>
+            <Damage>5</Damage>
+            <LifetimeMS>3000</LifetimeMS>
+        </Projectile>
+    </Object>
+    <Object type="0x0806" id="Tutorial Loot Bag">
+        <Class>Container</Class>
+        <Container />
+        <Loot />
+        <Texture>
+            <File>lofiObj</File><Index>0x08</Index>
+        </Texture>
+        <Size>75</Size>
+        <SlotTypes>0, 0, 0, 0, 0, 0, 0, 0</SlotTypes>
+        <Equipment>0x0a4f, -1, -1, -1, -1, -1, -1, -1</Equipment>
+    </Object>
+    <Object type="0x0808" id="Up Arrow">
+        <Class>GameObject</Class>
+        <Texture>
+            <File>lofiObj2</File><Index>0x14</Index>
+        </Texture>
+        <DrawOnGround />
+    </Object>
+    <Object type="0x0809" id="UpLeft Arrow">
+        <Class>GameObject</Class>
+        <Texture>
+            <File>lofiObj2</File><Index>0x15</Index>
+        </Texture>
+        <DrawOnGround />
+    </Object>
+    <Object type="0x080a" id="UpRight Arrow">
+        <Class>GameObject</Class>
+        <Texture>
+            <File>lofiObj2</File><Index>0x16</Index>
+        </Texture>
+        <DrawOnGround />
+    </Object>
+    <Object type="0x080b" id="Grey Up Arrow">
+        <Class>GameObject</Class>
+        <Texture>
+            <File>lofiObj2</File><Index>0x17</Index>
+        </Texture>
+        <DrawOnGround />
+    </Object>
+</Objects>

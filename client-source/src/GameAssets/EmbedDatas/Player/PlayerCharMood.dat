@@ -1,0 +1,50 @@
+<CharMoods>
+    <CharMood type="0x00">
+        <Name>Neutral</Name>
+        <Texture>
+            <File>CharMoods</File>
+            <Index>0x00</Index>
+        </Texture>
+        <Description color="0x7F7F7F">Nothing much to say.</Description>
+    </CharMood>
+    <CharMood type="0x01">
+        <Name>Happy</Name>
+        <Texture>
+            <File>CharMoods</File>
+            <Index>0x00</Index>
+        </Texture>
+        <Description color="0xBDF279">This character has a genuine smile on his/her face.</Description>
+    </CharMood>
+    <CharMood type="0x02">
+        <Name>Sad</Name>
+        <Texture>
+            <File>CharMoods</File>
+            <Index>0x00</Index>
+        </Texture>
+        <Description color="0x7F7F7F">This character is down about something.</Description>
+    </CharMood>
+    <CharMood type="0x03">
+        <Name>Tired</Name>
+        <Texture>
+            <File>CharMoods</File>
+            <Index>0x00</Index>
+        </Texture>
+        <Description color="0x7F7F7F">This character is weary of all the things he/she has done.</Description>
+    </CharMood>
+    <CharMood type="0x04">
+        <Name>Nervous</Name>
+        <Texture>
+            <File>CharMoods</File>
+            <Index>0x00</Index>
+        </Texture>
+        <Description color="0x7F7F7F">This character is on edge about something he/she is thinking about.</Description>
+    </CharMood>
+    <CharMood type="0x05">
+        <Name>Silly</Name>
+        <Texture>
+            <File>CharMoods</File>
+            <Index>0x00</Index>
+        </Texture>
+        <Description color="0x7F7F7F">This character is feeling childish and happy.</Description>
+    </CharMood>
+</CharMoods>

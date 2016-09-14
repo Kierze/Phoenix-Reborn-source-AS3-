@@ -1,0 +1,260 @@
+<Objects>
+    <Object type="0x600" id="Pirate">
+        <Group>Pirates</Group>
+        <Enemy />
+        <Class>Character</Class>
+        <AnimatedTexture>
+            <File>chars8x8rBeach</File><Index>1</Index>
+        </AnimatedTexture>
+        <HitSound>monster/pirates_hit</HitSound>
+        <DeathSound>monster/pirates_death</DeathSound>
+        <Size>100</Size>
+        <MaxHitPoints>100</MaxHitPoints>
+        <Defense>2</Defense>
+        <Resilience>15</Resilience>
+        <Terrain>ShoreSand</Terrain>
+        <Projectile id="0">
+            <ObjectId>Blade</ObjectId>
+            <Damage>25</Damage>
+            <Speed>75</Speed>
+            <LifetimeMS>450</LifetimeMS>
+        </Projectile>
+    </Object>
+
+    <Object type="0x601" id="Piratess">
+        <Group>Pirates</Group>
+        <Enemy />
+        <Class>Character</Class>
+        <AnimatedTexture>
+            <File>chars8x8rBeach</File><Index>2</Index>
+        </AnimatedTexture>
+        <HitSound>monster/pirates_hit</HitSound>
+        <DeathSound>monster/pirates_death</DeathSound>
+        <Size>100</Size>
+        <MaxHitPoints>100</MaxHitPoints>
+        <Defense>2</Defense>
+        <Resilience>15</Resilience>
+        <Terrain>ShoreSand</Terrain>
+        <SpawnProb>1.0</SpawnProb>
+        <Projectile id="0">
+            <ObjectId>Blade</ObjectId>
+            <Damage>25</Damage>
+            <Speed>75</Speed>
+            <LifetimeMS>450</LifetimeMS>
+        </Projectile>
+    </Object>
+
+    <Object type="0x602" id="Snake">
+        <Group>Snakes</Group>
+        <Enemy />
+        <Class>Character</Class>
+        <AnimatedTexture>
+            <File>chars8x8dBeach</File><Index>0</Index>
+        </AnimatedTexture>
+        <HitSound>monster/snakes_hit</HitSound>
+        <DeathSound>monster/snakes_death</DeathSound>
+        <Size>80</Size>
+        <MaxHitPoints>80</MaxHitPoints>
+        <Defense>1</Defense>
+        <Resilience>15</Resilience>
+        <Terrain>ShoreSand</Terrain>
+        <SpawnProb>1.0</SpawnProb>
+        <Spawn>
+            <Mean>5</Mean><StdDev>1</StdDev><Min>2</Min><Max>7</Max>
+        </Spawn>
+        <Projectile id="0">
+            <ObjectId>Green Magic</ObjectId>
+            <Damage>25</Damage>
+            <Speed>80</Speed>
+            <LifetimeMS>450</LifetimeMS>
+        </Projectile>
+    </Object>
+
+    <Object type="0x603" id="Poison Scorpion">
+        <Group>Scorpions</Group>
+        <Enemy />
+        <Class>Character</Class>
+        <AnimatedTexture>
+            <File>chars8x8rBeach</File><Index>4</Index>
+        </AnimatedTexture>
+        <HitSound>monster/scorpions_hit</HitSound>
+        <DeathSound>monster/scorpions_death</DeathSound>
+        <Size>80</Size>
+        <MaxHitPoints>45</MaxHitPoints>
+        <Defense>4</Defense>
+        <Resilience>15</Resilience>
+        <Terrain>ShoreSand</Terrain>
+        <Projectile id="0">
+            <ObjectId>Green Magic</ObjectId>
+            <Damage>35</Damage>
+            <Speed>95</Speed>
+            <LifetimeMS>550</LifetimeMS>
+            <Size>75</Size>
+        </Projectile>
+    </Object>
+
+    <Object type="0x604" id="Scorpion Queen">
+        <Group>Scorpions</Group>
+        <Enemy />
+        <Class>Character</Class>
+        <AnimatedTexture>
+            <File>chars8x8rBeach</File><Index>5</Index>
+        </AnimatedTexture>
+        <HitSound>monster/scorpions_hit</HitSound>
+        <DeathSound>monster/scorpions_death</DeathSound>
+        <Size>120</Size>
+        <MaxHitPoints>750</MaxHitPoints>
+        <Defense>10</Defense>
+        <Resilience>80</Resilience>
+        <Terrain>ShoreSand</Terrain>
+        <Quest />
+        <Level>1</Level>
+        <XpMult>2</XpMult>
+        <SpawnProb>0.75</SpawnProb>
+        <Projectile id="0">
+            <ObjectId>Green Magic</ObjectId>
+            <Damage>55</Damage>
+            <Speed>75</Speed>
+            <LifetimeMS>2000</LifetimeMS>
+            <Size>110</Size>
+        </Projectile>
+    </Object>
+
+    <Object type="0x0953" id="Bandit Leader">
+        <Group>Bandits</Group>
+        <Enemy />
+        <Class>Character</Class>
+        <AnimatedTexture>
+            <File>chars8x8rBeach</File><Index>10</Index>
+        </AnimatedTexture>
+        <HitSound>monster/elves_hit</HitSound>
+        <DeathSound>monster/elves_death</DeathSound>
+        <Size>130</Size>
+        <MaxHitPoints>1500</MaxHitPoints>
+        <Defense>10</Defense>
+        <Resilience>80</Resilience>
+        <Terrain>ShoreSand</Terrain>
+        <Quest />
+        <Level>2</Level>
+        <XpMult>1.6</XpMult>
+        <SpawnProb>0.75</SpawnProb>
+        <Projectile id="0">
+            <ObjectId>Blade</ObjectId>
+            <Damage>80</Damage>
+            <Speed>90</Speed>
+            <Size>80</Size>
+            <LifetimeMS>600</LifetimeMS>
+        </Projectile>
+    </Object>
+
+    <Object type="0x0954" id="Bandit E">
+        <Group>Bandits</Group>
+        <Enemy />
+        <Class>Character</Class>
+        <AnimatedTexture>
+            <File>chars8x8rBeach</File><Index>11</Index>
+        </AnimatedTexture>
+        <HitSound>monster/elves_hit</HitSound>
+        <DeathSound>monster/elves_death</DeathSound>
+        <Size>90</Size>
+        <MaxHitPoints>375</MaxHitPoints>
+        <Defense>4</Defense>
+        <Resilience>25</Resilience>
+        <Terrain>ShoreSand</Terrain>
+        <Projectile id="0">
+            <ObjectId>Blade</ObjectId>
+            <Damage>50</Damage>
+            <Speed>80</Speed>
+            <Size>65</Size>
+            <LifetimeMS>600</LifetimeMS>
+        </Projectile>
+        <Projectile id="1">
+            <ObjectId>Blade</ObjectId>
+            <Damage>45</Damage>
+            <Speed>80</Speed>
+            <Size>65</Size>
+            <LifetimeMS>900</LifetimeMS>
+        </Projectile>
+    </Object>
+
+    <Object type="0x60e" id="Red Gelatinous Cube">
+        <Group>Cubes</Group>
+        <Enemy />
+        <Class>Character</Class>
+        <Texture>
+            <File>lofiChar8x8</File><Index>0xbc</Index>
+        </Texture>
+        <HitSound>monster/cubes_hit</HitSound>
+        <DeathSound>monster/cubes_death</DeathSound>
+        <Size>80</Size>
+        <MaxHitPoints>400</MaxHitPoints>
+        <Defense>5</Defense>
+        <Terrain>ShorePlains</Terrain>
+        <SpawnProb>1.0</SpawnProb>
+        <Spawn>
+            <Mean>5</Mean><StdDev>1</StdDev><Min>2</Min><Max>7</Max>
+        </Spawn>
+        <Cube />
+        <XpMult>0.6</XpMult>
+        <Projectile id="0">
+            <ObjectId>Salmon Missile</ObjectId>
+            <Damage>45</Damage>
+            <Speed>65</Speed>
+            <LifetimeMS>1500</LifetimeMS>
+        </Projectile>
+    </Object>
+
+    <Object type="0x60f" id="Purple Gelatinous Cube">
+        <Group>Cubes</Group>
+        <Enemy />
+        <Class>Character</Class>
+        <Texture>
+            <File>lofiChar8x8</File><Index>0xbd</Index>
+        </Texture>
+        <HitSound>monster/cubes_hit</HitSound>
+        <DeathSound>monster/cubes_death</DeathSound>
+        <Size>80</Size>
+        <MaxHitPoints>400</MaxHitPoints>
+        <Defense>5</Defense>
+        <Terrain>ShorePlains</Terrain>
+        <SpawnProb>1.0</SpawnProb>
+        <Spawn>
+            <Mean>5</Mean><StdDev>1</StdDev><Min>2</Min><Max>7</Max>
+        </Spawn>
+        <Cube />
+        <XpMult>0.6</XpMult>
+        <Projectile id="0">
+            <ObjectId>Purple Magic</ObjectId>
+            <Damage>60</Damage>
+            <Speed>70</Speed>
+            <LifetimeMS>1500</LifetimeMS>
+        </Projectile>
+    </Object>
+
+    <Object type="0x610" id="Green Gelatinous Cube">
+        <Group>Cubes</Group>
+        <Enemy />
+        <Class>Character</Class>
+        <Texture>
+            <File>lofiChar8x8</File><Index>0xbe</Index>
+        </Texture>
+        <HitSound>monster/cubes_hit</HitSound>
+        <DeathSound>monster/cubes_death</DeathSound>
+        <Size>80</Size>
+        <MaxHitPoints>400</MaxHitPoints>
+        <Defense>5</Defense>
+        <Terrain>ShorePlains</Terrain>
+        <SpawnProb>1.0</SpawnProb>
+        <Spawn>
+            <Mean>5</Mean><StdDev>1</StdDev><Min>2</Min><Max>7</Max>
+        </Spawn>
+        <Cube />
+        <XpMult>0.6</XpMult>
+        <Projectile id="0">
+            <ObjectId>Green Magic</ObjectId>
+            <Damage>50</Damage>
+            <Speed>70</Speed>
+            <LifetimeMS>1500</LifetimeMS>
+        </Projectile>
+    </Object>
+</Objects>

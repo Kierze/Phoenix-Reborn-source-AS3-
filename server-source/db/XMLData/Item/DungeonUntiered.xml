@@ -1,0 +1,1299 @@
+<Objects>
+  <!-- Pirate Cave-->
+  <Object type="0xa50" id="Pirate Rum">
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0x11</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>It doesn't seem like drinking this would be a good idea.</Description>
+    <Sound>use_potion</Sound>
+    <Consumable/>
+    <BagType>1</BagType>
+    <Activate effect="Drunk" duration="30">ConditionEffectSelf</Activate>
+  </Object>
+  
+  <!-- Snake Pit -->
+  <Object type="0xa3f" id="Snake Oil">
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0x01</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>A topical potion of healing that upon use is shared with fellow travelers.</Description>
+    <Sound>use_potion</Sound>
+    <Consumable/>
+    <Potion/>
+    <BagType>0</BagType>
+    <Activate range="10" amount="100">HealNova</Activate>
+  </Object>
+  <Object type="0xc04" id="Wand of the Bulwark">
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0x6c</Index>
+    </Texture>
+    <SlotType>8</SlotType>
+    <Description>This strange weapon was used by ancient battle mages to deter invaders. The secret to its construction has long been lost.</Description>
+    <RateOfFire>0.33</RateOfFire>
+    <Sound>weapon/wand_of_death</Sound>
+    <Projectile>
+      <ObjectId>Rimmed Mystic Shot</ObjectId>
+      <Speed>6</Speed>
+      <MinDamage>300</MinDamage>
+      <MaxDamage>400</MaxDamage>
+      <LifetimeMS>11000</LifetimeMS>
+      <Parametric/>
+      <PassesCover/>
+    </Projectile>
+    <LevelReq>20</LevelReq>
+    <BagType>4</BagType>
+    <FameBonus>6</FameBonus>
+    <OldSound>magicShoot</OldSound>
+  </Object>
+  <Object type="0xa40" id="Snake Skin Shield">
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0x03</Index>
+    </Texture>
+    <SlotType>5</SlotType>
+    <Description>A shield made of snake skin stretched across rigid frame.</Description>
+    <Sound>spell/fire_spray</Sound>
+    <Projectile>
+      <ObjectId>Silver Shield</ObjectId>
+      <Speed>160</Speed>
+      <MinDamage>250</MinDamage>
+      <MaxDamage>300</MaxDamage>
+      <LifetimeMS>200</LifetimeMS>
+      <Size>140</Size>
+      <ConditionEffect duration="3">Stunned</ConditionEffect>
+      <MultiHit/>
+      <PassesCover/>
+      <ParticleTrail/>
+    </Projectile>
+    <ActivateOnEquip stat="21" amount="7">IncrementStat</ActivateOnEquip>
+    <ActivateOnEquip stat="22" amount="3">IncrementStat</ActivateOnEquip>
+    <ConditionEffect duration="3">Stunned</ConditionEffect>
+    <Usable/>
+    <LevelReq>6</LevelReq>
+    <BagType>1</BagType>
+    <MpCost>100</MpCost>
+    <Activate>Shoot</Activate>
+    <NumProjectiles>4</NumProjectiles>
+  </Object>
+  <Object type="0xa3e" id="Snake Skin Armor">
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0x00</Index>
+    </Texture>
+    <SlotType>6</SlotType>
+    <Description>A tight fitting garment of snake skin that is both functional and stylish.</Description>
+    <ActivateOnEquip stat="21" amount="11">IncrementStat</ActivateOnEquip>
+    <ActivateOnEquip stat="22" amount="3">IncrementStat</ActivateOnEquip>
+    <ActivateOnEquip stat="28" amount="3">IncrementStat</ActivateOnEquip>
+    <BagType>1</BagType>
+    <FameBonus>1</FameBonus>
+  </Object>
+  <Object type="0xa41" id="Snake Eye Ring">
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0x02</Index>
+    </Texture>
+    <SlotType>9</SlotType>
+    <Description>A ring made from the eye of the Snake Queen.</Description>
+    <ActivateOnEquip stat="20" amount="3">IncrementStat</ActivateOnEquip>
+    <ActivateOnEquip stat="22" amount="3">IncrementStat</ActivateOnEquip>
+    <BagType>1</BagType>
+  </Object>
+  
+  <!-- Spider Den -->
+  <Object type="0x707" id="Healing Ichor">
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0x20</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>This foul-smelling spider ichor restores health.</Description>
+    <Sound>use_potion</Sound>
+    <Activate amount="150">Heal</Activate>
+    <Consumable/>
+    <Potion/>
+    <BagType>0</BagType>
+  </Object>
+  <Object type="0x709" id="Poison Fang Dagger">
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0x22</Index>
+    </Texture>
+    <SlotType>2</SlotType>
+    <Description>A dagger fashioned from the fang of an enormous spider.</Description>
+    <RateOfFire>1</RateOfFire>
+    <Sound>weapon/poison_fang_dagger</Sound>
+    <Projectile>
+      <ObjectId>Green Bolt</ObjectId>
+      <Speed>140</Speed>
+      <MinDamage>55</MinDamage>
+      <MaxDamage>120</MaxDamage>
+      <LifetimeMS>400</LifetimeMS>
+    </Projectile>
+    <LevelReq>5</LevelReq>
+    <BagType>1</BagType>
+    <OldSound>daggerSwing</OldSound>
+  </Object>
+  <Object type="0x708" id="Spider's Eye Ring">
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0x21</Index>
+    </Texture>
+    <SlotType>9</SlotType>
+    <Description>A ring crafted from the faceted eye of an enormous spider.</Description>
+    <ActivateOnEquip stat="26" amount="3">IncrementStat</ActivateOnEquip>
+    <ActivateOnEquip stat="27" amount="3">IncrementStat</ActivateOnEquip>
+    <BagType>1</BagType>
+  </Object>
+  
+  <!-- Tutorial -->
+  <Object type="0xa4f" id="Ring of Minor Protection">
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj</File>
+      <Index>0x2c</Index>
+    </Texture>
+    <SlotType>9</SlotType>
+    <Description>A silver ring that buzzes with a faint magical hum.</Description>
+    <ActivateOnEquip stat="0" amount="40">IncrementStat</ActivateOnEquip>
+    <ActivateOnEquip stat="21" amount="4">IncrementStat</ActivateOnEquip>
+    <ActivateOnEquip stat="26" amount="4">IncrementStat</ActivateOnEquip>
+    <BagType>0</BagType>
+  </Object>
+  
+  <!-- Theater of the Puppet Master -->
+  <Object type="0xc0d" id="Prism of Dancing Swords">
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0x58</Index>
+    </Texture>
+    <SlotType>22</SlotType>
+    <Description>This prism has a deep flaw that causes it to scatter light in two directions.</Description>
+    <ActivateOnEquip stat="20" amount="4">IncrementStat</ActivateOnEquip>
+    <ActivateOnEquip stat="22" amount="4">IncrementStat</ActivateOnEquip>
+    <ActivateOnEquip stat="0" amount="40">IncrementStat</ActivateOnEquip>
+    <Usable/>
+    <BagType>4</BagType>
+    <FameBonus>6</FameBonus>
+    <MpCost>85</MpCost>
+    <Activate duration="5">Decoy</Activate>
+    <Activate duration="5" angleOffset="180">Decoy</Activate>
+  </Object>
+  
+  <!-- Ocean Trench -->
+  <Object type="0xc10" id="Coral Bow">
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0x04</Index>
+    </Texture>
+    <SlotType>3</SlotType>
+    <Description>A bow fashioned from living coral found in only the deepest ocean trenches.  It is the favored weapon of those that inhabit the realms beneath of waves.</Description>
+    <RateOfFire>1.25</RateOfFire>
+    <Sound>weapon/double_bow</Sound>
+    <Projectile>
+      <ObjectId>Coral Arrow</ObjectId>
+      <Speed>185</Speed>
+      <MinDamage>60</MinDamage>
+      <MaxDamage>80</MaxDamage>
+      <LifetimeMS>420</LifetimeMS>
+      <MultiHit/>
+    </Projectile>
+    <LevelReq>20</LevelReq>
+    <BagType>4</BagType>
+    <FameBonus>6</FameBonus>
+    <NumProjectiles>2</NumProjectiles>
+    <OldSound>arrowShoot</OldSound>
+  </Object>
+  <Object type="0xc12" id="Coral Juice">
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0x07</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>A rare drink created by Thessal herself. It cures wounds and replenishes mental strength.</Description>
+    <Sound>use_potion</Sound>
+    <Activate amount="100">Heal</Activate>
+    <Activate amount="100">Magic</Activate>
+    <Consumable/>
+    <Potion/>
+    <BagType>3</BagType>
+  </Object>
+  <Object type="0xc13" id="Coral Ring">
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0x08</Index>
+    </Texture>
+    <SlotType>9</SlotType>
+    <Description>A ring crafted from the dangerous Fire Coral.</Description>
+    <ActivateOnEquip stat="27" amount="3">IncrementStat</ActivateOnEquip>
+    <ActivateOnEquip stat="22" amount="3">IncrementStat</ActivateOnEquip>
+    <ActivateOnEquip stat="3" amount="80">IncrementStat</ActivateOnEquip>
+    <BagType>2</BagType>
+    <FameBonus>4</FameBonus>
+  </Object>
+  <Object type="0xc18" id="Coral Silk Armor">
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0x0d</Index>
+    </Texture>
+    <SlotType>6</SlotType>
+    <Description>Mermaid-maide armor woven from unbreakable coral threads.</Description>
+    <ActivateOnEquip stat="21" amount="16">IncrementStat</ActivateOnEquip>
+    <ActivateOnEquip stat="28" amount="4">IncrementStat</ActivateOnEquip>
+    <ActivateOnEquip stat="22" amount="3">IncrementStat</ActivateOnEquip>
+    <BagType>2</BagType>
+    <FameBonus>5</FameBonus>
+  </Object>
+  <Object type="0xc1c" id="Coral Venom Trap">
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0x1b</Index>
+    </Texture>
+    <SlotType>20</SlotType>
+    <Description>A trap imbued with deadly venom from the coral of the Ocean Trench</Description>
+    <ActivateOnEquip stat="28" amount="2">IncrementStat</ActivateOnEquip>
+    <ActivateOnEquip stat="22" amount="2">IncrementStat</ActivateOnEquip>
+    <Usable/>
+    <LevelReq>20</LevelReq>
+    <BagType>2</BagType>
+    <FameBonus>4</FameBonus>
+    <MpCost>130</MpCost>
+    <Activate radius="4" totalDamage="350" condEffect="Paralyzed" condDuration="3.5">Trap</Activate>
+  </Object>
+
+  <!-- Forbidden Jungle-->
+  <Object type="0xc14" id="Robe of the Tlatoani">
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0x09</Index>
+    </Texture>
+    <SlotType>14</SlotType>
+    <Description>An ancient ceremonial robe once worn by the Tlatoani.</Description>
+    <ActivateOnEquip stat="27" amount="8">IncrementStat</ActivateOnEquip>
+    <ActivateOnEquip stat="3" amount="45">IncrementStat</ActivateOnEquip>
+    <BagType>2</BagType>
+    <FameBonus>2</FameBonus>
+  </Object>
+  <Object type="0xc15" id="Staff of the Crystal Serpent">
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0x0a</Index>
+    </Texture>
+    <SlotType>17</SlotType>
+    <Description>An ancient staff used both for sacrifice and communion with the gods.</Description>
+    <RateOfFire>1.1</RateOfFire>
+    <Sound>monster/djinn_hit</Sound>
+    <Projectile>
+      <ObjectId>Crystal Serpent Missile</ObjectId>
+      <Speed>180</Speed>
+      <MinDamage>60</MinDamage>
+      <MaxDamage>70</MaxDamage>
+      <LifetimeMS>500</LifetimeMS>
+      <Amplitude>0.5</Amplitude>
+      <Frequency>2</Frequency>
+    </Projectile>
+    <LevelReq>10</LevelReq>
+    <BagType>2</BagType>
+    <FameBonus>2</FameBonus>
+    <NumProjectiles>2</NumProjectiles>
+    <ArcGap>0</ArcGap>
+    <OldSound>magicShoot</OldSound>
+  </Object>
+  <Object type="0xc16" id="Cracked Crystal Skull">
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0x0b</Index>
+    </Texture>
+    <SlotType>19</SlotType>
+    <Description>A relic uncovered from the depths of the jungle. It exudes a deep darkness.</Description>
+    <Usable/>
+    <LevelReq>5</LevelReq>
+    <BagType>2</BagType>
+    <FameBonus>2</FameBonus>
+    <MpCost>140</MpCost>
+    <Activate radius="4.25" totalDamage="80">VampireBlast</Activate>
+  </Object>
+  <Object type="0xc17" id="Crystal Bone Ring">
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0x0c</Index>
+    </Texture>
+    <SlotType>9</SlotType>
+    <Description>A ring made from a splinter of crystallized sacrificial bone.</Description>
+    <ActivateOnEquip stat="28" amount="3">IncrementStat</ActivateOnEquip>
+    <ActivateOnEquip stat="27" amount="3">IncrementStat</ActivateOnEquip>
+    <BagType>1</BagType>
+  </Object>
+  <Object type="0xc1a" id="Pollen Powder">
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0x19</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>A pouch of ground pollen from the flowers indigenous to the Forbidden Jungle.</Description>
+    <Sound>use_potion</Sound>
+    <Consumable/>
+    <Potion/>
+    <BagType>0</BagType>
+    <Activate range="10" amount="100">MagicNova</Activate>
+  </Object>
+  
+  <!-- Manor of the Immortals -->
+  <Object type="0xc1d" id="St. Abraham's Wand">
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0x1c</Index>
+    </Texture>
+    <SlotType>8</SlotType>
+    <Description>A wand made from a brilliant white cross designed to ward off evil.</Description>
+    <ActivateOnEquip stat="26" amount="4">IncrementStat</ActivateOnEquip>
+    <ActivateOnEquip stat="27" amount="4">IncrementStat</ActivateOnEquip>
+    <RateOfFire>1</RateOfFire>
+    <Sound>weapon/fire_wand</Sound>
+    <Projectile>
+      <ObjectId>Cross Bullet</ObjectId>
+      <Speed>130</Speed>
+      <MinDamage>90</MinDamage>
+      <MaxDamage>110</MaxDamage>
+      <LifetimeMS>800</LifetimeMS>
+    </Projectile>
+    <LevelReq>10</LevelReq>
+    <BagType>2</BagType>
+    <FameBonus>3</FameBonus>
+    <OldSound>magicShoot</OldSound>
+  </Object>
+  <Object type="0xc09" id="Tome of Purification">
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0x1d</Index>
+    </Texture>
+    <SlotType>4</SlotType>
+    <Description>An ancient tome bound in white Leather, created to aid in the struggle against the ultimate evil.</Description>
+    <Sound>spell/major_heal</Sound>
+    <ActivateOnEquip stat="26" amount="7">IncrementStat</ActivateOnEquip>
+    <ActivateOnEquip stat="27" amount="7">IncrementStat</ActivateOnEquip>
+    <Usable/>
+    <LevelReq>20</LevelReq>
+    <BagType>4</BagType>
+    <FameBonus>6</FameBonus>
+    <MpCost>100</MpCost>
+    <Activate amount="250" range="6">HealNova</Activate>
+    <Activate range="6" effect="Speedy" checkExistingEffect="Hexed">ClearConditionEffectAura</Activate>
+    <Activate range="6">RemoveNegativeConditions</Activate>
+  </Object>
+  <Object type="0xc1f" id="Chasuble of Holy Light">
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0x1e</Index>
+    </Texture>
+    <SlotType>14</SlotType>
+    <Description>An ornate robe worn by servants of the faith.</Description>
+    <ActivateOnEquip stat="21" amount="10">IncrementStat</ActivateOnEquip>
+    <ActivateOnEquip stat="3" amount="50">IncrementStat</ActivateOnEquip>
+    <ActivateOnEquip stat="26" amount="4">IncrementStat</ActivateOnEquip>
+    <ActivateOnEquip stat="27" amount="4">IncrementStat</ActivateOnEquip>
+    <BagType>2</BagType>
+    <FameBonus>3</FameBonus>
+  </Object>
+  <Object type="0xc20" id="Ring of Divine Faith">
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0x1f</Index>
+    </Texture>
+    <SlotType>9</SlotType>
+    <Description>A ring that symbolizes divine might.</Description>
+    <ActivateOnEquip stat="26" amount="5">IncrementStat</ActivateOnEquip>
+    <ActivateOnEquip stat="27" amount="5">IncrementStat</ActivateOnEquip>
+    <FameBonus>3</FameBonus>
+    <BagType>2</BagType>
+  </Object>
+  <Object type="0xc21" id="Holy Water">
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0x23</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>Blessed water that heals and purifies the user.</Description>
+    <Sound>use_potion</Sound>
+    <Activate amount="100">Heal</Activate>
+    <Activate effect="Speedy" checkExistingEffect="Hexed">ClearConditionEffectSelf</Activate>
+    <Activate>RemoveNegativeConditionsSelf</Activate>
+    <Consumable/>
+    <Potion/>
+    <BagType>3</BagType>
+  </Object>
+  <Object type="0xc22" id="Bone Dagger">
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0x28</Index>
+    </Texture>
+    <SlotType>2</SlotType>
+    <Description>A dagger made of razor-sharp bone.</Description>
+    <RateOfFire>1</RateOfFire>
+    <Sound>weapon/dirk</Sound>
+    <Projectile>
+      <ObjectId>Bone Dagger Shot</ObjectId>
+      <Speed>140</Speed>
+      <MinDamage>70</MinDamage>
+      <MaxDamage>130</MaxDamage>
+      <LifetimeMS>320</LifetimeMS>
+      <MultiHit/>
+    </Projectile>
+    <LevelReq>10</LevelReq>
+    <BagType>2</BagType>
+    <OldSound>daggerSwing</OldSound>
+    <FameBonus>2</FameBonus>
+  </Object>
+  
+  <!-- Tomb of the Ancients-->
+  <Object type="0xba0" id="Ring of the Sphinx">
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj4</File>
+      <Index>0xa0</Index>
+    </Texture>
+    <SlotType>9</SlotType>
+    <Description>The malachite stone makes you feel at peace with the land.</Description>
+    <ActivateOnEquip stat="27" amount="4">IncrementStat</ActivateOnEquip>
+    <ActivateOnEquip stat="28" amount="4">IncrementStat</ActivateOnEquip>
+    <ActivateOnEquip stat="3" amount="100">IncrementStat</ActivateOnEquip>
+    <BagType>4</BagType>
+    <FameBonus>5</FameBonus>
+  </Object>
+  <Object type="0xba1" id="Ring of the Nile">
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj4</File>
+      <Index>0xa1</Index>
+    </Texture>
+    <SlotType>9</SlotType>
+    <Description>The azule stone makes you feel ready for any situation.</Description>
+    <ActivateOnEquip stat="22" amount="4">IncrementStat</ActivateOnEquip>
+    <ActivateOnEquip stat="28" amount="4">IncrementStat</ActivateOnEquip>
+    <ActivateOnEquip stat="0" amount="60">IncrementStat</ActivateOnEquip>
+    <ActivateOnEquip stat="3" amount="60">IncrementStat</ActivateOnEquip>
+    <BagType>4</BagType>
+    <FameBonus>5</FameBonus>
+  </Object>
+  <Object type="0xba2" id="Ring of the Pyramid">
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj4</File>
+      <Index>0xa2</Index>
+    </Texture>
+    <SlotType>9</SlotType>
+    <Description>The dolomite stone makes you feel able to stand against anything.</Description>
+    <ActivateOnEquip stat="20" amount="4">IncrementStat</ActivateOnEquip>
+    <ActivateOnEquip stat="21" amount="4">IncrementStat</ActivateOnEquip>
+    <ActivateOnEquip stat="0" amount="100">IncrementStat</ActivateOnEquip>
+    <BagType>4</BagType>
+    <FameBonus>5</FameBonus>
+  </Object>
+  <Object type="0xc1e" id="Tome of Holy Protection">
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0x53</Index>
+    </Texture>
+    <SlotType>4</SlotType>
+    <Description>A tome dedicated to the works of a forgotten god is written in a strange script that glows with a pure white light.</Description>
+    <Sound>spell/major_heal</Sound>
+    <ActivateOnEquip stat="26" amount="4">IncrementStat</ActivateOnEquip>
+    <ActivateOnEquip stat="0" amount="40">IncrementStat</ActivateOnEquip>
+    <Usable/>
+    <LevelReq>20</LevelReq>
+    <BagType>4</BagType>
+    <FameBonus>6</FameBonus>
+    <MpCost>100</MpCost>
+    <Activate amount="250" range="6">HealNova</Activate>
+    <Activate effect="Armored" duration="4">ConditionEffectSelf</Activate>
+  </Object>
+  
+  <!-- Davy Jones' Locker -->
+
+  <Object type="0xc25" id="Ghost Pirate Rum">
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj3</File>
+      <Index>0xbf</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>Rum with ghostly properties that can help the drinker enter the spirit realm. It has fermented under the sea for ages.</Description>
+    <Sound>use_potion</Sound>
+    <Consumable/>
+    <BagType>1</BagType>
+    <Activate effect="Drunk" duration="6">ConditionEffectSelf</Activate>
+    <Activate effect="Invisible" duration="4">ConditionEffectSelf</Activate>
+  </Object>
+  <Object type="0xc27" id="Captain's Ring">
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj3</File>
+      <Index>0xc7</Index>
+    </Texture>
+    <SlotType>9</SlotType>
+    <Description>Captain Davy Jones's ring.</Description>
+    <ActivateOnEquip stat="20" amount="3">IncrementStat</ActivateOnEquip>
+    <ActivateOnEquip stat="28" amount="3">IncrementStat</ActivateOnEquip>
+    <ActivateOnEquip stat="0" amount="40">IncrementStat</ActivateOnEquip>
+    <BagType>2</BagType>
+    <FameBonus>2</FameBonus>
+  </Object>
+  <Object type="0xc28" id="Spectral Cloth Armor">
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj3</File>
+      <Index>0xc8</Index>
+    </Texture>
+    <SlotType>6</SlotType>
+    <Description>A ghostly fabric from the other side.</Description>
+    <ActivateOnEquip stat="21" amount="14">IncrementStat</ActivateOnEquip>
+    <ActivateOnEquip stat="20" amount="3">IncrementStat</ActivateOnEquip>
+    <ActivateOnEquip stat="22" amount="3">IncrementStat</ActivateOnEquip>
+    <ActivateOnEquip stat="28" amount="3">IncrementStat</ActivateOnEquip>
+    <BagType>2</BagType>
+    <FameBonus>2</FameBonus>
+  </Object>
+  <Object type="0xc29" id="Spirit Dagger">
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj3</File>
+      <Index>0xc9</Index>
+    </Texture>
+    <SlotType>2</SlotType>
+    <Description>A dagger that was condemned to Davy Jones's Locker.</Description>
+    <RateOfFire>1</RateOfFire>
+    <Sound>weapon/dirk</Sound>
+    <Projectile>
+      <ObjectId>Spirit Dagger Slash</ObjectId>
+      <Speed>130</Speed>
+      <MinDamage>45</MinDamage>
+      <MaxDamage>245</MaxDamage>
+      <LifetimeMS>400</LifetimeMS>
+      <Amplitude>0.2</Amplitude>
+      <Frequency>0.2</Frequency>
+    </Projectile>
+    <LevelReq>20</LevelReq>
+    <BagType>4</BagType>
+    <OldSound>daggerSwing</OldSound>
+    <FameBonus>4</FameBonus>
+  </Object>
+  <Object type="0xc2a" id="Ghostly Prism">
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj3</File>
+      <Index>0xca</Index>
+    </Texture>
+    <SlotType>22</SlotType>
+    <Description>A cursed piece of Davy Jones's treasure. Using it leaves behind a deadly spirit bomb.</Description>
+    <Usable/>
+    <LevelReq>20</LevelReq>
+    <BagType>4</BagType>
+    <MpCost>90</MpCost>
+    <Activate objectId="Spirit Prism Bomb">Pet</Activate>
+    <Activate maxDistance="20">Teleport</Activate>
+    <ActivateOnEquip stat="28" amount="3">IncrementStat</ActivateOnEquip>
+    <FameBonus>6</FameBonus>
+  </Object>
+
+  <!-- Mad Lab -->
+  <Object type="0xc41" id="Transformation Potion">
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj3</File>
+      <Index>0x1b4</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>A science experiment.</Description>
+    <Sound>use_potion</Sound>
+    <Consumable/>
+    <BagType>1</BagType>
+    <Activate effect="Invisible" >ClearConditionEffectSelf</Activate>
+    <Activate effect="Hexed" duration="30">ConditionEffectSelf</Activate>
+  </Object>
+  <Object type="0xc30" id="Scepter of Fulmination">
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj3</File>
+      <Index>0x1af</Index>
+    </Texture>
+    <SlotType>23</SlotType>
+    <Description>This scepter's blast is so powerful it will slow opponents.</Description>
+    <Sound>spell/magic_nova</Sound>
+    <ActivateOnEquip stat="20" amount="2">IncrementStat</ActivateOnEquip>
+    <ActivateOnEquip stat="27" amount="2">IncrementStat</ActivateOnEquip>
+    <Usable/>
+    <LevelReq>20</LevelReq>
+    <BagType>2</BagType>
+    <FameBonus>4</FameBonus>
+    <MpCost>65</MpCost>
+    <Activate totalDamage="180" maxTargets="7" condEffect="Slowed" condDuration="3" color="0xff9933">Lightning</Activate>
+  </Object>
+  <Object type="0xc31" id="Experimental Ring">
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj3</File>
+      <Index>0x1b0</Index>
+    </Texture>
+    <SlotType>9</SlotType>
+    <Description>An early prototype ring.</Description>
+    <ActivateOnEquip stat="0" amount="60">IncrementStat</ActivateOnEquip>
+    <ActivateOnEquip stat="3" amount="60">IncrementStat</ActivateOnEquip>
+    <ActivateOnEquip stat="26" amount="4">IncrementStat</ActivateOnEquip>
+    <ActivateOnEquip stat="21" amount="4">IncrementStat</ActivateOnEquip>
+    <BagType>2</BagType>
+    <FameBonus>4</FameBonus>
+  </Object>
+  <Object type="0xc32" id="Robe of the Mad Scientist">
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj3</File>
+      <Index>0x1b1</Index>
+    </Texture>
+    <SlotType>14</SlotType>
+    <Description>A well-worn robe used for Science!</Description>
+    <ActivateOnEquip stat="20" amount="4">IncrementStat</ActivateOnEquip>
+    <ActivateOnEquip stat="26" amount="2">IncrementStat</ActivateOnEquip>
+    <ActivateOnEquip stat="21" amount="13">IncrementStat</ActivateOnEquip>
+    <ActivateOnEquip stat="27" amount="5">IncrementStat</ActivateOnEquip>
+    <ActivateOnEquip stat="3" amount="55">IncrementStat</ActivateOnEquip>
+    <BagType>2</BagType>
+    <FameBonus>5</FameBonus>
+  </Object>
+  <Object type="0xc33" id="Conducting Wand">
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj3</File>
+      <Index>0x1b2</Index>
+    </Texture>
+    <SlotType>8</SlotType>
+    <Description>This wand is powerful at conducting magical energy into a devastating blast.</Description>
+    <RateOfFire>1</RateOfFire>
+    <Sound>weapon/wand_of_death</Sound>
+    <Projectile>
+      <ObjectId>Directed Explosion</ObjectId>
+      <Speed>130</Speed>
+      <Size>50</Size>
+      <MinDamage>50</MinDamage>
+      <MaxDamage>180</MaxDamage>
+      <LifetimeMS>770</LifetimeMS>
+    </Projectile>
+    <LevelReq>20</LevelReq>
+    <ActivateOnEquip stat="21" amount="1">IncrementStat</ActivateOnEquip>
+    <ActivateOnEquip stat="27" amount="1">IncrementStat</ActivateOnEquip>
+    <BagType>2</BagType>
+    <FameBonus>4</FameBonus>
+    <OldSound>magicShoot</OldSound>
+  </Object>
+
+  <!-- Beachzone -->
+  <Object type="0xc34" id="Sand Pail 5">
+    <DisplayId>Sand Pail</DisplayId>
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj3</File>
+      <Index>0x172</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>Use this to make an awesome sand castle! (Heals nearby injured players.)</Description>
+    <Sound>monster/stone_walls_hit</Sound>
+    <Consumable/>
+    <Doses>5</Doses>
+    <SuccessorId>Sand Pail 4</SuccessorId>
+    <BagType>2</BagType>
+    <Activate objectId="Sand Castle">Pet</Activate>
+    <OldSound>use_potion</OldSound>
+    <Soulbound/>
+  </Object>
+  <Object type="0xc35" id="Sand Pail 4">
+    <DisplayId>Sand Pail</DisplayId>
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj3</File>
+      <Index>0x172</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>Use this to make an awesome sand castle! (Heals nearby injured players.)</Description>
+    <Sound>monster/stone_walls_hit</Sound>
+    <Consumable/>
+    <Doses>4</Doses>
+    <SuccessorId>Sand Pail 3</SuccessorId>
+    <BagType>2</BagType>
+    <Activate objectId="Sand Castle">Pet</Activate>
+    <OldSound>use_potion</OldSound>
+    <Soulbound/>
+  </Object>
+  <Object type="0xc36" id="Sand Pail 3">
+    <DisplayId>Sand Pail</DisplayId>
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj3</File>
+      <Index>0x172</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>Use this to make an awesome sand castle! (Heals nearby injured players.)</Description>
+    <Sound>monster/stone_walls_hit</Sound>
+    <Consumable/>
+    <Doses>3</Doses>
+    <SuccessorId>Sand Pail 2</SuccessorId>
+    <BagType>2</BagType>
+    <Activate objectId="Sand Castle">Pet</Activate>
+    <OldSound>use_potion</OldSound>
+    <Soulbound/>
+  </Object>
+  <Object type="0xc37" id="Sand Pail 2">
+    <DisplayId>Sand Pail</DisplayId>
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj3</File>
+      <Index>0x172</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>Use this to make an awesome sand castle! (Heals nearby injured players.)</Description>
+    <Sound>monster/stone_walls_hit</Sound>
+    <Consumable/>
+    <Doses>2</Doses>
+    <SuccessorId>Sand Pail 1</SuccessorId>
+    <BagType>2</BagType>
+    <Activate objectId="Sand Castle">Pet</Activate>
+    <OldSound>use_potion</OldSound>
+    <Soulbound/>
+  </Object>
+  <Object type="0xc38" id="Sand Pail 1">
+    <DisplayId>Sand Pail</DisplayId>
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj3</File>
+      <Index>0x172</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>Use this to make an awesome sand castle! (Heals nearby injured players.)</Description>
+    <Sound>monster/stone_walls_hit</Sound>
+    <Consumable/>
+    <BagType>2</BagType>
+    <Activate objectId="Sand Castle">Pet</Activate>
+    <OldSound>use_potion</OldSound>
+    <Soulbound/>
+  </Object>
+  <Object type="0xc39" id="Bahama Sunrise">
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj3</File>
+      <Index>0x173</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>A tangy fruit drink that boosts dexterity and life.</Description>
+    <Sound>use_potion</Sound>
+    <Consumable/>
+    <Soulbound/>
+    <Potion/>
+    <BagType>3</BagType>
+    <Activate stat="28" amount="10" duration="20">StatBoostSelf</Activate>
+    <Activate stat="0" amount="50" duration="20">StatBoostSelf</Activate>
+    <Activate effect="Drunk" duration="15">ConditionEffectSelf</Activate>
+  </Object>
+  <Object type="0xc3a" id="Blue Paradise">
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj3</File>
+      <Index>0x174</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>A refreshing tropical drink that boosts life and mana.</Description>
+    <Sound>use_potion</Sound>
+    <Consumable/>
+    <Soulbound/>
+    <Potion/>
+    <BagType>3</BagType>
+    <Activate stat="3" amount="50" duration="20">StatBoostSelf</Activate>
+    <Activate stat="0" amount="50" duration="20">StatBoostSelf</Activate>
+    <Activate effect="Drunk" duration="15">ConditionEffectSelf</Activate>
+  </Object>
+  <Object type="0xc3b" id="Pink Passion Breeze">
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj3</File>
+      <Index>0x175</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>A sweet tropical drink that boosts attack and dexterity.</Description>
+    <Sound>use_potion</Sound>
+    <Consumable/>
+    <Soulbound/>
+    <Potion/>
+    <BagType>3</BagType>
+    <Activate stat="20" amount="10" duration="20">StatBoostSelf</Activate>
+    <Activate stat="28" amount="10" duration="20">StatBoostSelf</Activate>
+    <Activate effect="Drunk" duration="15">ConditionEffectSelf</Activate>
+  </Object>
+  <Object type="0xc3c" id="Lime Jungle Bay">
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj3</File>
+      <Index>0x176</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>A bold island drink that boosts defense and vitality.</Description>
+    <Sound>use_potion</Sound>
+    <Consumable/>
+    <Soulbound/>
+    <Potion/>
+    <BagType>3</BagType>
+    <Activate stat="21" amount="10" duration="30">StatBoostSelf</Activate>
+    <Activate stat="26" amount="10" duration="30">StatBoostSelf</Activate>
+    <Activate effect="Drunk" duration="15">ConditionEffectSelf</Activate>
+  </Object>
+
+  <!-- Lair of Draconis -->
+  <Object type="0xc82" id="Leaf Dragon Hide Armor">
+    <Class>Equipment</Class>
+    <Item />
+    <Texture>
+      <File>lofiObj3</File>
+      <Index>0x22b</Index>
+    </Texture>
+    <SlotType>6</SlotType>
+    <Description>Light armor crafted from the hard-as-steel leafy sclaes of a Leaf Dragon.</Description>
+    <ActivateOnEquip stat="21" amount="22">IncrementStat</ActivateOnEquip>
+    <ActivateOnEquip stat="28" amount="8">IncrementStat</ActivateOnEquip>
+    <BagType>3</BagType>
+    <FameBonus>6</FameBonus>
+  </Object>
+  <Object type="0xc83" id="Water Dragon Silk Robe">
+    <Class>Equipment</Class>
+    <Item />
+    <Texture>
+      <File>lofiObj3</File>
+      <Index>0x22c</Index>
+    </Texture>
+    <SlotType>14</SlotType>
+    <Description>A magic robe woven from enchanted threads of water harvested from a great Water Dragon's body.</Description>
+    <ActivateOnEquip stat="20" amount="6">IncrementStat</ActivateOnEquip>
+    <ActivateOnEquip stat="21" amount="16">IncrementStat</ActivateOnEquip>
+    <ActivateOnEquip stat="27" amount="8">IncrementStat</ActivateOnEquip>
+    <ActivateOnEquip stat="3" amount="80">IncrementStat</ActivateOnEquip>
+    <BagType>3</BagType>
+    <FameBonus>6</FameBonus>
+  </Object>
+  <Object type="0xc84" id="Fire Dragon Battle Armor">
+    <Class>Equipment</Class>
+    <Item />
+    <Texture>
+      <File>lofiObj3</File>
+      <Index>0x22d</Index>
+    </Texture>
+    <SlotType>7</SlotType>
+    <Description>Battle armor made from Fire Dragon scales, one of the strongest substances world has ever seen.</Description>
+    <ActivateOnEquip stat="21" amount="28">IncrementStat</ActivateOnEquip>
+    <ActivateOnEquip stat="26" amount="4">IncrementStat</ActivateOnEquip>
+    <ActivateOnEquip stat="0" amount="60">IncrementStat</ActivateOnEquip>
+    <BagType>3</BagType>
+    <FameBonus>6</FameBonus>
+  </Object>
+ 
+  <Object type="0xc51" id="Celestial Blade">
+    <Class>Equipment</Class>
+    <Item />
+    <Texture>
+      <File>lofiObj3</File>
+      <Index>0x20d</Index>
+    </Texture>
+    <SlotType>24</SlotType>
+    <Description>An ancient weapon imbued with the power of the cosmos.</Description>
+    <RateOfFire>1</RateOfFire>
+    <Sound>weapon/long_sword</Sound>
+    <Projectile>
+      <ObjectId>Celestial Slash</ObjectId>
+      <Speed>130</Speed>
+      <MinDamage>200</MinDamage>
+      <MaxDamage>220</MaxDamage>
+      <LifetimeMS>400</LifetimeMS>
+      <Amplitude>1</Amplitude>
+      <Frequency>0.2</Frequency>
+    </Projectile>
+    <LevelReq>20</LevelReq>
+    <BagType>4</BagType>
+    <FameBonus>6</FameBonus>
+    <OldSound>bladeSwing</OldSound>
+  </Object>
+  <Object type="0xc52" id="Ray Katana">
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj3</File>
+      <Index>0x20e</Index>
+    </Texture>
+    <SlotType>24</SlotType>
+    <Description>A great katana charged with the power of the sun itself.</Description>
+    <RateOfFire>1</RateOfFire>
+    <Sound>weapon/long_sword</Sound>
+    <Projectile>
+      <ObjectId>Beam Slash</ObjectId>
+      <Speed>180</Speed>
+      <MinDamage>60</MinDamage>
+      <MaxDamage>95</MaxDamage>
+      <LifetimeMS>340</LifetimeMS>
+      <MultiHit/>
+    </Projectile>
+    <LevelReq>20</LevelReq>
+    <BagType>4</BagType>
+    <FameBonus>3</FameBonus>
+    <OldSound>bladeSwing</OldSound>
+    <Soulbound/>
+    <DisplayId>Ray Katana</DisplayId>
+  </Object>
+  <Object type="0xc5a" id="Midnight Star">
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj3</File>
+      <Index>0x22a</Index>
+    </Texture>
+    <SlotType>25</SlotType>
+    <Description>A legendary shuriken that sucks the light in around it.</Description>
+    <Sound>spell/fire_spray</Sound>
+    <ExtraTooltipData>
+      <EffectInfo name="While Key Held" description=""/>
+      <EffectInfo name="" description="Speedy on self"/>
+      <EffectInfo name="" description="Drain 10 MP/sec"/>
+      <EffectInfo name="When Key Released" description=""/>
+    </ExtraTooltipData>
+    <Projectile>
+      <ObjectId>Ninja Star Midnight</ObjectId>
+      <Speed>150</Speed>
+      <MinDamage>300</MinDamage>
+      <MaxDamage>600</MaxDamage>
+      <LifetimeMS>1000</LifetimeMS>
+      <Size>120</Size>
+      <ConditionEffect duration="4">Paralyzed</ConditionEffect>
+      <PassesCover/>
+    </Projectile>
+    <ConditionEffect duration="4">Paralyzed</ConditionEffect>
+    <Usable/>
+    <LevelReq>20</LevelReq>
+    <BagType>4</BagType>
+    <MpCost>0</MpCost>
+    <MpEndCost>90</MpEndCost>
+    <MultiPhase/>
+    <Activate>ShurikenAbility</Activate>
+    <Soulbound/>
+    <DisplayId>Midnight Star</DisplayId>
+  </Object>
+
+  <!-- Resurrection Series-->
+  <Object type="0xb3e" id="Amulet of Resurrection">
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0x50</Index>
+    </Texture>
+    <SlotType>9</SlotType>
+    <Description>An amulet that protects the wearer from even death itself.</Description>
+    <ActivateOnEquip stat="94" amount="20">IncrementStat</ActivateOnEquip>
+    <ActivateOnEquip stat="96" amount="20">IncrementStat</ActivateOnEquip>
+    <ActivateOnEquip stat="20" amount="2">IncrementStat</ActivateOnEquip>
+    <ActivateOnEquip stat="21" amount="20">IncrementStat</ActivateOnEquip>
+    <ActivateOnEquip stat="22" amount="20">IncrementStat</ActivateOnEquip>
+    <ActivateOnEquip stat="26" amount="20">IncrementStat</ActivateOnEquip>
+    <ActivateOnEquip stat="27" amount="20">IncrementStat</ActivateOnEquip>
+    <ActivateOnEquip stat="28" amount="20">IncrementStat</ActivateOnEquip>
+    <ActivateOnEquip stat="0" amount="200">IncrementStat</ActivateOnEquip>
+    <ActivateOnEquip stat="3" amount="200">IncrementStat</ActivateOnEquip>
+    <Resurrects/>
+    <BagType>4</BagType>
+  </Object>
+  <Object type="0xc5b" id="Amulet Strap">
+    <Class>Equipment</Class>
+    <Item />
+    <Texture>
+      <File>lofiObj3</File>
+      <Index>0x230</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>A leather strap that probably could fit around your neck.</Description>
+    <BagType>4</BagType>
+    <Material/>
+    <Price>20</Price>
+  </Object>
+  <Object type="0xc5c" id="Amulet Core">
+    <Class>Equipment</Class>
+    <Item />
+    <Texture>
+      <File>lofiObj3</File>
+      <Index>0x231</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Description>*You feel the core pulsating in your hand*
+Legend has it... The core can stop even death itself if properly used.</Description>
+    <BagType>4</BagType>
+    <Material/>
+  </Object>
+  
+  <!-- Oryx's Castle-->
+  <Object type="0xc05" id="Ancient Stone Sword">
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0x6d</Index>
+    </Texture>
+    <SlotType>1</SlotType>
+    <Description>A slow but powerful sword that is a relic of a long forgotten age.</Description>
+    <RateOfFire>0.6</RateOfFire>
+    <Sound>weapon/glass_sword</Sound>
+    <Projectile>
+      <ObjectId>Stone Slash</ObjectId>
+      <Speed>100</Speed>
+      <MinDamage>340</MinDamage>
+      <MaxDamage>390</MaxDamage>
+      <LifetimeMS>400</LifetimeMS>
+    </Projectile>
+    <LevelReq>20</LevelReq>
+    <BagType>4</BagType>
+    <FameBonus>4</FameBonus>
+    <OldSound>bladeSwing</OldSound>
+  </Object>
+
+  <Object type="0xb34" id="Fire Water">
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0x2b</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Tier>3</Tier>
+    <Description>A potent draught from Oryx's wine cellar.</Description>
+    <Sound>use_potion</Sound>
+    <Activate amount="230">Heal</Activate>
+    <Consumable/>
+    <Potion/>
+    <BagType>3</BagType>
+  </Object>
+  <Object type="0xb35" id="Cream Spirit">
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0x2c</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Tier>3</Tier>
+    <Description>A potent draught from Oryx's wine cellar.</Description>
+    <Sound>use_potion</Sound>
+    <Activate amount="150">Magic</Activate>
+    <Consumable/>
+    <Potion/>
+    <BagType>3</BagType>
+  </Object>
+  <Object type="0xb36" id="Chardonnay">
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0x2d</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Tier>3</Tier>
+    <Description>A potent draught from Oryx's wine cellar.</Description>
+    <Sound>use_potion</Sound>
+    <Activate amount="150">Heal</Activate>
+    <Consumable/>
+    <Potion/>
+    <BagType>3</BagType>
+  </Object>
+  <Object type="0xb37" id="Melon Liqueur">
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0x2e</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Tier>3</Tier>
+    <Description>A potent draught from Oryx's wine cellar.</Description>
+    <Sound>use_potion</Sound>
+    <Activate amount="150">Magic</Activate>
+    <Consumable/>
+    <Potion/>
+    <BagType>3</BagType>
+  </Object>
+  <Object type="0xb38" id="Cabernet">
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0x2f</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Tier>3</Tier>
+    <Description>A potent draught from Oryx's wine cellar.</Description>
+    <Sound>use_potion</Sound>
+    <Activate amount="150">Heal</Activate>
+    <Consumable/>
+    <Potion/>
+    <BagType>3</BagType>
+  </Object>
+  <Object type="0xb39" id="Vintage Port">
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0x3b</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Tier>3</Tier>
+    <Description>A potent draught from Oryx's wine cellar.</Description>
+    <Sound>use_potion</Sound>
+    <Activate amount="150">Magic</Activate>
+    <Consumable/>
+    <Potion/>
+    <BagType>3</BagType>
+  </Object>
+  <Object type="0xb3a" id="Sauvignon Blanc">
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0x3c</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Tier>3</Tier>
+    <Description>A potent draught from Oryx's wine cellar.</Description>
+    <Sound>use_potion</Sound>
+    <Activate amount="150">Heal</Activate>
+    <Consumable/>
+    <Potion/>
+    <BagType>3</BagType>
+  </Object>
+  <Object type="0xb3b" id="Muscat">
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0x3d</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Tier>3</Tier>
+    <Description>A potent draught from Oryx's wine cellar.</Description>
+    <Sound>use_potion</Sound>
+    <Activate amount="150">Magic</Activate>
+    <Consumable/>
+    <Potion/>
+    <BagType>3</BagType>
+  </Object>
+  <Object type="0xb3c" id="Rice Wine">
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0x3e</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Tier>3</Tier>
+    <Description>A potent draught from Oryx's wine cellar.</Description>
+    <Sound>use_potion</Sound>
+    <Activate amount="150">Heal</Activate>
+    <Consumable/>
+    <Potion/>
+    <BagType>3</BagType>
+  </Object>
+  <Object type="0xb3d" id="Shiraz">
+    <Class>Equipment</Class>
+    <Item/>
+    <Texture>
+      <File>lofiObj2</File>
+      <Index>0x3f</Index>
+    </Texture>
+    <SlotType>10</SlotType>
+    <Tier>3</Tier>
+    <Description>A potent draught from Oryx's wine cellar.</Description>
+    <Sound>use_potion</Sound>
+    <Activate amount="150">Magic</Activate>
+    <Consumable/>
+    <Potion/>
+    <BagType>3</BagType>
+  </Object>
+</Objects>

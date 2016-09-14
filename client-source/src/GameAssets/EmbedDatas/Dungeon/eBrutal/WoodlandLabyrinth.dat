@@ -1,0 +1,259 @@
+<Objects>
+    <!-- UNVERIFIED Woodland Labyrinth XML -->
+    <Object type="0x2a00" id="Forest Larva">
+        <Enemy/>
+        <Class>Character</Class>
+        <Texture>
+            <File>lofiObj5</File>
+            <Index>0x8a</Index>
+        </Texture>
+        <Defense>15</Defense>
+        <Size>120</Size>
+        <HitSound>monster/chicken_hit</HitSound>
+        <DeathSound>monster/chicken_death</DeathSound>
+        <MaxHitPoints>66000</MaxHitPoints>
+        <XpMult>0.3</XpMult>
+        <ShadowSize>80</ShadowSize>
+        <Projectile id="0">
+            <ObjectId>Yellow Energy Shot</ObjectId>
+            <Damage>80</Damage>
+            <Speed>70</Speed>
+            <LifetimeMS>1400</LifetimeMS>
+            <ConditionEffect duration="3">Slowed</ConditionEffect>
+        </Projectile>
+    </Object>
+    <Object type="0x2a01" id="Monstrous Megamoth">
+        <Enemy/>
+        <Class>Character</Class>
+        <Texture>
+            <File>lofiObj5</File>
+            <Index>0x8a</Index>
+        </Texture>
+        <Defense>15</Defense>
+        <Size>120</Size>
+        <HitSound>monster/chicken_hit</HitSound>
+        <DeathSound>monster/chicken_death</DeathSound>
+        <MaxHitPoints>66000</MaxHitPoints>
+        <XpMult>0.3</XpMult>
+        <ShadowSize>80</ShadowSize>
+        <Projectile id="0">
+            <ObjectId>Celestial Slash</ObjectId>
+            <Damage>50</Damage>
+            <Speed>70</Speed>
+            <LifetimeMS>1400</LifetimeMS>
+            <ConditionEffect duration="3">Quiet</ConditionEffect>
+        </Projectile>
+    </Object>
+    <Object type="0x2a02" id="Monstrous Megamoth Sentinel">
+        <Enemy/>
+        <Class>Character</Class>
+        <Texture>
+            <File>lofiObj5</File>
+            <Index>0x8a</Index>
+        </Texture>
+        <Defense>15</Defense>
+        <Size>120</Size>
+        <HitSound>monster/chicken_hit</HitSound>
+        <DeathSound>monster/chicken_death</DeathSound>
+        <MaxHitPoints>1500</MaxHitPoints>
+        <XpMult>0.3</XpMult>
+        <ShadowSize>80</ShadowSize>
+        <Projectile id="0">
+            <ObjectId>Blue Bolt</ObjectId>
+            <Damage>80</Damage>
+            <Speed>90</Speed>
+            <LifetimeMS>900</LifetimeMS>
+            <ConditionEffect duration="0.9">Confused</ConditionEffect>
+        </Projectile>
+    </Object>
+    <Object type="0x2a03" id="Mini Larva">
+        <Enemy/>
+        <Class>Character</Class>
+        <Texture>
+            <File>lofiObj5</File>
+            <Index>0x8a</Index>
+        </Texture>
+        <Defense>15</Defense>
+        <Size>120</Size>
+        <HitSound>monster/chicken_hit</HitSound>
+        <DeathSound>monster/chicken_death</DeathSound>
+        <MaxHitPoints>1500</MaxHitPoints>
+        <XpMult>0.3</XpMult>
+        <ShadowSize>80</ShadowSize>
+        <Projectile id="0">
+            <ObjectId>Blue Magic</ObjectId>
+            <Size>40</Size>
+            <Damage>80</Damage>
+            <Speed>120</Speed>
+            <LifetimeMS>1800</LifetimeMS>
+        </Projectile>
+    </Object>
+    <Object type="0x2a04" id="Murderous Megamoth">
+        <Enemy/>
+        <Class>Character</Class>
+        <Texture>
+            <File>lofiObj5</File>
+            <Index>0x8a</Index>
+        </Texture>
+        <Defense>15</Defense>
+        <Size>120</Size>
+        <HitSound>monster/chicken_hit</HitSound>
+        <DeathSound>monster/chicken_death</DeathSound>
+        <MaxHitPoints>35000</MaxHitPoints>
+        <XpMult>3</XpMult>
+        <ShadowSize>80</ShadowSize>
+        <Projectile id="0">
+            <ObjectId>Fire Boomerang</ObjectId>
+            <Damage>100</Damage>
+            <Speed>90</Speed>
+            <LifetimeMS>1200</LifetimeMS>
+            <Boomerang/>
+            <ConditionEffect duration="0.9">Confused</ConditionEffect>
+        </Projectile>
+    </Object>
+    <Object type="0x2a10" id="Woodland Weakness Turret">
+        <Enemy />
+        <Class>Character</Class>
+        <RemoteTexture>
+            <Instance>production</Instance>
+            <Id>123</Id>
+        </RemoteTexture>
+        <Hitsound>monster/dwarves_hit</Hitsound>
+        <DeathSound>monster/dwarves_death</DeathSound>
+        <Size>100</Size>
+        <MaxHitPoints>15000000</MaxHitPoints>
+        <Defense>150</Defense>
+        <Projectile id="0">
+            <ObjectId>Green Magic</ObjectId>
+            <Damage>75</Damage>
+            <Speed>50</Speed>
+            <LifetimeMS>1000</LifetimeMS>
+            <ConditionEffect duration="2.5">Weak</ConditionEffect>
+            <PassesCover />
+        </Projectile>
+    </Object>
+    <Object type="0x2a11" id="Woodland Paralyze Turret">
+        <Enemy />
+        <Class>Character</Class>
+        <RemoteTexture>
+            <Instance>production</Instance>
+            <Id>123</Id>
+        </RemoteTexture>
+        <Hitsound>monster/dwarves_hit</Hitsound>
+        <DeathSound>monster/dwarves_death</DeathSound>
+        <Size>100</Size>
+        <MaxHitPoints>15000000</MaxHitPoints>
+        <Defense>150</Defense>
+        <Projectile id="0">
+            <ObjectId>Yellow Magic</ObjectId>
+            <Damage>75</Damage>
+            <Speed>50</Speed>
+            <LifetimeMS>1000</LifetimeMS>
+            <ConditionEffect duration="2.5">Paralyzed</ConditionEffect>
+            <PassesCover />
+        </Projectile>
+    </Object>
+    <Object type="0x2a12" id="Woodland Silence Turret">
+        <Enemy />
+        <Class>Character</Class>
+        <RemoteTexture>
+            <Instance>production</Instance>
+            <Id>123</Id>
+        </RemoteTexture>
+        <Hitsound>monster/dwarves_hit</Hitsound>
+        <DeathSound>monster/dwarves_death</DeathSound>
+        <Size>100</Size>
+        <MaxHitPoints>15000000</MaxHitPoints>
+        <Defense>150</Defense>
+        <Projectile id="0">
+            <ObjectId>Blue Magic</ObjectId>
+            <Damage>75</Damage>
+            <Speed>50</Speed>
+            <LifetimeMS>1000</LifetimeMS>
+            <ConditionEffect duration="2.5">Quiet</ConditionEffect>
+            <PassesCover />
+        </Projectile>
+    </Object>
+    <Object type="0x2a13" id="Grizzled Armored Squirrel">
+        <Enemy />
+        <Class>Character</Class>
+        <RemoteTexture>
+            <Instance>production</Instance>
+            <Id>123</Id>
+        </RemoteTexture>
+        <Hitsound>monster/dwarves_hit</Hitsound>
+        <DeathSound>monster/dwarves_death</DeathSound>
+        <Size>100</Size>
+        <MaxHitPoints>4000</MaxHitPoints>
+        <Defense>0</Defense>
+        <Projectile id="0">
+            <ObjectId>Blade</ObjectId>
+            <Damage>90</Damage>
+            <Speed>50</Speed>
+            <LifetimeMS>1000</LifetimeMS>
+            <PassesCover />
+        </Projectile>
+    </Object>
+    <Object type="0x2a14" id="Mecha Squirrel">
+        <Enemy />
+        <Class>Character</Class>
+        <RemoteTexture>
+            <Instance>production</Instance>
+            <Id>123</Id>
+        </RemoteTexture>
+        <Hitsound>monster/dwarves_hit</Hitsound>
+        <DeathSound>monster/dwarves_death</DeathSound>
+        <Size>200</Size>
+        <MaxHitPoints>10000</MaxHitPoints>
+        <Defense>6</Defense>
+        <Projectile id="0">
+            <ObjectId>Fireball</ObjectId>
+            <Damage>175</Damage>
+            <Speed>50</Speed>
+            <LifetimeMS>1000</LifetimeMS>
+            <PassesCover />
+        </Projectile>
+    </Object>
+    <Object type="0x2a15" id="Forest Goblin Bruiser">
+        <Enemy />
+        <Class>Character</Class>
+        <RemoteTexture>
+            <Instance>production</Instance>
+            <Id>123</Id>
+        </RemoteTexture>
+        <Hitsound>monster/dwarves_hit</Hitsound>
+        <DeathSound>monster/dwarves_death</DeathSound>
+        <Size>100</Size>
+        <MaxHitPoints>5000</MaxHitPoints>
+        <Defense>6</Defense>
+        <Projectile id="0">
+            <ObjectId>Blade</ObjectId>
+            <Damage>100</Damage>
+            <Speed>50</Speed>
+            <LifetimeMS>1000</LifetimeMS>
+            <PassesCover />
+        </Projectile>
+    </Object>
+    <Object type="0x2a16" id="Forest Goblin Nechromancer">
+        <Enemy />
+        <Class>Character</Class>
+        <RemoteTexture>
+            <Instance>production</Instance>
+            <Id>123</Id>
+        </RemoteTexture>
+        <Hitsound>monster/dwarves_hit</Hitsound>
+        <DeathSound>monster/dwarves_death</DeathSound>
+        <Size>100</Size>
+        <MaxHitPoints>1500</MaxHitPoints>
+        <Defense>6</Defense>
+        <Projectile id="0">
+            <ObjectId>Green Missile</ObjectId>
+            <Damage>100</Damage>
+            <Speed>50</Speed>
+            <Amplitude>1</Amplitude>
+            <Frequency>2</Frequency>
+            <LifetimeMS>5000</LifetimeMS>'
+            <PassesCover />
+        </Projectile>
+    </Object>
+</Objects>

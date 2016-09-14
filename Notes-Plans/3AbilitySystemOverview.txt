@@ -1,0 +1,70 @@
+Written and updated by Proph.
+
+
+The 3-Ability System
+
+=====
+Overview
+
+Each class has three abilities unique to their own class. Each ability will have its own properties, including stats, cooldowns, etc. The abilities must relate to and affect a main playstyle for the class. This means that if a class is meant to be an aim-based ranged damage dealer (Archer), the abilities will relate to such identity, creating class diversity.
+
+The first ability is usually very related to the original ability of the class, and it highlights a main function of the class. This is always available to you.
+
+The second and third abilities pertain to utility, damage, damage absorption, etc. They are usually made to play in conjunction with the first ability. The second and third abilities are only available once you reach the character level required to unlock each one.
+
+Abilities are always bound to the character itself, not any item. Ability powers scale off of level, stats, and ability item. All these three in conjunction allow abilities to gain strength throughout all levels of play. Ability items serve as direct scaling components to an ability's power.
+
+Some abilities are meant to be used in emergencies or in times of need, while others are built to chain combos off of other abilities to deal immense damage. Either way, abilities are built to promote special forms of play of each class, thus promoting class diversity.
+
+Abilities are usable even without the item, but they will be vastly weaker without an ability item to power off of.
+
+====
+Player Interface
+
+The 3-ability system will require certain UI changes.
+
+1.) All ability items must be remade. No ability item will have UseItem available to it. It won't be a consumable anymore. Instead, it will have a handy little stat called "Ability Power". Ability Power makes an ability stronger, and it directly correlates with the tier of the tiered ability (ie. t1 = 1AP, t2 = 2AP, etc). The ability item description should reflect the amount of Ability Power.
+
+2.) There should be space in the UI for three inventory-size boxes. Each of these boxes will be a 40x40 image of an ability. Hovering over these abilities will show you their details in a description box (just like items), such as stats and whatnot. If the user is silenced or does not have enough mana, the ability will have a red X over its image. If the ability is on cooldown, it will show as a translucent dark bar over the image that decreases in size as time elapses.
+
+3.) Keyboard shortcuts Z, X, and C will be implemented to use each of the 3 abilities. Therefore, they must be configurable hotkeys through the options menu.
+
+====
+The inside client
+
+Abilities actually have very little hardcoding in the client other than being a modified useitem. With this being said, we'll just tweak this so that Z, X, and C perform definable functions.
+
+-----
+After you press an ability hotkey...
+1.) The client quickly checks for ability ID, mana cost versus player mana, cursor location or other target location. It verifies them that they are rational: (abilities 0,1,2 would be ID's, anything else would be invalid) [mana cost is self explanatory] (the target location must be within x distance of the player to be valid)
+
+2.) The client sends a UseAbility packet, which includes ability ID and target location.
+
+3.) Server receives the UseAbility packet and checks for ability ID, mana costs, target location, world ID, and other stuff to check for viability. The server also calculates damage, cooldown, etc.
+
+4.) After verifying that the UseAbility packet is correct, the server renders the ability actions serverside as well as sending packets back to render the ability actions clientside. The ability use is now complete.
+
+-----
+
+Discussions and Remarks
+=====
+
+SEPTEMBER 1ST, 2015
+-----
+0.) 3 Ability System. Each ability has its own properties, costs, and cooldowns.
+1.) Ability One is the base ability of the class and is only modified to fit a character's specialization.
+2.) Ability Two and Three are entirely dependent on the specialization.
+3.) You gain the option to specialize when you meet the requirements to unlock Ability Two.
+4.) Specializations are related to the class itself and shouldn't step too close to other class specializations.
+5.) Tiered Abilities serve as direct scaling power stats for abilities.
+6.) UT Abilities will also grant Ability Power, but can have unique attributes that affect abilities.
+7.) Leveling will have a much greater emphasis than before, and max level will be much tougher and longer to attain than before.
+8.) Maxing remains a concept, however maxing will not provide a huge power boost like Prod, just a noticeable one.
+9.) Stat Potions will become harder to gain and more valuable. They will be made cooler (and they don't necessarily have to be potions this time)
+10.) At max level, your character can earn a special hero title. (ie max level fire wizard = "Mage of Inferno")
+11.) We should probably work on getting the basic part of this thing done first.
+
+During the space of today, Trav was able to create almost the entire feature. Abilities have their own special XML's that roughly look like items but differ in many functionalities. Tooltips have been created for each abilities and Trav also made a small UI tab to show the three ability icons as well as an active cooldown on them. Splendid! After a few repo changes, we'll move those changes to MDB2 to continue our source work. Good work Trav!
+
+-----
+

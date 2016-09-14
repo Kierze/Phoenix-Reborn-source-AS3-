@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<SoundPack name="Ossi's Musicpack" folderPath="sfx/soundpacks/OssiPack/">
+  <MusicList inheritFrom="default" folderPath="music/">
+    <Music name="MainTheme1" path="maintheme1.mp3"/>
+    <Music name="MainTheme2" path="maintheme2.mp3"/>
+    <Music name="MainTheme3" path="Spectre.mp3"/>
+    <Music name="SpriteWorld" path="02_nibblepits.mp3"/>
+  </MusicList>
+  <SoundList inheritFrom="default" />
+</SoundPack>

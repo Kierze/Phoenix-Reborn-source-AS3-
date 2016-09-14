@@ -1,0 +1,169 @@
+<Objects>
+    <!-- Supply Crates -->
+    <Object type="0x230d" id="Supply Crate Series #1">
+        <Class>Equipment</Class>
+        <Item />
+        <Texture>
+            <File>lofiEnvironment2</File>
+            <Index>0xd6</Index>
+        </Texture>
+        <SlotType>10</SlotType>
+        <Description>A crate that can be opened with a key. Can give you a random strangifier, skin, or a rare chance at a series #1 unusual skin!</Description>
+        <BagType>1</BagType>
+        <Crate/>
+        <CrateLoot chance="0.01">
+            <Loot unusual="true" series="1">Skin</Loot>
+        </CrateLoot>
+        <CrateLoot chance="0.09">
+            <Loot>Skin</Loot>
+        </CrateLoot>
+        <CrateLoot chance="0.1">
+            <Loot>StrangePart</Loot>
+        </CrateLoot>
+        <CrateLoot chance="0.8">
+            <Loot minTier="8" maxTier="11">TieredStrangifier</Loot>
+        </CrateLoot>
+        <Material/>
+    </Object>
+    <Object type="0x2314" id="Supply Crate Series #2">
+        <Class>Equipment</Class>
+        <Item />
+        <Texture>
+            <File>lofiEnvironment2</File>
+            <Index>0xd6</Index>
+        </Texture>
+        <SlotType>10</SlotType>
+        <Description>A crate that can be opened with a key. Can give you a random strangifier, skin, or a rare chance at a series #2 unusual skin!</Description>
+        <BagType>1</BagType>
+        <Crate/>
+        <CrateLoot chance="0.01">
+            <Loot unusual="true" series="2">Skin</Loot>
+        </CrateLoot>
+        <CrateLoot chance="0.09">
+            <Loot>Skin</Loot>
+        </CrateLoot>
+        <CrateLoot chance="0.1">
+            <Loot>StrangePart</Loot>
+        </CrateLoot>
+        <CrateLoot chance="0.8">
+            <Loot minTier="8" maxTier="11">TieredStrangifier</Loot>
+        </CrateLoot>
+        <Material/>
+    </Object>
+
+    <!-- Unusual Crates -->
+    <Object type="0x230f" id="Unusual Crate">
+        <Class>Equipment</Class>
+        <Item />
+        <Texture>
+            <File>lofiObj3</File>
+            <Index>0x234</Index>
+        </Texture>
+        <SlotType>10</SlotType>
+        <Description>A crate that can be opened with a key. Has a 100% chance to give an unusual skin of any series.</Description>
+        <BagType>4</BagType>
+        <Crate/>
+        <CrateLoot chance="1">
+            <Loot unusual="true">Skin</Loot>
+        </CrateLoot>
+        <Material/>
+    </Object>
+    <Object type="0x2315" id="Premium Skin Crate">
+        <Class>Equipment</Class>
+        <Item />
+        <Texture>
+            <File>lofiObj3</File>
+            <Index>0x234</Index>
+        </Texture>
+        <SlotType>10</SlotType>
+        <Description>A crate that can be opened with a key. Has a 100% chance to give a premium skin of any series.</Description>
+        <BagType>4</BagType>
+        <Crate>0</Crate>
+        <Crate/>
+        <CrateLoot chance="1">
+            <Loot unusual="true" premium="true">Skin</Loot>
+        </CrateLoot>
+        <Material/>
+    </Object>
+    <Object type="0x2316" id="Premium Effect Crate">
+        <Class>Equipment</Class>
+        <Item />
+        <Texture>
+            <File>lofiObj3</File>
+            <Index>0x234</Index>
+        </Texture>
+        <SlotType>10</SlotType>
+        <Description>A crate that can be opened with a key. Has a 100% chance to give an unusual skin with a premium effect.</Description>
+        <BagType>4</BagType>
+        <Crate/>
+        <CrateLoot chance="1">
+            <Loot unusual="true" series="-1">Skin</Loot>
+        </CrateLoot>
+        <Material/>
+    </Object>
+    <Object type="0x2317" id="Premium Crate">
+        <Class>Equipment</Class>
+        <Item />
+        <Texture>
+            <File>lofiObj3</File>
+            <Index>0x234</Index>
+        </Texture>
+        <SlotType>10</SlotType>
+        <Description>A crate that can be opened with a key. Has a 100% chance to give a premium skin with a premium effect.</Description>
+        <BagType>4</BagType>
+        <Crate/>
+        <CrateLoot chance="1">
+            <Loot unusual="true" premium="true" series="-1">Skin</Loot>
+        </CrateLoot>
+        <Material/>
+    </Object>
+    <Object type="0x2319" id="All Unusual Crate">
+        <Class>Equipment</Class>
+        <Item />
+        <Texture>
+            <File>lofiObj3</File>
+            <Index>0x234</Index>
+        </Texture>
+        <SlotType>10</SlotType>
+        <Description>A crate that can be opened with a key. Has a 100% chance to give an unusual or premium skin of any series.</Description>
+        <BagType>4</BagType>
+        <Crate/>
+        <CrateLoot chance="0.25">
+            <Loot unusual="true" premium="true">Skin</Loot>
+        </CrateLoot>
+        <CrateLoot chance="0.75">
+            <Loot unusual="true">Skin</Loot>
+        </CrateLoot>
+        <Material/>
+    </Object>
+
+    <!-- Other Crates -->
+    <Object type="0x231a" id="Potion Crate">
+        <Class>Equipment</Class>
+        <Item />
+        <Texture>
+            <File>lofiObj3</File>
+            <Index>0x23b</Index>
+        </Texture>
+        <SlotType>10</SlotType>
+        <Description>A crate that can be opened with a key. Can give you a random stat-increasing potion, or an exceedingly rare maxy!</Description>
+        <BagType>1</BagType>
+        <Crate/>
+        <CrateLoot chance="0.01">
+            <Loot name="Potion of Maxy" nameColor="0x8000FF">Item</Loot>
+        </CrateLoot>
+        <CrateLoot chance="0.09">
+            <Loot name="Potion of Life">Item</Loot>
+            <Loot name="Potion of Mana">Item</Loot>
+        </CrateLoot>
+        <CrateLoot chance="0.9">
+            <Loot name="Potion of Speed">Item</Loot>
+            <Loot name="Potion of Dexterity">Item</Loot>
+            <Loot name="Potion of Defense">Item</Loot>
+            <Loot name="Potion of Attack">Item</Loot>
+            <Loot name="Potion of Wisdom">Item</Loot>
+            <Loot name="Potion of Vitality">Item</Loot>
+        </CrateLoot>
+        <Material/>
+    </Object>
+</Objects>

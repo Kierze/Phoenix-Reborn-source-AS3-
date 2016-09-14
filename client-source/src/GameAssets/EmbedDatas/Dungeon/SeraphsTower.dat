@@ -1,0 +1,469 @@
+<Objects>
+    <!-- Tower from Seraphs Dominion -->
+    <Object type="0x3000" id="Demon of Darkness">
+        <Enemy />
+        <Class>Character</Class>
+        <AnimatedTexture>
+            <File>chars16x16dEncounters2</File>
+            <Index>41</Index>
+        </AnimatedTexture>
+        <HitSound>monster/flaming_skulls_hit</HitSound>
+        <DeathSound>monster/flaming_skulls_death</DeathSound>
+        <Size>120</Size>
+        <MaxHitPoints>95000</MaxHitPoints>
+        <Defense>50</Defense>
+        <Projectile id="0">
+            <ObjectId>Fire Bolt</ObjectId>
+            <Damage>150</Damage>
+            <Speed>50</Speed>
+            <LifetimeMS>3000</LifetimeMS>
+            <Size>120</Size>
+        </Projectile>
+        <Projectile id="1">
+            <ObjectId>Fire Mystic Shot</ObjectId>
+            <Damage>80</Damage>
+            <Speed>50</Speed>
+            <LifetimeMS>5000</LifetimeMS>
+            <ConditionEffect duration="5">Weak</ConditionEffect>
+        </Projectile>
+        <Projectile id="2">
+            <ObjectId>Fire Bolt</ObjectId>
+            <Damage>220</Damage>
+            <Speed>100</Speed>
+            <LifetimeMS>2000</LifetimeMS>
+            <ConditionEffect duration="5">Weak</ConditionEffect>
+            <ConditionEffect duration="5">Dazed</ConditionEffect>
+            <Size>120</Size>
+        </Projectile>
+        <Projectile id="3">
+            <ObjectId>Fire Bolt</ObjectId>
+            <Damage>190</Damage>
+            <Speed>50</Speed>
+            <LifetimeMS>3000</LifetimeMS>
+            <Size>120</Size>
+        </Projectile>
+        <Projectile id="4">
+            <ObjectId>Fire Mystic Shot</ObjectId>
+            <Damage>100</Damage>
+            <Speed>50</Speed>
+            <LifetimeMS>5000</LifetimeMS>
+            <ConditionEffect duration="5">Weak</ConditionEffect>
+            <ConditionEffect duration="5">Dazed</ConditionEffect>
+        </Projectile>
+        <Projectile id="5">
+            <ObjectId>Fire Bolt</ObjectId>
+            <Damage>200</Damage>
+            <Speed>100</Speed>
+            <LifetimeMS>2000</LifetimeMS>
+            <ArmorPiercing/>
+            <ConditionEffect duration="5">Weak</ConditionEffect>
+            <ConditionEffect duration="5">Dazed</ConditionEffect>
+            <Size>120</Size>
+        </Projectile>
+        <Projectile id="6">
+            <ObjectId>Fire Mystic Shot</ObjectId>
+            <Damage>100</Damage>
+            <Speed>50</Speed>
+            <LifetimeMS>5000</LifetimeMS>
+            <ConditionEffect duration="5">Weak</ConditionEffect>
+            <ConditionEffect duration="5">Dazed</ConditionEffect>
+            <Parametric/>
+        </Projectile>
+    </Object>
+    <Object type="0x3001" id="Minion of Darkness">
+        <Enemy />
+        <Class>Character</Class>
+        <Texture>
+            <File>lofiChar28x8</File>
+            <Index>0x21</Index>
+        </Texture>
+        <HitSound>monster/abyss_demons_hit</HitSound>
+        <DeathSound>monster/abyss_demons_death</DeathSound>
+        <Size>100</Size>
+        <MaxHitPoints>1000</MaxHitPoints>
+        <Defense>30</Defense>
+        <Projectile id="0">
+            <ObjectId>Red Fire</ObjectId>
+            <Damage>40</Damage>
+            <Speed>50</Speed>
+            <LifetimeMS>3000</LifetimeMS>
+            <ConditionEffect duration="4">Slowed</ConditionEffect>
+            <Size>140</Size>
+        </Projectile>
+    </Object>
+    <Object type="0x3002" id="Demon of Despair">
+        <Enemy />
+        <Class>Character</Class>
+        <AnimatedTexture>
+            <File>chars16x16dEncounters2</File>
+            <Index>42</Index>
+        </AnimatedTexture>
+        <HitSound>monster/flaming_skulls_hit</HitSound>
+        <DeathSound>monster/flaming_skulls_death</DeathSound>
+        <Size>120</Size>
+        <MaxHitPoints>95000</MaxHitPoints>
+        <Defense>50</Defense>
+        <Projectile id="0">
+            <ObjectId>Pink Bolt</ObjectId>
+            <Damage>150</Damage>
+            <Speed>50</Speed>
+            <LifetimeMS>3000</LifetimeMS>
+            <Size>120</Size>
+        </Projectile>
+        <Projectile id="1">
+            <ObjectId>Rimmed Mystic Shot</ObjectId>
+            <Damage>50</Damage>
+            <Speed>50</Speed>
+            <LifetimeMS>5000</LifetimeMS>
+            <ConditionEffect duration="5">Dazed</ConditionEffect>
+        </Projectile>
+        <Projectile id="2">
+            <ObjectId>Pink Bolt</ObjectId>
+            <Damage>140</Damage>
+            <Speed>100</Speed>
+            <LifetimeMS>2000</LifetimeMS>
+            <ArmorPiercing/>
+            <Size>120</Size>
+        </Projectile>
+        <Projectile id="3">
+            <ObjectId>Pink Bolt</ObjectId>
+            <Damage>180</Damage>
+            <Speed>50</Speed>
+            <LifetimeMS>3000</LifetimeMS>
+            <Size>120</Size>
+        </Projectile>
+        <Projectile id="4">
+            <ObjectId>Rimmed Mystic Shot</ObjectId>
+            <Damage>70</Damage>
+            <Speed>50</Speed>
+            <LifetimeMS>5000</LifetimeMS>
+            <ConditionEffect duration="5">Weak</ConditionEffect>
+            <ConditionEffect duration="5">Dazed</ConditionEffect>
+        </Projectile>
+        <Projectile id="5">
+            <ObjectId>Pink Bolt</ObjectId>
+            <Damage>140</Damage>
+            <Speed>100</Speed>
+            <LifetimeMS>2000</LifetimeMS>
+            <ArmorPiercing/>
+            <ConditionEffect duration="5">Slowed</ConditionEffect>
+            <Size>120</Size>
+        </Projectile>
+        <Projectile id="6">
+            <ObjectId>Rimmed Mystic Shot</ObjectId>
+            <Damage>70</Damage>
+            <Speed>50</Speed>
+            <LifetimeMS>5000</LifetimeMS>
+            <ConditionEffect duration="5">Weak</ConditionEffect>
+            <ConditionEffect duration="5">Dazed</ConditionEffect>
+            <Parametric/>
+        </Projectile>
+    </Object>
+    <Object type="0x3003" id="Minion of Despair">
+        <Enemy />
+        <Class>Character</Class>
+        <Texture>
+            <File>lofiChar28x8</File>
+            <Index>0x22</Index>
+        </Texture>
+        <HitSound>monster/abyss_demons_hit</HitSound>
+        <DeathSound>monster/abyss_demons_death</DeathSound>
+        <Size>100</Size>
+        <MaxHitPoints>1000</MaxHitPoints>
+        <Defense>30</Defense>
+        <Projectile id="0">
+            <ObjectId>Purple Magic</ObjectId>
+            <Damage>90</Damage>
+            <Speed>50</Speed>
+            <LifetimeMS>3000</LifetimeMS>
+            <Size>140</Size>
+        </Projectile>
+    </Object>
+    <Object type="0x3004" id="Mysterious Head">
+        <Enemy />
+        <Group>Mysterious</Group>
+        <Class>Character</Class>
+        <AnimatedTexture>
+            <File>chars8x8dEncounters</File>
+            <Index>21</Index>
+        </AnimatedTexture>
+        <AltTexture id="1">
+            <Texture>
+                <File>invisible</File>
+                <Index>0</Index>
+            </Texture>
+        </AltTexture>
+        <HitSound>monster/abyss_demons_hit</HitSound>
+        <DeathSound>monster/abyss_demons_death</DeathSound>
+        <Size>200</Size>
+        <MaxHitPoints>20000</MaxHitPoints>
+        <Defense>30</Defense>
+        <Projectile id="0">
+            <ObjectId>White Flame</ObjectId>
+            <Damage>100</Damage>
+            <Speed>70</Speed>
+            <LifetimeMS>3000</LifetimeMS>
+            <Size>150</Size>
+            <ConditionEffect duration="5">Dazed</ConditionEffect>
+        </Projectile>
+    </Object>
+    <Object type="0x3005" id="Mysterious Hand">
+        <Enemy />
+        <Class>Character</Class>
+        <AnimatedTexture>
+            <File>chars8x8dEncounters</File>
+            <Index>20</Index>
+        </AnimatedTexture>
+        <AltTexture id="1">
+            <Texture>
+                <File>invisible</File>
+                <Index>0</Index>
+            </Texture>
+        </AltTexture>
+        <HitSound>monster/abyss_demons_hit</HitSound>
+        <DeathSound>monster/abyss_demons_hit</DeathSound>
+        <Size>200</Size>
+        <MaxHitPoints>10000</MaxHitPoints>
+        <Defense>10</Defense>
+        <Projectile id="0">
+            <ObjectId>Black Magic</ObjectId>
+            <Damage>80</Damage>
+            <Speed>50</Speed>
+            <LifetimeMS>3000</LifetimeMS>
+            <Size>200</Size>
+            <ConditionEffect duration="3">Weak</ConditionEffect>
+        </Projectile>
+    </Object>
+    <Object type="0x3006" id="Tower Entrance Wall">
+        <Class>Wall</Class>
+        <Texture>
+            <File>lofiEnvironment2</File>
+            <Index>0x67</Index>
+        </Texture>
+        <Top>
+            <Texture>
+                <File>lofiEnvironment2</File>
+                <Index>0x62</Index>
+            </Texture>
+        </Top>
+        <Size>8.5</Size>
+        <Elevation>1.5</Elevation>
+        <HitSound>monster/stone_walls_hit</HitSound>
+        <DeathSound>monster/stone_walls_death</DeathSound>
+        <Static />
+    </Object>
+    <Object type="0x3007" id="Tower Outside Wall">
+        <Class>Wall</Class>
+        <Texture>
+            <File>lofiEnvironment2</File>
+            <Index>0x67</Index>
+        </Texture>
+        <Top>
+            <Texture>
+                <File>lofiEnvironment2</File>
+                <Index>0x62</Index>
+            </Texture>
+        </Top>
+        <Size>10</Size>
+        <HitSound>monster/stone_walls_hit</HitSound>
+        <DeathSound>monster/stone_walls_death</DeathSound>
+        <Static />
+        <FullOccupy />
+        <OccupySquare />
+        <EnemyOccupySquare />
+        <BlocksSight />
+    </Object>
+    <Object type="0x3008" id="Tower Ceiling">
+        <Class>Wall</Class>
+        <Texture>
+            <File>lofiEnvironment2</File>
+            <Index>0x67</Index>
+        </Texture>
+        <Top>
+            <Texture>
+                <File>lofiEnvironment2</File>
+                <Index>0x62</Index>
+            </Texture>
+        </Top>
+        <Size>1</Size>
+        <Elevation>8.5</Elevation>
+        <HitSound>monster/stone_walls_hit</HitSound>
+        <DeathSound>monster/stone_walls_death</DeathSound>
+        <Static />
+    </Object>
+    <Object type="0x3009" id="Lesser Tower Warrior">
+        <Enemy />
+        <Class>Character</Class>
+        <AnimatedTexture>
+            <File>chars8x8dEncounters</File>
+            <Index>23</Index>
+        </AnimatedTexture>
+        <HitSound>monster/pirates_hit</HitSound>
+        <DeathSound>monster/pirates_death</DeathSound>
+        <Size>100</Size>
+        <MaxHitPoints>20</MaxHitPoints>
+        <Defense>1</Defense>
+        <Projectile id="0">
+            <ObjectId>Blade</ObjectId>
+            <Damage>15</Damage>
+            <Speed>40</Speed>
+            <LifetimeMS>600</LifetimeMS>
+        </Projectile>
+    </Object>
+    <Object type="0x300a" id="Greater Tower Warrior">
+        <Enemy />
+        <Class>Character</Class>
+        <AnimatedTexture>
+            <File>chars8x8dEncounters</File>
+            <Index>22</Index>
+        </AnimatedTexture>
+        <HitSound>monster/cave_pirates_hit</HitSound>
+        <DeathSound>monster/cave_pirates_death</DeathSound>
+        <Size>100</Size>
+        <MaxHitPoints>100</MaxHitPoints>
+        <Defense>3</Defense>
+        <Projectile id="0">
+            <ObjectId>Blade</ObjectId>
+            <Damage>25</Damage>
+            <Speed>50</Speed>
+            <LifetimeMS>600</LifetimeMS>
+        </Projectile>
+    </Object>
+    <Object type="0x300b" id="Tower Golem Boss">
+        <Enemy />
+        <Class>Character</Class>
+        <AnimatedTexture>
+            <File>chars16x16dEncounters2</File>
+            <Index>43</Index>
+        </AnimatedTexture>
+        <HitSound>monster/golems_hit</HitSound>
+        <DeathSound>monster/golems_death</DeathSound>
+        <Size>100</Size>
+        <MaxHitPoints>1000</MaxHitPoints>
+        <Defense>10</Defense>
+        <Projectile id="0">
+            <ObjectId>Grey Boomerang</ObjectId>
+            <Damage>80</Damage>
+            <Speed>60</Speed>
+            <LifetimeMS>2000</LifetimeMS>
+            <Boomerang/>
+        </Projectile>
+        <Quest/>
+    </Object>
+    <Object type="0x300c" id="Tower Golem">
+        <Enemy />
+        <Class>Character</Class>
+        <AnimatedTexture>
+            <File>chars16x16dEncounters2</File>
+            <Index>43</Index>
+        </AnimatedTexture>
+        <HitSound>monster/golems_hit</HitSound>
+        <DeathSound>monster/golems_death</DeathSound>
+        <Size>100</Size>
+        <MaxHitPoints>1000</MaxHitPoints>
+        <Defense>10</Defense>
+        <Projectile id="0">
+            <ObjectId>Grey Boomerang</ObjectId>
+            <Damage>80</Damage>
+            <Speed>60</Speed>
+            <LifetimeMS>2000</LifetimeMS>
+            <Boomerang/>
+        </Projectile>
+    </Object>
+    <Object type="0x300d" id="Tower Bandit">
+        <Enemy />
+        <Class>Character</Class>
+        <AnimatedTexture>
+            <File>chars8x8dEncounters</File>
+            <Index>25</Index>
+        </AnimatedTexture>
+        <HitSound>monster/elves_hit</HitSound>
+        <DeathSound>monster/elves_death</DeathSound>
+        <Size>100</Size>
+        <MaxHitPoints>50</MaxHitPoints>
+        <Defense>3</Defense>
+        <Projectile id="0">
+            <ObjectId>Blade</ObjectId>
+            <Damage>15</Damage>
+            <Speed>80</Speed>
+            <LifetimeMS>500</LifetimeMS>>
+        </Projectile>
+    </Object>
+    <Object type="0x300e" id="Tower Bandit Leader">
+        <Enemy />
+        <Class>Character</Class>
+        <AnimatedTexture>
+            <File>chars8x8dEncounters</File>
+            <Index>24</Index>
+        </AnimatedTexture>
+        <HitSound>monster/elves_hit</HitSound>
+        <DeathSound>monster/elves_death</DeathSound>
+        <Size>120</Size>
+        <MaxHitPoints>150</MaxHitPoints>
+        <Defense>4</Defense>
+        <Projectile id="0">
+            <ObjectId>Blade</ObjectId>
+            <Damage>40</Damage>
+            <Speed>80</Speed>
+            <LifetimeMS>650</LifetimeMS>
+        </Projectile>
+    </Object>
+    <Object type="0x300f" id="Scientist">
+        <Enemy />
+        <Class>Character</Class>
+        <AnimatedTexture>
+            <File>chars8x8dEncounters</File>
+            <Index>26</Index>
+        </AnimatedTexture>
+        <HitSound>monster/undead_dwarves_hit</HitSound>
+        <DeathSound>monster/undead_dwarves_death</DeathSound>
+        <Size>100</Size>
+        <MaxHitPoints>300</MaxHitPoints>
+        <Defense>5</Defense>
+        <Projectile id="0">
+            <ObjectId>Green Magic</ObjectId>
+            <Damage>80</Damage>
+            <Speed>70</Speed>
+            <LifetimeMS>1000</LifetimeMS>
+        </Projectile>
+    </Object>
+    <Object type="0x3010" id="Super Tower Warrior">
+        <Enemy />
+        <Class>Character</Class>
+        <AnimatedTexture>
+            <File>chars8x8dEncounters</File>
+            <Index>22</Index>
+        </AnimatedTexture>
+        <HitSound>monster/cave_pirates_hit</HitSound>
+        <DeathSound>monster/cave_pirates_death</DeathSound>
+        <Size>200</Size>
+        <MaxHitPoints>2000</MaxHitPoints>
+        <Defense>8</Defense>
+        <Projectile id="0">
+            <ObjectId>White Bolt</ObjectId>
+            <Damage>150</Damage>
+            <Speed>80</Speed>
+            <LifetimeMS>2000</LifetimeMS>
+        </Projectile>
+        <Quest/>
+    </Object>
+    <Object type="0x3011" id="Super Tower Warrior Decoy">
+        <Enemy />
+        <Class>Character</Class>
+        <AnimatedTexture>
+            <File>chars8x8dEncounters</File>
+            <Index>22</Index>
+        </AnimatedTexture>
+        <HitSound>monster/cave_pirates_hit</HitSound>
+        <DeathSound>monster/cave_pirates_death</DeathSound>
+        <Size>200</Size>
+        <MaxHitPoints>1000</MaxHitPoints>
+        <Defense>5</Defense>
+        <Projectile id="0">
+            <ObjectId>White Bolt</ObjectId>
+            <Damage>50</Damage>
+            <Speed>80</Speed>
+            <LifetimeMS>2000</LifetimeMS>
+        </Projectile>
+    </Object>
+</Objects>
